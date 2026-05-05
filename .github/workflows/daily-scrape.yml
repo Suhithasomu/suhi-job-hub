@@ -37,24 +37,22 @@ jobs:
         run: python src/scraper.py
         working-directory: suhi_platform
 
-
       - name: Build HTML
         run: python src/build_html.py
         working-directory: suhi_platform
-
 
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
+          git add suhi_platform/docs/
           git diff --staged --quiet || git commit -m "Auto-update jobs $(date +'%Y-%m-%d')"
           git push
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/
+          path: suhi_platform/docs/
 
       - name: Deploy to GitHub Pages
         id: deployment
