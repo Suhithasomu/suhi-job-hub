@@ -487,7 +487,7 @@ def run_all():
             "workday": len(wd_jobs),
         }
     }
-   with open(os.path.join(docs_dir, "jobs.json"), "w") as f:
+    with open(os.path.join(docs_dir, "jobs.json"), "w") as f:
         json.dump(output, f, indent=2)
     print(f"   Saved to docs/jobs.json")
     return output
