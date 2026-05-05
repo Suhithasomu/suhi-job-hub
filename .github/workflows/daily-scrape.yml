@@ -3,7 +3,12 @@ name: Scrape Jobs and Deploy
 on:
   schedule:
     - cron: '0 14 * * *'
-  workflow_dispatch:
+  workflow_dispatch:         # Manual trigger from Actions tab
+  push:
+    branches: [main]
+    paths:                   # Only redeploy when these files change
+      - 'suhi_platform/src/**'
+      - 'suhi_platform/docs/**'
 
 permissions:
   contents: write
