@@ -6,9 +6,7 @@ import json, os
 from datetime import datetime
 
 def build():
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    docs_dir = os.path.join(script_dir, "..", "docs")
-    with open(os.path.join(docs_dir, "jobs.json")) as f:
+    with open("docs/jobs.json") as f:
         data = json.load(f)
 
     jobs = data.get("jobs", [])
@@ -271,6 +269,21 @@ nav{{background:var(--surface);border-bottom:1px solid var(--border);height:56px
 
 <script>
 const JOBS = {jobs_js};
+const API_KEY = "";  // Optional: add your Anthropic API key here for AI features
+
+// Real recruiters from Apollo.io (last names partially masked on free plan)
+const RECRUITERS = {{
+  "Stripe": {{name:"Sudha R.", title:"Technical Recruiter", init:"SR", via:"Apollo.io"}},
+  "Datadog": {{name:"Macarena G.", title:"Recruiting Manager", init:"MG", via:"Apollo.io"}},
+  "Coinbase": {{name:"Sameer K.", title:"Technical Recruiter", init:"SK", via:"Apollo.io"}},
+  "Robinhood": {{name:"Jackie C.", title:"Technical Recruiter", init:"JC", via:"Apollo.io"}},
+  "Rippling": {{name:"Vaishali S.", title:"Sr. TA Partner", init:"VS", via:"Apollo.io"}},
+  "Figma": {{name:"Patrick M.", title:"Technical Recruiter", init:"PM", via:"Apollo.io"}},
+}};
+
+function getRecruiter(company) {{
+  return RECRUITERS[company] || null;
+}}
 const RES = `CANDIDATE: Suhitha Reddy Somu (Suhi) — Senior Data Analyst
 TITLES (never change): PayScale=Data Analyst | Infor=Software Engineer Associate | CDF=Volunteer Data Analyst
 LOCKED METRICS: $4.2M revenue optimization · 87% churn model · $200K funding · 40% ETL reduction via Alteryx · 17% patient outreach improvement · 33% query latency reduction · 15+ cross-functional teams
@@ -340,7 +353,7 @@ function renderCard(j){{
     </div>
     <div class="jacts">
       <button class="btn btn-dark" onclick="openTailor_j(${{JSON.stringify(j).replace(/"/g,'&quot;')}})">✦ Tailor resume</button>
-      <button class="btn" onclick="this.nextElementSibling.classList.toggle('open')">Breakdown</button>
+      <button class="btn" onclick="this.closest('.jcard').querySelector('.bdown').classList.toggle('open')">Breakdown</button>
       <button class="btn" onclick="draftOutreach_j(${{JSON.stringify(j).replace(/"/g,'&quot;')}})">Draft outreach</button>
       <a class="btn btn-go" href="${{j.url}}" target="_blank" rel="noopener noreferrer">Apply now ↗</a>
     </div>
@@ -400,8 +413,15 @@ function openTailor_j(j){{
   document.getElementById("mod").classList.add("open");
   ["gap","bullets","ats","summary"].forEach(async k=>{{
     try{{
+      if(!API_KEY){{
+        document.getElementById("ms-"+k).innerHTML=`<div class="lbox" style="color:var(--amber)">
+          Add your API key to enable AI tailoring.<br><small>Find <code>const API_KEY = "";</code> in build_html.py and add your key from console.anthropic.com</small>
+        </div>`;
+        return;
+      }}
       const r=await fetch("https://api.anthropic.com/v1/messages",{{
-        method:"POST",headers:{{"Content-Type":"application/json","anthropic-dangerous-direct-browser-access":"true"}},
+        method:"POST",
+        headers:{{"Content-Type":"application/json","x-api-key":API_KEY,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"}},
         body:JSON.stringify({{model:"claude-sonnet-4-20250514",max_tokens:900,messages:[{{role:"user",content:PROMPTS[k](j)}}]}})
       }});
       const d=await r.json();
@@ -423,17 +443,47 @@ function cmbg(e){{if(e.target.id==="mod")cm();}}
 
 async function draftOutreach_j(j){{
   pg("outreach");
-  document.getElementById("oc").innerHTML=`<div class="lbox"><span class="spin"></span>Drafting outreach for ${{j.company}}…</div>`;
+  const rec = getRecruiter(j.company);
+  const recLine = rec ? `Recruiter: ${{rec.name}}, ${{rec.title}} at ${{j.company}} (found via ${{rec.via}})` : `Address to Hiring Team / Talent Acquisition at ${{j.company}}`;
+
+  // Show recruiter card immediately before API call
+  document.getElementById("oc").innerHTML=`
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:1rem;">
+      <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Job</div>
+      <div style="font-size:15px;font-weight:800">${{j.title}}</div>
+      <div style="font-size:13px;color:var(--text2);margin-top:2px">${{j.company}} · ${{j.location}} · ${{j.source}}</div>
+      ${{rec ? `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);display:flex;align-items:center;gap:8px">
+        <div style="width:30px;height:30px;border-radius:50%;background:var(--bbg);color:var(--blue);display:grid;place-items:center;font-size:11px;font-weight:800">${{rec.init}}</div>
+        <div><div style="font-size:13px;font-weight:700">${{rec.name}}</div>
+        <div style="font-size:11px;color:var(--text2)">${{rec.title}} <span style="color:var(--teal);margin-left:4px;font-weight:700">via ${{rec.via}}</span></div></div>
+      </div>` : `<div style="font-size:12px;color:var(--text3);margin-top:8px">No recruiter found in database — message will address Hiring Team</div>`}}
+    </div>
+    <div class="lbox"><span class="spin"></span>Drafting LinkedIn message and cold email…</div>`;
+
+  if(!API_KEY){{
+    document.getElementById("oc").innerHTML += `<div style="background:var(--abg);color:var(--amber);padding:12px;border-radius:var(--rs);font-size:13px;margin-top:8px">
+      ⚠ To enable AI-drafted messages, add your Anthropic API key:<br>
+      1. Open <code>suhi_platform/src/build_html.py</code><br>
+      2. Find <code>const API_KEY = "";</code><br>
+      3. Replace with <code>const API_KEY = "";</code><br>
+      4. Commit and re-run the workflow<br><br>
+      <strong>Get a free key at: console.anthropic.com</strong>
+    </div>`;
+    return;
+  }}
+
   try{{
     const r=await fetch("https://api.anthropic.com/v1/messages",{{
-      method:"POST",headers:{{"Content-Type":"application/json","anthropic-dangerous-direct-browser-access":"true"}},
-      body:JSON.stringify({{model:"claude-sonnet-4-20250514",max_tokens:800,messages:[{{role:"user",content:`Draft two outreach messages. Human, warm, specific.
+      method:"POST",
+      headers:{{"Content-Type":"application/json","x-api-key":API_KEY,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"}},
+      body:JSON.stringify({{model:"claude-sonnet-4-20250514",max_tokens:800,messages:[{{role:"user",content:`Draft two outreach messages. Human, warm, specific — no corporate clichés.
 SENDER: Suhitha (Suhi) Reddy, Senior Data Analyst, 5+ yrs, Dallas TX
 Wins: $4.2M revenue optimization (PayScale), 40% ETL reduction healthcare (CDF), 87% churn model (Infor), AWS certified
-Role: ${{j.title}} at ${{j.company}} (${{j.industry}}) | Source: ${{j.source}}
-===LINKEDIN=== Under 150 words. Warm, specific, soft CTA.
-===EMAIL=== Subject: [punchy 6-8 word subject]
-[Under 190 words. Specific to ${{j.company}}. Hard metric. 15-min call CTA. Sign as Suhi.]`}}]}})
+Role: ${{j.title}} at ${{j.company}} (${{j.industry}})
+${{recLine}}
+===LINKEDIN=== Under 150 words. Use recruiter first name if known. Reference one specific win relevant to ${{j.industry}}. Soft CTA for 15-min chat.
+===EMAIL=== Subject: [Punchy 6-8 word subject — not generic]
+[Under 190 words. Specific connection to ${{j.company}}. Hard metric. 15-min call CTA. Sign as Suhi.]`}}]}})
     }});
     const d=await r.json();
     const text=d.content?.[0]?.text||"";
@@ -461,7 +511,7 @@ render();
     html = html.replace("WORKDAY_COMPANIES_PLACEHOLDER", str(len([1]*30)))
 
     os.makedirs("docs", exist_ok=True)
-    with open(os.path.join(docs_dir, "index.html"), "w", encoding="utf-8") as f:
+    with open("docs/index.html", "w", encoding="utf-8") as f:
         f.write(html)
     print("✅ Built docs/index.html")
 
