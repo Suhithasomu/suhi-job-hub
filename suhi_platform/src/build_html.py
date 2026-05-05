@@ -23,6 +23,7 @@ def build():
 
     # Build job cards JS array
     jobs_js = json.dumps(jobs)
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -269,7 +270,7 @@ nav{{background:var(--surface);border-bottom:1px solid var(--border);height:56px
 
 <script>
 const JOBS = {jobs_js};
-const API_KEY = "";  // Optional: add your Anthropic API key here for AI features
+const API_KEY = "{api_key}";  // Optional: add your Anthropic API key here for AI features
 
 // Real recruiters from Apollo.io (last names partially masked on free plan)
 const RECRUITERS = {{
@@ -415,7 +416,7 @@ function openTailor_j(j){{
     try{{
       if(!API_KEY){{
         document.getElementById("ms-"+k).innerHTML=`<div class="lbox" style="color:var(--amber)">
-          Add your API key to enable AI tailoring.<br><small>Find <code>const API_KEY = "";</code> in build_html.py and add your key from console.anthropic.com</small>
+          Add your API key to enable AI tailoring.<br><small>Find <code>const API_KEY = "{api_key}";</code> in build_html.py and add your key from console.anthropic.com</small>
         </div>`;
         return;
       }}
@@ -464,8 +465,8 @@ async function draftOutreach_j(j){{
     document.getElementById("oc").innerHTML += `<div style="background:var(--abg);color:var(--amber);padding:12px;border-radius:var(--rs);font-size:13px;margin-top:8px">
       ⚠ To enable AI-drafted messages, add your Anthropic API key:<br>
       1. Open <code>suhi_platform/src/build_html.py</code><br>
-      2. Find <code>const API_KEY = "";</code><br>
-      3. Replace with <code>const API_KEY = "";</code><br>
+      2. Find <code>const API_KEY = "{api_key}";</code><br>
+      3. Replace with <code>const API_KEY = "{api_key}";</code><br>
       4. Commit and re-run the workflow<br><br>
       <strong>Get a free key at: console.anthropic.com</strong>
     </div>`;
