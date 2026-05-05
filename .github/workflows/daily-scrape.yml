@@ -40,7 +40,8 @@ jobs:
       - name: Build HTML
         run: python src/build_html.py
         working-directory: suhi_platform
-
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
