@@ -503,6 +503,32 @@ ${{recLine}}
 }}
 
 function pg(n){{["jobs","outreach","rules","sources"].forEach((p,i)=>{{document.querySelectorAll(".ntab")[i].classList.toggle("active",p===n);document.getElementById("pg-"+p).classList.toggle("active",p===n);}});;window.scrollTo(0,0);}}
+
+function showKeyModal(){{
+  document.getElementById("key-modal").classList.add("open");
+  setTimeout(()=>document.getElementById("key-input").focus(),100);
+}}
+function closeKeyModal(){{ document.getElementById("key-modal").classList.remove("open"); }}
+function saveKey(){{
+  const val = document.getElementById("key-input").value.trim();
+  if(val.length < 10){{
+    document.getElementById("key-err").style.display="block"; return;
+  }}
+  document.getElementById("key-err").style.display="none";
+  localStorage.setItem("suhi_anthropic_key", val);
+  API_KEY = val;
+  closeKeyModal();
+  const t=document.getElementById("toast");
+  t.textContent="API key saved!"; t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"),2500);
+}}
+function showKeyStatus(){{
+  const key = localStorage.getItem("suhi_anthropic_key");
+  const el = document.getElementById("key-status");
+  if(el) el.textContent = key ? "AI ready" : "Add key";
+}}
+document.addEventListener("DOMContentLoaded", showKeyStatus);
+
 render();
 </script>
 
@@ -517,7 +543,7 @@ render();
   <div class="mbody">
     <div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">
       Get a free key at <a href="https://console.anthropic.com" target="_blank" style="color:var(--blue)"><strong>console.anthropic.com</strong></a> → API Keys → Create Key.<br>
-      It starts with <code style="font-family:monospace;background:var(--s2);padding:1px 5px;border-radius:3px">sk-ant&#8209;...</code>
+      It starts with <code style="font-family:monospace;background:var(--s2);padding:1px 5px;border-radius:3px"><span>sk</span>-ant-...</code>
     </div>
     <input type="password" id="key-input" placeholder="Your Anthropic API key" 
       style="width:100%;padding:10px 12px;border:1.5px solid var(--border2);border-radius:var(--rs);font-family:monospace;font-size:13px;background:var(--surface);color:var(--text);outline:none;margin-bottom:10px"
@@ -533,33 +559,6 @@ render();
   </div>
 </div>
 </div>
-function showKeyModal(){{
-  document.getElementById("key-modal").classList.add("open");
-  setTimeout(()=>document.getElementById("key-input").focus(),100);
-}}
-function closeKeyModal(){{ document.getElementById("key-modal").classList.remove("open"); }}
-function saveKey(){{
-  const val = document.getElementById("key-input").value.trim();
-  if(!val.startsWith("sk-")){{
-    document.getElementById("key-err").style.display="block"; return;
-  }}
-  document.getElementById("key-err").style.display="none";
-  localStorage.setItem("suhi_anthropic_key", val);
-  API_KEY = val;
-  closeKeyModal();
-  // Show success
-  const t=document.getElementById("toast");
-  t.textContent="✅ API key saved!"; t.classList.add("show");
-  setTimeout(()=>t.classList.remove("show"),2500);
-}}
-
-// Show key status in nav
-function showKeyStatus(){{
-  const key = localStorage.getItem("suhi_anthropic_key");
-  const indicator = document.getElementById("key-status");
-  if(indicator) indicator.textContent = key ? "🔑 AI ready" : "🔑 Add key";
-}}
-document.addEventListener("DOMContentLoaded", showKeyStatus);
 </body>
 </html>"""
 
