@@ -35,9 +35,13 @@ jobs:
 
       - name: Run scraper
         run: python src/scraper.py
+        working-directory: suhi_platform
+
 
       - name: Build HTML
         run: python src/build_html.py
+        working-directory: suhi_platform
+
 
       - name: Save updated data
         run: |
