@@ -6,7 +6,9 @@ import json, os
 from datetime import datetime
 
 def build():
-    with open("docs/jobs.json") as f:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    docs_dir = os.path.join(script_dir, "..", "docs")
+    with open(os.path.join(docs_dir, "jobs.json")) as f:
         data = json.load(f)
 
     jobs = data.get("jobs", [])
@@ -459,7 +461,7 @@ render();
     html = html.replace("WORKDAY_COMPANIES_PLACEHOLDER", str(len([1]*30)))
 
     os.makedirs("docs", exist_ok=True)
-    with open("docs/index.html", "w", encoding="utf-8") as f:
+    with open(os.path.join(docs_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
     print("✅ Built docs/index.html")
 
