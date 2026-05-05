@@ -23,7 +23,6 @@ def build():
 
     # Build job cards JS array
     jobs_js = json.dumps(jobs)
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -168,7 +167,10 @@ nav{{background:var(--surface);border-bottom:1px solid var(--border);height:56px
     <button class="ntab" onclick="pg('rules')">My Rules</button>
     <button class="ntab" onclick="pg('sources')">Sources</button>
   </div>
-  <div class="nlive"><div class="ldot"></div><span>Updated {last_updated}</span></div>
+  <div style="display:flex;align-items:center;gap:8px">
+    <span id="key-status" onclick="showKeyModal()" style="font-size:11px;color:var(--text2);padding:4px 10px;background:var(--s2);border-radius:20px;border:1px solid var(--border);cursor:pointer;font-weight:600">🔑 Add key</span>
+    <div class="nlive"><div class="ldot"></div><span>Updated {last_updated}</span></div>
+  </div>
 </nav>
 
 <div id="pg-jobs" class="page active">
@@ -270,7 +272,8 @@ nav{{background:var(--surface);border-bottom:1px solid var(--border);height:56px
 
 <script>
 const JOBS = {jobs_js};
-const API_KEY = "{api_key}";  // Optional: add your Anthropic API key here for AI features
+// API key stored in YOUR browser only — never sent to GitHub
+let API_KEY = localStorage.getItem("suhi_anthropic_key") || "";
 
 // Real recruiters from Apollo.io (last names partially masked on free plan)
 const RECRUITERS = {{
@@ -415,8 +418,11 @@ function openTailor_j(j){{
   ["gap","bullets","ats","summary"].forEach(async k=>{{
     try{{
       if(!API_KEY){{
-        document.getElementById("ms-"+k).innerHTML=`<div class="lbox" style="color:var(--amber)">
-          Add your API key to enable AI tailoring.<br><small>Find <code>const API_KEY = "{api_key}";</code> in build_html.py and add your key from console.anthropic.com</small>
+        if(k==="gap") showKeyModal();
+        document.getElementById("ms-"+k).innerHTML=`<div class="lbox" style="color:var(--amber);padding:1.5rem">
+          <div style="font-size:16px;margin-bottom:8px">🔑 API key needed</div>
+          <div style="font-size:13px;margin-bottom:12px">Enter your free Anthropic API key to enable AI tailoring. It stays in your browser only — never uploaded to GitHub.</div>
+          <button class="btn btn-dark" onclick="showKeyModal()">Enter API key</button>
         </div>`;
         return;
       }}
@@ -462,13 +468,10 @@ async function draftOutreach_j(j){{
     <div class="lbox"><span class="spin"></span>Drafting LinkedIn message and cold email…</div>`;
 
   if(!API_KEY){{
-    document.getElementById("oc").innerHTML += `<div style="background:var(--abg);color:var(--amber);padding:12px;border-radius:var(--rs);font-size:13px;margin-top:8px">
-      ⚠ To enable AI-drafted messages, add your Anthropic API key:<br>
-      1. Open <code>suhi_platform/src/build_html.py</code><br>
-      2. Find <code>const API_KEY = "{api_key}";</code><br>
-      3. Replace with <code>const API_KEY = "{api_key}";</code><br>
-      4. Commit and re-run the workflow<br><br>
-      <strong>Get a free key at: console.anthropic.com</strong>
+    document.getElementById("oc").innerHTML += `<div style="background:var(--abg);color:var(--amber);padding:14px;border-radius:var(--rs);font-size:13px;margin-top:8px">
+      <div style="font-size:15px;font-weight:700;margin-bottom:8px">🔑 API key needed</div>
+      <div style="margin-bottom:12px">Enter your free Anthropic API key to generate outreach messages. It stays in your browser only — never uploaded anywhere.</div>
+      <button class="btn btn-dark" onclick="showKeyModal()">Enter API key</button>
     </div>`;
     return;
   }}
@@ -502,6 +505,61 @@ ${{recLine}}
 function pg(n){{["jobs","outreach","rules","sources"].forEach((p,i)=>{{document.querySelectorAll(".ntab")[i].classList.toggle("active",p===n);document.getElementById("pg-"+p).classList.toggle("active",p===n);}});;window.scrollTo(0,0);}}
 render();
 </script>
+
+<!-- API KEY MODAL -->
+<div class="mbg" id="key-modal" onclick="if(event.target.id==='key-modal') closeKeyModal()">
+<div class="modal" style="max-width:440px">
+  <div class="mhdr">
+    <div class="mxrow"><button class="mx" onclick="closeKeyModal()">✕</button></div>
+    <div class="mttl">🔑 Enter your Anthropic API key</div>
+    <div class="msub">Stored in your browser only — never sent to GitHub or any server</div>
+  </div>
+  <div class="mbody">
+    <div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">
+      Get a free key at <a href="https://console.anthropic.com" target="_blank" style="color:var(--blue)"><strong>console.anthropic.com</strong></a> → API Keys → Create Key.<br>
+      It starts with <code style="font-family:monospace;background:var(--s2);padding:1px 5px;border-radius:3px">sk-ant&#8209;...</code>
+    </div>
+    <input type="password" id="key-input" placeholder="Your Anthropic API key" 
+      style="width:100%;padding:10px 12px;border:1.5px solid var(--border2);border-radius:var(--rs);font-family:monospace;font-size:13px;background:var(--surface);color:var(--text);outline:none;margin-bottom:10px"
+      onkeydown="if(event.key==='Enter') saveKey()">
+    <div id="key-err" style="font-size:12px;color:var(--red);margin-bottom:8px;display:none">Please enter a valid Anthropic API key</div>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-dark" onclick="saveKey()" style="flex:1">Save key &amp; continue</button>
+      <button class="btn" onclick="closeKeyModal()">Cancel</button>
+    </div>
+    <div style="font-size:11px;color:var(--text3);margin-top:10px;line-height:1.5">
+      Your key is saved with <code>localStorage</code> — it only exists in your browser on this device. Clearing browser data will remove it.
+    </div>
+  </div>
+</div>
+</div>
+function showKeyModal(){{
+  document.getElementById("key-modal").classList.add("open");
+  setTimeout(()=>document.getElementById("key-input").focus(),100);
+}}
+function closeKeyModal(){{ document.getElementById("key-modal").classList.remove("open"); }}
+function saveKey(){{
+  const val = document.getElementById("key-input").value.trim();
+  if(!val.startsWith("sk-")){{
+    document.getElementById("key-err").style.display="block"; return;
+  }}
+  document.getElementById("key-err").style.display="none";
+  localStorage.setItem("suhi_anthropic_key", val);
+  API_KEY = val;
+  closeKeyModal();
+  // Show success
+  const t=document.getElementById("toast");
+  t.textContent="✅ API key saved!"; t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"),2500);
+}}
+
+// Show key status in nav
+function showKeyStatus(){{
+  const key = localStorage.getItem("suhi_anthropic_key");
+  const indicator = document.getElementById("key-status");
+  if(indicator) indicator.textContent = key ? "🔑 AI ready" : "🔑 Add key";
+}}
+document.addEventListener("DOMContentLoaded", showKeyStatus);
 </body>
 </html>"""
 
