@@ -472,7 +472,9 @@ def run_all():
     print(f"   Companies covered: {len(set(j['company'] for j in all_jobs))}")
 
     # ── Output ──
-    os.makedirs("docs", exist_ok=True)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    docs_dir = os.path.join(script_dir, "..", "docs")
+    os.makedirs(docs_dir, exist_ok=True)
     output = {
         "jobs": all_jobs[:100],  # top 100
         "total": len(all_jobs),
