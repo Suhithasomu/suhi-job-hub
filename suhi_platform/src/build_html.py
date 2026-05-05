@@ -352,7 +352,7 @@ function copyText(t) {
 var SRC_COLORS = {Greenhouse:'#d2f0df',Lever:'#d4e8f8',Ashby:'#ede8fe',Workday:'#feefc7',Indeed:'#d2f0df'};
 var SRC_TEXT   = {Greenhouse:'#1d6640',Lever:'#1a4880',Ashby:'#5418b0',Workday:'#795100',Indeed:'#1d6640'};
 
-function renderCard(j) {
+function renderCard(j, idx) {
   var srcBg = SRC_COLORS[j.source]||'#eceae4';
   var srcTx = SRC_TEXT[j.source]||'#68665d';
   var scores = {
@@ -367,7 +367,6 @@ function renderCard(j) {
     return '<div class="brow"><div class="blbl">'+k+'</div><div class="btrack"><div class="bfill" style="width:'+v+'%;background:'+gc(v)+'"></div></div><div class="bpct" style="color:'+gc(v)+'">'+v+'%</div></div>';
   }).join('');
 
-  var safeJ = JSON.stringify(j).replace(/"/g,'&quot;');
   return '<div class="jcard">'
     +'<div class="jtop">'
     +'<div class="jlogo">'+(j.company||'?').charAt(0)+'</div>'
@@ -384,27 +383,28 @@ function renderCard(j) {
     +'<div class="sring">'+ring(j.score)+'<div class="srinner"><div class="snum" style="color:'+gc(j.score)+'">'+j.score+'</div><div class="ssub">match</div></div></div>'
     +'</div>'
     +'<div class="jacts">'
-    +'<button class="btn btn-dark" onclick=\'openTailor("'+safeJ+'")\'>✦ Tailor resume</button>'
+    +'<button class="btn btn-dark" onclick="openTailor('+idx+')">✦ Tailor resume</button>'
     +'<button class="btn" onclick="this.closest(\'.jcard\').querySelector(\'.bdown\').classList.toggle(\'open\')">Breakdown</button>'
-    +'<button class="btn" onclick=\'doOutreach("'+safeJ+'")\'>Draft outreach</button>'
+    +'<button class="btn" onclick="doOutreach('+idx+')">Draft outreach</button>'
     +'<a class="btn btn-go" href="'+j.url+'" target="_blank" rel="noopener noreferrer">Apply now ↗</a>'
     +'</div>'
     +'<div class="bdown">'+bdRows+'</div>'
     +'</div>';
 }
 
+var FILTERED = [];
 function render() {
   var txt = document.getElementById('jf').value.toLowerCase();
   var ms  = parseInt(document.getElementById('sf').value)||0;
   var loc = document.getElementById('lf').value;
   var src = document.getElementById('srcf').value;
-  var f   = JOBS.filter(function(j) {
+  FILTERED = JOBS.filter(function(j) {
     return (j.title&&j.title.toLowerCase().indexOf(txt)>-1||j.company&&j.company.toLowerCase().indexOf(txt)>-1||j.industry&&j.industry.toLowerCase().indexOf(txt)>-1)
       && j.score>=ms && (!loc||(j.location||'').indexOf(loc)>-1) && (!src||j.source===src);
   });
   document.getElementById('st-t').textContent = f.length;
   document.getElementById('st-9').textContent = f.filter(function(j){return j.score>=90;}).length;
-  document.getElementById('jlist').innerHTML  = f.length ? f.map(renderCard).join('') : '<div class="empty">No jobs match your filters.</div>';
+  document.getElementById('jlist').innerHTML  = f.length ? f.map(function(j,i){ return renderCard(j,i); }).join('') : '<div class="empty">No jobs match your filters.</div>';
 }
 
 // ─── TAILOR MODAL ────────────────────────────────────────────────────────────
@@ -417,8 +417,8 @@ var PROMPTS = {
   summary: function(j){ return 'Write tailored resume summary.\n'+RES+'\n'+RULES+'\nJOB: '+j.title+' at '+j.company+' ('+j.industry+')\nOutput: HEADLINE (title + 3 specialties), SUMMARY (5 sentences: years+domain, locked metric for '+j.industry+', technical stack, alignment with '+j.company+', forward-looking mentioning '+j.company+').'; }
 };
 
-function openTailor(jStr) {
-  CJ = JSON.parse(jStr.replace(/&quot;/g,'"'));
+function openTailor(idx) {
+  CJ = FILTERED[idx];
   document.getElementById('mttl').textContent = CJ.title+' @ '+CJ.company;
   document.getElementById('msub').textContent = 'Running your 4-prompt tailoring system...';
   ['gap','bullets','ats','summary'].forEach(function(k){
@@ -473,8 +473,8 @@ function copyAll() {
 function cm() { document.getElementById('mod').classList.remove('open'); }
 
 // ─── OUTREACH ────────────────────────────────────────────────────────────────
-function doOutreach(jStr) {
-  var j = JSON.parse(jStr.replace(/&quot;/g,'"'));
+function doOutreach(idx) {
+  var j = FILTERED[idx];
   pg('outreach');
   var rec = RECRUITERS[j.company] || null;
   var recHtml = rec
@@ -512,7 +512,7 @@ function doOutreach(jStr) {
       +'<div class="osec"><div class="olbl">Cold email</div><div class="schip">📧 '+sub+'</div><div class="msgbox" id="em-m">'+body.replace(/\n/g,'<br>')+'</div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" onclick="copyText(document.getElementById(\'em-m\').innerText)">Copy email</button><a class="btn btn-blue" href="https://mail.google.com/mail/?view=cm&su='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body)+'" target="_blank">Open in Gmail ↗</a><a class="btn btn-go" href="'+j.url+'" target="_blank">Apply now ↗</a></div></div>'
       +'</div>';
   }).catch(function(){
-    document.getElementById('outreach-msgs').innerHTML = '<div class="lbox" style="color:var(--red)">Error. <button class="btn" onclick="doOutreach(\''+jStr.replace(/'/g,"\\'")+'\')" >Retry</button></div>';
+    document.getElementById('outreach-msgs').innerHTML = '<div class="lbox" style="color:var(--red)">Error generating outreach. Please try again.</div>';
   });
 }
 
