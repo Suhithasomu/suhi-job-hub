@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suhi's Job Intelligence Hub — Live</title>
+<title>Suhi's Job Intelligence Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -29,9 +29,12 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
 .ntab{font-family:inherit;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--rs);cursor:pointer;border:none;background:none;color:var(--text2);transition:all .15s;white-space:nowrap}
 .ntab:hover{background:var(--s2);color:var(--text)}
 .ntab.active{background:var(--text);color:#fff}
-.nlive{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text2);padding:4px 10px;background:var(--s2);border-radius:20px;border:1px solid var(--border);font-weight:500}
-.ldot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pu 2s infinite;flex-shrink:0}
+.nav-end{display:flex;align-items:center;gap:8px}
+.live-pill{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text2);padding:4px 10px;background:var(--s2);border-radius:20px;border:1px solid var(--border);font-weight:500}
+.ldot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pu 2s infinite}
 @keyframes pu{0%,100%{opacity:1}50%{opacity:.4}}
+.key-btn{font-size:11px;color:var(--text2);padding:4px 10px;background:var(--s2);border-radius:20px;border:1px solid var(--border);cursor:pointer;font-weight:600;font-family:inherit}
+.key-btn:hover{background:var(--s3)}
 .page{display:none}.page.active{display:block}
 .wrap{max-width:980px;margin:0 auto;padding:1.75rem 1.5rem}
 .ph{margin-bottom:1.5rem}
@@ -48,7 +51,7 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
 .jcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem 1.3rem;margin-bottom:.75rem;transition:all .15s}
 .jcard:hover{border-color:var(--border2);box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .jtop{display:flex;gap:12px;align-items:flex-start}
-.jlogo{width:44px;height:44px;border-radius:11px;background:var(--s2);border:1px solid var(--border);display:grid;place-items:center;font-size:18px;flex-shrink:0}
+.jlogo{width:44px;height:44px;border-radius:11px;background:var(--s2);border:1px solid var(--border);display:grid;place-items:center;font-size:16px;font-weight:800;color:var(--text2);flex-shrink:0}
 .jmeta{flex:1;min-width:0}
 .jr1{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .jtitle{font-size:15px;font-weight:800;letter-spacing:-.2px}
@@ -72,6 +75,7 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
 .btn-dark:hover{opacity:.83}
 .btn-go{background:var(--green);color:#fff;border-color:transparent}
 .btn-go:hover{opacity:.88}
+.btn-blue{background:var(--bbg);color:var(--blue);border-color:transparent}
 .bdown{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}
 .bdown.open{display:block}
 .brow{display:flex;align-items:center;gap:10px;margin-bottom:7px}
@@ -82,6 +86,7 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
 .mbg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:500;align-items:center;justify-content:center;padding:1rem}
 .mbg.open{display:flex}
 .modal{background:var(--surface);border-radius:var(--r);width:100%;max-width:640px;max-height:88vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.modal-sm{max-width:440px}
 .mhdr{padding:1.25rem 1.5rem 1rem;border-bottom:1px solid var(--border);flex-shrink:0}
 .mxrow{display:flex;justify-content:flex-end;margin-bottom:6px}
 .mx{width:26px;height:26px;border-radius:50%;background:var(--s2);border:none;cursor:pointer;font-size:15px;color:var(--text2);display:grid;place-items:center}
@@ -111,25 +116,24 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
 .rc h3{font-size:13px;font-weight:800;margin-bottom:4px}
 .rc p{font-size:12px;color:var(--text2);line-height:1.6}
 .mchip{display:inline-block;background:var(--abg);color:var(--amber);font-size:11px;font-weight:700;padding:2px 7px;border-radius:4px;margin:2px 2px 0 0;font-family:'DM Mono',monospace}
-.source-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:1rem}
+.src-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:1rem}
 .src-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.1rem}
 .src-icon{font-size:24px;margin-bottom:8px}
 .src-name{font-size:14px;font-weight:800;margin-bottom:3px}
 .src-count{font-size:24px;font-weight:800;color:var(--green);line-height:1}
 .src-lbl{font-size:11px;color:var(--text2);margin-top:2px}
 .src-api{font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;margin-top:6px;display:inline-block;background:var(--gbg);color:var(--green)}
+.key-modal-body{padding:1.25rem 1.5rem}
+.key-input{width:100%;padding:10px 12px;border:1.5px solid var(--border2);border-radius:var(--rs);font-family:'DM Mono',monospace;font-size:13px;background:var(--surface);color:var(--text);outline:none;margin-bottom:10px}
+.key-input:focus{border-color:var(--blue)}
 .toast{position:fixed;bottom:22px;right:22px;background:var(--text);color:#fff;padding:10px 18px;border-radius:var(--rs);font-size:13px;font-weight:700;z-index:9999;opacity:0;transform:translateY(8px);transition:all .22s;pointer-events:none}
 .toast.show{opacity:1;transform:translateY(0)}
 .empty{text-align:center;padding:4rem 2rem;color:var(--text2);font-size:14px}
-@media(max-width:640px){
-  nav{padding:0 1rem}
-  .ntab{padding:5px 9px;font-size:11px}
-  .stats{grid-template-columns:1fr 1fr}
-  .wrap{padding:1.25rem 1rem}
-}
+@media(max-width:640px){nav{padding:0 1rem}.ntab{padding:5px 9px;font-size:11px}.stats{grid-template-columns:1fr 1fr}.wrap{padding:1.25rem 1rem}}
 </style>
 </head>
 <body>
+
 <nav>
   <div class="brand">
     <div class="bmark">S</div>
@@ -141,28 +145,29 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
     <button class="ntab" onclick="pg('rules')">My Rules</button>
     <button class="ntab" onclick="pg('sources')">Sources</button>
   </div>
-  <div style="display:flex;align-items:center;gap:8px">
-    <span id="key-status" onclick="showKeyModal()" style="font-size:11px;color:var(--text2);padding:4px 10px;background:var(--s2);border-radius:20px;border:1px solid var(--border);cursor:pointer;font-weight:600">🔑 Add key</span>
-    <div class="nlive"><div class="ldot"></div><span>Updated May 05, 2026 07:50 PM UTC</span></div>
+  <div class="nav-end">
+    <button class="key-btn" id="key-btn" onclick="showKeyModal()">🔑 Add key</button>
+    <div class="live-pill"><div class="ldot"></div><span>May 05, 2026 09:15 PM UTC</span></div>
   </div>
 </nav>
 
+<!-- JOBS PAGE -->
 <div id="pg-jobs" class="page active">
 <div class="wrap">
   <div class="ph">
     <h2>Job matches for Suhi</h2>
-    <p>Scraped from 260+ company career pages across Greenhouse · Lever · Ashby · Workday · Auto-updates every morning</p>
-    <small>⏱ Last run: May 05, 2026 07:50 PM UTC · 92 total matches found · Showing top 100</small>
+    <p>Scraped from 260+ company career pages · Greenhouse · Lever · Ashby · Workday · Auto-updates every morning</p>
+    <small>Last run: May 05, 2026 09:15 PM UTC · 91 total matches · Showing top 100</small>
   </div>
   <div class="stats">
-    <div class="stat"><div class="sn" id="st-t">92</div><div class="sl">Jobs shown</div></div>
+    <div class="stat"><div class="sn" id="st-t">91</div><div class="sl">Jobs shown</div></div>
     <div class="stat"><div class="sn" id="st-9">0</div><div class="sl">90%+ match</div></div>
-    <div class="stat"><div class="sn">115</div><div class="sl">Greenhouse</div></div>
+    <div class="stat"><div class="sn">114</div><div class="sl">Greenhouse</div></div>
     <div class="stat"><div class="sn">2</div><div class="sl">Lever</div></div>
     <div class="stat"><div class="sn">0</div><div class="sl">Ashby+Workday</div></div>
   </div>
   <div class="filters">
-    <input type="text" id="jf" placeholder="🔍  Filter by title, company, industry…" oninput="render()">
+    <input type="text" id="jf" placeholder="Filter by title, company, industry..." oninput="render()">
     <select id="sf" onchange="render()">
       <option value="0">All scores</option>
       <option value="90">90%+ match</option>
@@ -186,46 +191,46 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
 </div>
 </div>
 
+<!-- OUTREACH PAGE -->
 <div id="pg-outreach" class="page">
 <div class="wrap">
   <div class="ph"><h2>Outreach center</h2><p>LinkedIn messages and cold emails using your locked metrics</p></div>
-  <div id="oc"><div class="empty">Click "Draft outreach" on any job to generate LinkedIn message + cold email here.</div></div>
+  <div id="oc"><div class="empty">Click "Draft outreach" on any job card to generate a LinkedIn message and cold email here.</div></div>
 </div>
 </div>
 
+<!-- RULES PAGE -->
 <div id="pg-rules" class="page">
 <div class="wrap">
-  <div class="ph"><h2>Your resume rules</h2><p>From your optimization chats — baked into every AI tailor</p></div>
-  <div class="rcard"><div class="rnum">1</div><div class="rc"><h3>Never change job titles</h3><p><span class="mchip">PayScale = Data Analyst</span><span class="mchip">Infor = Software Engineer Associate</span><span class="mchip">CDF = Volunteer Data Analyst</span></p></div></div>
+  <div class="ph"><h2>Your resume rules</h2><p>From your optimization chats — baked into every AI tailor prompt</p></div>
+  <div class="rcard"><div class="rnum">1</div><div class="rc"><h3>Never change job titles in experience section</h3><p><span class="mchip">PayScale = Data Analyst</span><span class="mchip">Infor = Software Engineer Associate</span><span class="mchip">CDF = Volunteer Data Analyst</span></p></div></div>
   <div class="rcard"><div class="rnum">2</div><div class="rc"><h3>Locked metrics — never alter</h3><span class="mchip">$4.2M revenue optimization</span><span class="mchip">87% churn accuracy</span><span class="mchip">$200K funding</span><span class="mchip">40% ETL reduction</span><span class="mchip">17% patient outreach</span><span class="mchip">33% query latency reduction</span></div></div>
-  <div class="rcard"><div class="rnum">3</div><div class="rc"><h3>4-prompt tailoring system</h3><p>① Gap analysis → ② Bullet rewrites → ③ ATS check → ④ Summary. All 4 run every time you click Tailor Resume.</p></div></div>
-  <div class="rcard"><div class="rnum">4</div><div class="rc"><h3>Formatting rules</h3><p>Black text/lines only · Max 1.5 pages · Certifications = separate section · Skills minimized to JD-relevant · Bold metrics only</p></div></div>
-  <div class="rcard"><div class="rnum">5</div><div class="rc"><h3>Every skill = backed by experience</h3><p>No floating skills. Max 1–2 new bullets per company per JD. Never full rebuild. Master v7 is always the base.</p></div></div>
+  <div class="rcard"><div class="rnum">3</div><div class="rc"><h3>4-prompt tailoring system</h3><p>Gap analysis → Bullet rewrites → ATS check → Summary. All 4 run every time you click Tailor Resume.</p></div></div>
+  <div class="rcard"><div class="rnum">4</div><div class="rc"><h3>Formatting rules</h3><p>Black text/lines only · Max 1.5 pages · Certifications = separate section · Skills minimized to JD-relevant · Bold metrics only ($4.2M, 87%, 40%) · No color/tables/text boxes</p></div></div>
+  <div class="rcard"><div class="rnum">5</div><div class="rc"><h3>Every skill must trace to a bullet</h3><p>No floating skills. Max 1–2 new bullets per company per JD. Never full rebuild. Master v7 is always the base.</p></div></div>
 </div>
 </div>
 
+<!-- SOURCES PAGE -->
 <div id="pg-sources" class="page">
 <div class="wrap">
-  <div class="ph"><h2>Data sources</h2><p>All 260+ companies scanned every morning — completely free</p></div>
-  <div class="source-grid">
-    <div class="src-card"><div class="src-icon">🟢</div><div class="src-name">Greenhouse</div><div class="src-count">100+</div><div class="src-lbl">companies monitored</div><span class="src-api">Free public API</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Stripe, HubSpot, Coinbase, Reddit, Robinhood, Datadog, Twilio, OpenAI, Notion, Figma, Gusto, Lattice, Rippling, Amplitude, MongoDB and 85+ more</div></div>
-    <div class="src-card"><div class="src-icon">🔵</div><div class="src-name">Lever</div><div class="src-count">80+</div><div class="src-lbl">companies monitored</div><span class="src-api">Free public API</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Netflix, Dropbox, Carta, Lattice, Gem, AngelList, Benchling, Headspace, Lyra Health, Arcadia.io, Mercury, Modern Treasury and 68+ more</div></div>
-    <div class="src-card"><div class="src-icon">🟣</div><div class="src-name">Ashby</div><div class="src-count">40+</div><div class="src-lbl">companies monitored</div><span class="src-api">Free public API</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Linear, Vercel, Retool, Perplexity, Cursor, ElevenLabs, Hugging Face, Weights & Biases, Scale AI, Descript and 30+ more</div></div>
-    <div class="src-card"><div class="src-icon">🟠</div><div class="src-name">Workday</div><div class="src-count">30+</div><div class="src-lbl">companies monitored</div><span class="src-api">Free scraper</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Fidelity, JPMorgan, Capital One, Ally Financial, AT&T, Salesforce, Oracle, Deloitte, McKinsey, Accenture, Southwest, Toyota and 18+ more</div></div>
-  </div>
-  <div style="margin-top:1.5rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
-    <h3 style="font-size:14px;font-weight:800;margin-bottom:8px">How auto-update works</h3>
-    <p style="font-size:13px;color:var(--text2);line-height:1.7">This platform runs on <strong>GitHub Actions</strong> — completely free. Every morning at 8am CST, a Python script calls Greenhouse, Lever, and Ashby public APIs (no auth needed), and scrapes Workday via their internal search endpoint. Jobs are scored against your resume profile, deduplicated, and the top 100 are saved to <code>jobs.json</code>. This HTML file is then rebuilt and published to GitHub Pages automatically. You don't need to do anything — just open the URL each morning.</p>
+  <div class="ph"><h2>Data sources</h2><p>260+ companies scanned every morning — completely free</p></div>
+  <div class="src-grid">
+    <div class="src-card"><div class="src-icon">🟢</div><div class="src-name">Greenhouse</div><div class="src-count">100+</div><div class="src-lbl">companies</div><span class="src-api">Free public API</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Stripe, HubSpot, Coinbase, OpenAI, Datadog, Twilio, Reddit, Notion, Figma, Gusto, Rippling, Amplitude, MongoDB, Robinhood, Plaid, Brex, Ramp + 83 more</div></div>
+    <div class="src-card"><div class="src-icon">🔵</div><div class="src-name">Lever</div><div class="src-count">80+</div><div class="src-lbl">companies</div><span class="src-api">Free public API</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Netflix, Dropbox, Carta, Arcadia.io, Mercury, Headspace, Lyra Health, Lattice, Gem, Modern Treasury, Innovaccer + 69 more</div></div>
+    <div class="src-card"><div class="src-icon">🟣</div><div class="src-name">Ashby</div><div class="src-count">40+</div><div class="src-lbl">companies</div><span class="src-api">Free public API</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Linear, Vercel, Retool, Perplexity, Cursor, ElevenLabs, Hugging Face, Weights & Biases, Scale AI, Descript + 30 more</div></div>
+    <div class="src-card"><div class="src-icon">🟠</div><div class="src-name">Workday</div><div class="src-count">30+</div><div class="src-lbl">companies</div><span class="src-api">Free scraper</span><div style="font-size:11px;color:var(--text2);margin-top:8px">Fidelity, JPMorgan, Capital One, Ally Financial, AT&T, Salesforce, Oracle, Deloitte, McKinsey, Accenture, Southwest, Toyota + 18 more</div></div>
   </div>
 </div>
 </div>
 
-<div class="mbg" id="mod" onclick="cmbg(event)">
+<!-- TAILOR MODAL -->
+<div class="mbg" id="mod" onclick="if(event.target.id==='mod') cm()">
 <div class="modal">
   <div class="mhdr">
-    <div class="mxrow"><button class="mx" onclick="cm()">✕</button></div>
+    <div class="mxrow"><button class="mx" onclick="cm()">&#x2715;</button></div>
     <div class="mttl" id="mttl">Tailoring resume</div>
-    <div class="msub" id="msub">Running your 4-prompt system…</div>
+    <div class="msub" id="msub">Running your 4-prompt system...</div>
   </div>
   <div class="mptabs">
     <button class="mptab active" onclick="mt('gap')" id="mpt-gap">① Gap analysis</button>
@@ -234,304 +239,324 @@ nav{background:var(--surface);border-bottom:1px solid var(--border);height:56px;
     <button class="mptab" onclick="mt('summary')" id="mpt-summary">④ Summary</button>
   </div>
   <div class="mbody">
-    <div class="msec active" id="ms-gap"><div class="lbox"><span class="spin"></span>Running gap analysis…</div></div>
-    <div class="msec" id="ms-bullets"><div class="lbox"><span class="spin"></span>Rewriting bullets…</div></div>
-    <div class="msec" id="ms-ats"><div class="lbox"><span class="spin"></span>Running ATS check…</div></div>
-    <div class="msec" id="ms-summary"><div class="lbox"><span class="spin"></span>Drafting summary…</div></div>
+    <div class="msec active" id="ms-gap"><div class="lbox"><span class="spin"></span>Running gap analysis...</div></div>
+    <div class="msec" id="ms-bullets"><div class="lbox"><span class="spin"></span>Rewriting bullets...</div></div>
+    <div class="msec" id="ms-ats"><div class="lbox"><span class="spin"></span>Running ATS check...</div></div>
+    <div class="msec" id="ms-summary"><div class="lbox"><span class="spin"></span>Drafting summary...</div></div>
   </div>
   <div class="mfooter" id="mft"></div>
 </div>
 </div>
-<div class="toast" id="toast">Copied ✓</div>
-
-<script>
-const JOBS = [{"title": "Senior Data Analyst, Enterprise Analytics ", "company": "GitLab", "location": "Remote, Bangalore", "url": "https://job-boards.greenhouse.io/gitlab/jobs/8478359002", "score": 87, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8478359002"}, {"title": "Senior Data Analyst, Marketing Analytics", "company": "GitLab", "location": "Remote, North America", "url": "https://job-boards.greenhouse.io/gitlab/jobs/8472178002", "score": 87, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8472178002"}, {"title": "Senior Software Engineer - Analytics Data Engineering", "company": "Klaviyo", "location": "Boston, MA", "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7564587003", "score": 80, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7564587003"}, {"title": "Senior Data Analyst", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=7783160", "score": 78, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7783160"}, {"title": "Commercial Loans Senior Data Analyst", "company": "SoFi", "location": "CA - Sacramento; NC -Charlotte; TX - Frisco; DE - Greenville ", "url": "https://sofi.com/careers/job/7598746003?gh_jid=7598746003", "score": 78, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7598746003"}, {"title": "Senior Manager, Product Data Analyst", "company": "ContentSquare", "location": "Paris Area, France", "url": "https://jobs.lever.co/contentsquare/732d8ae5-c560-4bc0-9727-fca9956dbe18", "score": 78, "source": "Lever", "posted": "2026-01-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "732d8ae5-c560-4bc0-9727-fca9956dbe18"}, {"title": "Senior Analytics Engineer, Marketing", "company": "Instacart", "location": "United States - Remote", "url": "https://instacart.careers/job/?gh_jid=7754354", "score": 77, "source": "Greenhouse", "posted": "2026-04-24", "industry": "SaaS/Tech", "salary": "See posting", "id": "7754354"}, {"title": "Senior Data Scientist II - AI for Analytics", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=7779563", "score": 77, "source": "Greenhouse", "posted": "2026-04-08", "industry": "AI/ML", "salary": "See posting", "id": "7779563"}, {"title": "Senior Analytics Engineer", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/7445224", "score": 77, "source": "Greenhouse", "posted": "2026-03-19", "industry": "SaaS/Tech", "salary": "See posting", "id": "7445224"}, {"title": "Data Engineer, Analytics Data Engineering", "company": "Dropbox", "location": "Remote - Canada: Select locations", "url": "https://jobs.dropbox.com/listing/7739574?gh_jid=7739574", "score": 77, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7739574"}, {"title": "Staff Data Engineer, Analytics Data Engineering", "company": "Dropbox", "location": "Remote - US: Select locations", "url": "https://jobs.dropbox.com/listing/7595183?gh_jid=7595183", "score": 77, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7595183"}, {"title": "Senior Data Engineer", "company": "Gusto", "location": "Denver, CO;San Francisco, CA;New York, NY;Los Angeles, CA;Seattle, WA;Toronto, Ontario, CAN - Remote", "url": "https://job-boards.greenhouse.io/gusto/jobs/7357541", "score": 76, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7357541"}, {"title": "Associate Marketing Data Analyst - Marketing Analytics", "company": "Datadog", "location": "New York, New York, USA", "url": "https://careers.datadoghq.com/detail/7837084/?gh_jid=7837084", "score": 74, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "7837084"}, {"title": "Senior Data Analyst, Spending", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8344077002?gh_jid=8344077002", "score": 73, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8344077002"}, {"title": "Senior Data Analyst, Trust & Safety", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8344063002?gh_jid=8344063002", "score": 73, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8344063002"}, {"title": "Financial Data Analyst-User Billing", "company": "Stripe", "location": "Bengaluru", "url": "https://stripe.com/jobs/search?gh_jid=7278434", "score": 73, "source": "Greenhouse", "posted": "2026-05-04", "industry": "FinTech", "salary": "See posting", "id": "7278434"}, {"title": "Senior Data Analyst", "company": "MongoDB", "location": "United States", "url": "https://www.mongodb.com/careers/job/?gh_jid=7696633", "score": 73, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7696633"}, {"title": "Senior Data Analyst II, Product", "company": "MongoDB", "location": "Austin", "url": "https://www.mongodb.com/careers/job/?gh_jid=7846877", "score": 73, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7846877"}, {"title": "Senior Analytics Engineer, Corporate Strategy", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7346630?t=gh_src=&gh_jid=7346630", "score": 72, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7346630"}, {"title": "Data Engineer II - Platform Analytics - Kibana Platform - AppEx", "company": "Elastic", "location": "Greece", "url": "https://jobs.elastic.co/jobs?gh_jid=7614519&gh_jid=7614519", "score": 72, "source": "Greenhouse", "posted": "2026-04-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "7614519"}, {"title": "Senior Analytics Engineer", "company": "Klaviyo", "location": "Boston, MA", "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7718472003", "score": 72, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7718472003"}, {"title": "Software Engineer II - Analytics Data Engineering", "company": "Klaviyo", "location": "Boston, MA", "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7669291003", "score": 72, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7669291003"}, {"title": "Senior Software Engineer, Data Engineering", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8505462002?gh_jid=8505462002", "score": 71, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8505462002"}, {"title": "Senior Software Engineer, Data Engineering", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660", "score": 71, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "4738660"}, {"title": "Senior Software Engineer, Data Engineering", "company": "Ripple", "location": "San Francisco, CA, United States", "url": "https://ripple.com/careers/all-jobs/job/7872439?gh_jid=7872439", "score": 71, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7872439"}, {"title": "Senior Technical Revenue Analyst (Dublin, Ireland) ", "company": "Figma", "location": "Dublin, Ireland", "url": "https://boards.greenhouse.io/figma/jobs/5835673004?gh_jid=5835673004", "score": 71, "source": "Greenhouse", "posted": "2026-04-15", "industry": "SaaS/Tech", "salary": "See posting", "id": "5835673004"}, {"title": "Senior Backend and Data Engineer, Telematics", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/7888101002?gh_jid=7888101002", "score": 71, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7888101002"}, {"title": "Senior Data Engineer, PickupXP", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/8479543002?gh_jid=8479543002", "score": 71, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8479543002"}, {"title": "Senior Manager, Data Engineering", "company": "SoFi", "location": "United States", "url": "https://sofi.com/careers/job/7718604003?gh_jid=7718604003", "score": 71, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7718604003"}, {"title": "Senior Staff Data Engineer", "company": "SoFi", "location": "CA - San Francisco; WA - Seattle; UT - Salt Lake", "url": "https://sofi.com/careers/job/7644799003?gh_jid=7644799003", "score": 71, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7644799003"}, {"title": "Lead Data Analyst, Growth Science", "company": "Chime", "location": "New York, NY, USA; San Francisco, CA, USA; Seattle, WA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8462910002?gh_jid=8462910002", "score": 70, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8462910002"}, {"title": "Staff Analytics Engineer, Subledger Platform", "company": "Affirm", "location": "Remote US", "url": "https://job-boards.greenhouse.io/affirm/jobs/7715405003", "score": 69, "source": "Greenhouse", "posted": "2026-04-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "7715405003"}, {"title": "Principal Machine Learning & Data Engineer ", "company": "Twilio", "location": "Remote - US", "url": "https://job-boards.greenhouse.io/twilio/jobs/7155492", "score": 69, "source": "Greenhouse", "posted": "2026-04-30", "industry": "AI/ML", "salary": "See posting", "id": "7155492"}, {"title": "Staff Analytics Engineer", "company": "Twilio", "location": "Remote - US", "url": "https://job-boards.greenhouse.io/twilio/jobs/7551660", "score": 69, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "7551660"}, {"title": "Lead Analytics Engineer", "company": "Oscar Health", "location": "New York, New York, United States", "url": "http://www.hioscar.com/careers/7809846?gh_jid=7809846", "score": 69, "source": "Greenhouse", "posted": "2026-04-15", "industry": "Healthcare", "salary": "See posting", "id": "7809846"}, {"title": "Data Scientist - Machine Learning, Pricing & Rider Engagement", "company": "Lyft", "location": "San Francisco, CA", "url": "https://app.careerpuck.com/job-board/lyft/job/8485432002?gh_jid=8485432002", "score": 69, "source": "Greenhouse", "posted": "2026-05-01", "industry": "AI/ML", "salary": "See posting", "id": "8485432002"}, {"title": "Senior Data Scientist - Ads Auctions", "company": "Instacart", "location": "United States - Remote", "url": "https://instacart.careers/job/?gh_jid=7762552", "score": 68, "source": "Greenhouse", "posted": "2026-04-08", "industry": "SaaS/Tech", "salary": "See posting", "id": "7762552"}, {"title": "Senior Data Scientist (I & II)", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=4949335", "score": 68, "source": "Greenhouse", "posted": "2026-04-17", "industry": "SaaS/Tech", "salary": "See posting", "id": "4949335"}, {"title": "Senior Data Scientist - Shopping Experience (Search)", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=7819293", "score": 68, "source": "Greenhouse", "posted": "2026-04-15", "industry": "E-Commerce", "salary": "See posting", "id": "7819293"}, {"title": "Senior Data Scientist, Ads", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/6042236", "score": 68, "source": "Greenhouse", "posted": "2026-03-19", "industry": "SaaS/Tech", "salary": "See posting", "id": "6042236"}, {"title": "Senior Data Scientist, Consumer", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/7275414", "score": 68, "source": "Greenhouse", "posted": "2026-03-19", "industry": "E-Commerce", "salary": "See posting", "id": "7275414"}, {"title": "Data Engineer", "company": "Dropbox", "location": "Remote - Mexico", "url": "https://jobs.dropbox.com/listing/7739553?gh_jid=7739553", "score": 68, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7739553"}, {"title": "Senior Data Scientist, AI Products", "company": "Dropbox", "location": "Remote - Canada: Select locations", "url": "https://jobs.dropbox.com/listing/7729764?gh_jid=7729764", "score": 68, "source": "Greenhouse", "posted": "2026-04-28", "industry": "AI/ML", "salary": "See posting", "id": "7729764"}, {"title": "Staff Data Engineer", "company": "Dropbox", "location": "Remote - Mexico", "url": "https://jobs.dropbox.com/listing/7739568?gh_jid=7739568", "score": 68, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7739568"}, {"title": "Associate, Insurance Senior Business Analyst", "company": "SoFi", "location": "UT - Cottonwood Heights; CA - San Francisco HQ; VA - Reston; TX - Frisco   ", "url": "https://sofi.com/careers/job/7677710003?gh_jid=7677710003", "score": 68, "source": "Greenhouse", "posted": "2026-05-01", "industry": "FinTech", "salary": "See posting", "id": "7677710003"}, {"title": "Senior Manager Data Scientist (Portfolio Management and Loss Mitigation)", "company": "SoFi", "location": "(CA - San Francisco; NY - New York City; UT - Salt Lake City; FL, Jacksonville; TX - Frisco) ", "url": "https://sofi.com/careers/job/7677684003?gh_jid=7677684003", "score": 68, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7677684003"}, {"title": "Lead Data Analyst", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8403069002?gh_jid=8403069002", "score": 65, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8403069002"}, {"title": "Data Analyst, Intern (Master's degree)", "company": "Stripe", "location": "Toronto, Ontario, Canada", "url": "https://stripe.com/jobs/search?gh_jid=7285986", "score": 65, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7285986"}, {"title": "Data Analyst, Payments Performance", "company": "Stripe", "location": "Seattle, WA", "url": "https://stripe.com/jobs/search?gh_jid=7440960", "score": 65, "source": "Greenhouse", "posted": "2026-05-04", "industry": "FinTech", "salary": "See posting", "id": "7440960"}, {"title": "Data Analyst - Global Growth Luxury Strategy", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8514400002?gh_jid=8514400002", "score": 65, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8514400002"}, {"title": "Data Analyst, Global Growth Strategy ", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/8461143002?gh_jid=8461143002", "score": 65, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8461143002"}, {"title": "Analytics Engineer", "company": "Stripe", "location": "Seattle, WA", "url": "https://stripe.com/jobs/search?gh_jid=7863844", "score": 64, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7863844"}, {"title": "GTM Analytics Engineer", "company": "Gusto", "location": "Denver, CO;San Francisco, CA;New York, NY;Las Vegas, NV;Atlanta, GA;Phoenix, AZ", "url": "https://job-boards.greenhouse.io/gusto/jobs/7557049", "score": 64, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7557049"}, {"title": "Intern, Analytics Engineer", "company": "Workato", "location": "Singapore", "url": "https://job-boards.greenhouse.io/workato/jobs/8434477002", "score": 64, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8434477002"}, {"title": "Intern, Analytics Engineer (Data Modeling)", "company": "Workato", "location": "Singapore", "url": "https://job-boards.greenhouse.io/workato/jobs/8501217002", "score": 64, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8501217002"}, {"title": "Senior Data Scientist, Fraud ", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7412037?t=gh_src=&gh_jid=7412037", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7412037"}, {"title": "Senior Data Scientist, ML (Brokerage)", "company": "Robinhood", "location": "Menlo Park, CA; New York, NY", "url": "https://boards.greenhouse.io/robinhood/jobs/7482186?t=gh_src=&gh_jid=7482186", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "AI/ML", "salary": "See posting", "id": "7482186"}, {"title": "Senior Data Scientist, ML (Incentives)", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7596426?t=gh_src=&gh_jid=7596426", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "AI/ML", "salary": "See posting", "id": "7596426"}, {"title": "Senior Data Scientist, Product", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7324981?t=gh_src=&gh_jid=7324981", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7324981"}, {"title": "Data Engineer", "company": "Brex", "location": "San Francisco, California, United States", "url": "https://www.brex.com/careers/8366850002?gh_jid=8366850002", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "8366850002"}, {"title": "Sr. Business Analyst, IT Transformation", "company": "Elastic", "location": "United States", "url": "https://jobs.elastic.co/jobs?gh_jid=7621572&gh_jid=7621572", "score": 63, "source": "Greenhouse", "posted": "2026-04-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "7621572"}, {"title": "Senior Business Analyst, Technical Services", "company": "MongoDB", "location": "New York City", "url": "https://www.mongodb.com/careers/job/?gh_jid=6841436", "score": 63, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "6841436"}, {"title": "Business Analyst Intern, Revenue Operations (AI Innovation) (Summer 2026)", "company": "Cloudflare", "location": "In-Office", "url": "https://boards.greenhouse.io/cloudflare/jobs/7761468?gh_jid=7761468", "score": 63, "source": "Greenhouse", "posted": "2026-04-21", "industry": "AI/ML", "salary": "See posting", "id": "7761468"}, {"title": "Sales Revenue Analyst - NYC", "company": "Datadog", "location": "New York, New York, USA", "url": "https://careers.datadoghq.com/detail/7587086/?gh_jid=7587086", "score": 63, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "7587086"}, {"title": "Data Engineer", "company": "Figma", "location": "San Francisco, CA \u2022 New York, NY \u2022 United States", "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004", "score": 63, "source": "Greenhouse", "posted": "2026-04-15", "industry": "SaaS/Tech", "salary": "See posting", "id": "5220003004"}, {"title": "Senior Product Data Scientist, Risk ", "company": "Gusto", "location": "San Francisco, CA;New York, NY", "url": "https://job-boards.greenhouse.io/gusto/jobs/7656216", "score": 63, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7656216"}, {"title": "Principal Database Engineer, Data Engineering", "company": "GitLab", "location": "Remote, EMEA; Remote, North America", "url": "https://job-boards.greenhouse.io/gitlab/jobs/8231379002", "score": 63, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8231379002"}, {"title": "Data Engineer", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/8503982002?gh_jid=8503982002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8503982002"}, {"title": "Senior Data Scientist, Decisions - Risk", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8477773002?gh_jid=8477773002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8477773002"}, {"title": "Senior Data Scientist - Optimization, Central Market Management & AI", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8483867002?gh_jid=8483867002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "AI/ML", "salary": "See posting", "id": "8483867002"}, {"title": "Senior Data Scientist, Rider New Products", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8355960002?gh_jid=8355960002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8355960002"}, {"title": "Data Engineer, Safeguards", "company": "Anthropic", "location": "London, UK", "url": "https://job-boards.greenhouse.io/anthropic/jobs/5156057008", "score": 63, "source": "Greenhouse", "posted": "2026-04-03", "industry": "SaaS/Tech", "salary": "See posting", "id": "5156057008"}, {"title": "Senior Data Scientist", "company": "SoFi", "location": "CA - San Francisco", "url": "https://sofi.com/careers/job/7667953003?gh_jid=7667953003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7667953003"}, {"title": "Senior Data Scientist, Borrow", "company": "SoFi", "location": "CA - San Francisco; NY - New York City   ", "url": "https://sofi.com/careers/job/7692954003?gh_jid=7692954003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7692954003"}, {"title": "Senior Data Scientist, Credit Strategy", "company": "SoFi", "location": "Add ALL locations here", "url": "https://sofi.com/careers/job/7718976003?gh_jid=7718976003", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "FinTech", "salary": "See posting", "id": "7718976003"}, {"title": "Senior Data Scientist, Member Insights - Growth", "company": "SoFi", "location": "CA - San Francisco; WA - Seattle", "url": "https://sofi.com/careers/job/7587079003?gh_jid=7587079003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7587079003"}, {"title": "Senior Manager Marketing Data Scientist, AI Enablement", "company": "SoFi", "location": "CA - San Francisco; NY - New York City", "url": "https://sofi.com/careers/job/7674010003?gh_jid=7674010003", "score": 63, "source": "Greenhouse", "posted": "2026-03-30", "industry": "AI/ML", "salary": "See posting", "id": "7674010003"}, {"title": "Senior Staff Data Scientist, Borrow", "company": "SoFi", "location": "CA - San Francisco; NY - New York City", "url": "https://sofi.com/careers/job/7601577003?gh_jid=7601577003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7601577003"}, {"title": "Senior Staff Data Scientist, Invest", "company": "SoFi", "location": "CA - San Francisco; NY - New York City", "url": "https://sofi.com/careers/job/7655116003?gh_jid=7655116003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "FinTech", "salary": "See posting", "id": "7655116003"}, {"title": "Director, Data Engineering ", "company": "Veracyte", "location": "San Diego, California, United States", "url": "https://veracyte.com/job-detail?gh_jid=5073317007", "score": 63, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "5073317007"}, {"title": "Senior Data Scientist, Marketplace", "company": "ZocDoc", "location": "New York, NY", "url": "https://job-boards.greenhouse.io/zocdoc/jobs/7740157", "score": 63, "source": "Greenhouse", "posted": "2026-04-16", "industry": "E-Commerce", "salary": "See posting", "id": "7740157"}, {"title": "Data Scientist Pleno - Afirmativa para Mulheres", "company": "Neon Database", "location": "Remoto", "url": "https://jobs.lever.co/neon/2221f2b5-7e69-4561-94cc-f1c52f034f6e", "score": 63, "source": "Lever", "posted": "2025-09-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "2221f2b5-7e69-4561-94cc-f1c52f034f6e"}, {"title": "Staff Marketing Data Scientist, Machine Learning", "company": "SoFi", "location": "CA - San Francisco, NY - New York ", "url": "https://sofi.com/careers/job/7708743003?gh_jid=7708743003", "score": 61, "source": "Greenhouse", "posted": "2026-05-04", "industry": "AI/ML", "salary": "See posting", "id": "7708743003"}, {"title": "Staff Data Analyst", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8403065002?gh_jid=8403065002", "score": 60, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8403065002"}, {"title": "Data Analyst II", "company": "Brex", "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil", "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002", "score": 60, "source": "Greenhouse", "posted": "2026-04-27", "industry": "SaaS/Tech", "salary": "See posting", "id": "8463703002"}, {"title": "Data Analyst III", "company": "Brex", "location": "New York, New York, United States", "url": "https://www.brex.com/careers/8463704002?gh_jid=8463704002", "score": 60, "source": "Greenhouse", "posted": "2026-04-27", "industry": "SaaS/Tech", "salary": "See posting", "id": "8463704002"}, {"title": "Data Analyst", "company": "Stripe", "location": "Dublin", "url": "https://stripe.com/jobs/search?gh_jid=7610132", "score": 60, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7610132"}, {"title": "Data Analyst,  Financial Enablement", "company": "Stripe", "location": "Dublin, Ireland", "url": "https://stripe.com/jobs/search?gh_jid=7874654", "score": 60, "source": "Greenhouse", "posted": "2026-05-04", "industry": "FinTech", "salary": "See posting", "id": "7874654"}, {"title": "Staff Data Analyst", "company": "Stripe", "location": "US", "url": "https://stripe.com/jobs/search?gh_jid=7801457", "score": 60, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7801457"}, {"title": "Staff Data Scientist, Consumer", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/6745284", "score": 60, "source": "Greenhouse", "posted": "2026-03-19", "industry": "E-Commerce", "salary": "See posting", "id": "6745284"}, {"title": "Staff Data Scientist, Marketing", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/7445240", "score": 60, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7445240"}, {"title": "Forward Deployed Marketing Data Scientist", "company": "Hightouch", "location": "Remote (North America)", "url": "https://job-boards.greenhouse.io/hightouch/jobs/5718912004", "score": 60, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "5718912004"}];
-// API key stored in YOUR browser only — never sent to GitHub
-let API_KEY = localStorage.getItem("suhi_anthropic_key") || "";
-
-// Real recruiters from Apollo.io (last names partially masked on free plan)
-const RECRUITERS = {
-  "Stripe": {name:"Sudha R.", title:"Technical Recruiter", init:"SR", via:"Apollo.io"},
-  "Datadog": {name:"Macarena G.", title:"Recruiting Manager", init:"MG", via:"Apollo.io"},
-  "Coinbase": {name:"Sameer K.", title:"Technical Recruiter", init:"SK", via:"Apollo.io"},
-  "Robinhood": {name:"Jackie C.", title:"Technical Recruiter", init:"JC", via:"Apollo.io"},
-  "Rippling": {name:"Vaishali S.", title:"Sr. TA Partner", init:"VS", via:"Apollo.io"},
-  "Figma": {name:"Patrick M.", title:"Technical Recruiter", init:"PM", via:"Apollo.io"},
-};
-
-function getRecruiter(company) {
-  return RECRUITERS[company] || null;
-}
-const RES = `CANDIDATE: Suhitha Reddy Somu (Suhi) — Senior Data Analyst
-TITLES (never change): PayScale=Data Analyst | Infor=Software Engineer Associate | CDF=Volunteer Data Analyst
-LOCKED METRICS: $4.2M revenue optimization · 87% churn model · $200K funding · 40% ETL reduction via Alteryx · 17% patient outreach improvement · 33% query latency reduction · 15+ cross-functional teams
-SKILLS: SQL, Python, Tableau, Power BI, Snowflake, dbt, Alteryx, Spark, Kafka, Databricks, AWS, ETL/ELT, A/B Testing, t-tests/ANOVA, GitHub
-EDUCATION: MS Big Data Analytics, U of Central Missouri, GPA 3.85
-CERTS: AWS Solutions Architect Associate, AWS Cloud Practitioner`;
-const RULES=`RULES: Never change job titles | Locked metrics stay exactly as-is | Skills=JD-relevant only | Max 1.5 pages black text | Bold metrics only | Certs=separate section | Max 1-2 new bullets/company | ATS target 90+`;
-
-function gc(s){return s>=90?"#1d6640":s>=80?"#1a4880":s>=70?"#795100":"#8b1f1f"}
-function ring(s){const r=20,C=2*Math.PI*r,f=(s/100)*C,c=gc(s);return`<svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="${r}" fill="none" stroke="#eceae4" stroke-width="5"/><circle cx="28" cy="28" r="${r}" fill="none" stroke="${c}" stroke-width="5" stroke-dasharray="${f} ${C}" stroke-linecap="round" transform="rotate(-90 28 28)"/></svg>`;}
-function copy(t){navigator.clipboard.writeText(t).catch(()=>{});const e=document.getElementById("toast");e.classList.add("show");setTimeout(()=>e.classList.remove("show"),2000)}
-
-const SRC_COLORS={"Greenhouse":"#d2f0df","Lever":"#d4e8f8","Ashby":"#ede8fe","Workday":"#feefc7","Indeed":"#d2f0df"};
-const SRC_TEXT={"Greenhouse":"#1d6640","Lever":"#1a4880","Ashby":"#5418b0","Workday":"#795100","Indeed":"#1d6640"};
-
-function card(j){
-  const srcBg=SRC_COLORS[j.source]||"#eceae4";
-  const srcTx=SRC_TEXT[j.source]||"#68665d";
-  return`<div class="jcard">
-    <div class="jtop">
-      <div class="jlogo">${j.company?.charAt(0)||"?"}</div>
-      <div class="jmeta">
-        <div class="jr1"><span class="jtitle">${j.title}</span><span class="tag" style="background:${srcBg};color:${srcTx}">${j.source}</span></div>
-        <div class="jco">${j.company}</div>
-        <div class="tags">
-          <span class="tag tg">${j.location||"See posting"}</span>
-          <span class="tag tb">${j.industry||"Analytics"}</span>
-          ${j.salary&&j.salary!=="See posting"?`<span class="tag tgn">${j.salary}</span>`:""}
-          ${j.posted?`<span class="tag tg">${j.posted}</span>`:""}
-        </div>
-      </div>
-      <div class="sring">${ring(j.score)}<div class="srinner"><div class="snum" style="color:${gc(j.score)}">${j.score}</div><div class="ssub">match</div></div></div>
-    </div>
-    <div class="jacts">
-      <button class="btn btn-dark" onclick="openTailor(${j.score}, '${(j.title||"").replace(/'/g,"\\'")}',' ${(j.company||"").replace(/'/g,"\\'")}',' ${(j.industry||"SaaS").replace(/'/g,"\\'")}',' ${(j.url||"").replace(/'/g,"\\'")}',' ${(j.skills||[]).join(", ")}')">✦ Tailor resume</button>
-      <button class="btn" onclick="tbd(${j.score},this)">Breakdown</button>
-      <button class="btn" onclick="draftOutreach('${(j.title||"").replace(/'/g,"\\'")}',' ${(j.company||"").replace(/'/g,"\\'")}',' ${(j.location||"").replace(/'/g,"\\'")}',' ${(j.url||"").replace(/'/g,"\\'")}',' ${(j.salary||"").replace(/'/g,"\\'")}',' ${(j.industry||"").replace(/'/g,"\\'")}',' ${(j.source||"").replace(/'/g,"\\'")}')">Draft outreach</button>
-      <a class="btn btn-go" href="${j.url}" target="_blank" rel="noopener noreferrer">Apply now ↗</a>
-    </div>
-    <div class="bdown" id="bd-${j.score}-${Math.random().toString(36).slice(2,6)}">
-      ${["Skills","Experience","Education","Industry","Location"].map((k,i)=>{const v=[j.score-2,j.score,100,Math.min(j.score+5,99),j.location?.toLowerCase().includes("remote")?100:92][i];return`<div class="brow"><div class="blbl">${k}</div><div class="btrack"><div class="bfill" style="width:${v}%;background:${gc(v)}"></div></div><div class="bpct" style="color:${gc(v)}">${v}%</div></div>`;})[i]}
-      ${["Skills","Experience","Education","Industry","Location"].map((k,i)=>{const v=[j.score-2,j.score,100,Math.min(j.score+5,99),j.location?.toLowerCase().includes("remote")?100:92][i];return`<div class="brow"><div class="blbl">${k}</div><div class="btrack"><div class="bfill" style="width:${v}%;background:${gc(v)}"></div></div><div class="bpct" style="color:${gc(v)}">${v}%</div></div>`;})[1]}
-      ${["Skills","Experience","Education","Industry","Location"].map((k,i)=>{const v=[j.score-2,j.score,100,Math.min(j.score+5,99),j.location?.toLowerCase().includes("remote")?100:92][i];return`<div class="brow"><div class="blbl">${k}</div><div class="btrack"><div class="bfill" style="width:${v}%;background:${gc(v)}"></div></div><div class="bpct" style="color:${gc(v)}">${v}%</div></div>`;})[2]}
-    </div>
-  </div>`;
-}
-
-function renderCard(j){
-  const srcBg=SRC_COLORS[j.source]||"#eceae4";
-  const srcTx=SRC_TEXT[j.source]||"#68665d";
-  const uid=`${j.company||"x"}-${j.title||"x"}`.replace(/[^a-zA-Z0-9]/g,"").slice(0,12)+Math.random().toString(36).slice(2,5);
-  const scores={Skills:Math.min(j.score+1,99),Experience:j.score,Education:100,Industry:Math.min(j.score+4,99),Location:(j.location||"").toLowerCase().includes("remote")?100:92};
-  return`<div class="jcard">
-    <div class="jtop">
-      <div class="jlogo" style="font-size:15px;font-weight:800;color:var(--text2)">${(j.company||"?").charAt(0)}</div>
-      <div class="jmeta">
-        <div class="jr1"><span class="jtitle">${j.title}</span><span class="tag" style="background:${srcBg};color:${srcTx}">${j.source}</span></div>
-        <div class="jco">${j.company}</div>
-        <div class="tags">
-          <span class="tag tg">${j.location||"See posting"}</span>
-          <span class="tag tb">${j.industry||"Analytics"}</span>
-          ${j.salary&&j.salary!=="See posting"?`<span class="tag tgn">${j.salary}</span>`:""}
-          ${j.posted?`<span class="tag tg">${j.posted.slice(0,10)}</span>`:""}
-        </div>
-      </div>
-      <div class="sring">${ring(j.score)}<div class="srinner"><div class="snum" style="color:${gc(j.score)}">${j.score}</div><div class="ssub">match</div></div></div>
-    </div>
-    <div class="jacts">
-      <button class="btn btn-dark" onclick="openTailor_j(${JSON.stringify(j).replace(/"/g,'&quot;')})">✦ Tailor resume</button>
-      <button class="btn" onclick="this.closest('.jcard').querySelector('.bdown').classList.toggle('open')">Breakdown</button>
-      <button class="btn" onclick="draftOutreach_j(${JSON.stringify(j).replace(/"/g,'&quot;')})">Draft outreach</button>
-      <a class="btn btn-go" href="${j.url}" target="_blank" rel="noopener noreferrer">Apply now ↗</a>
-    </div>
-    <div class="bdown">
-      ${Object.entries(scores).map(([k,v])=>`<div class="brow"><div class="blbl">${k}</div><div class="btrack"><div class="bfill" style="width:${v}%;background:${gc(v)}"></div></div><div class="bpct" style="color:${gc(v)}">${v}%</div></div>`).join("")}
-    </div>
-  </div>`;
-}
-
-function render(){
-  const txt=document.getElementById("jf").value.toLowerCase();
-  const ms=parseInt(document.getElementById("sf").value)||0;
-  const loc=document.getElementById("lf").value;
-  const src=document.getElementById("srcf").value;
-  const f=JOBS.filter(j=>
-    (j.title?.toLowerCase().includes(txt)||j.company?.toLowerCase().includes(txt)||j.industry?.toLowerCase().includes(txt))
-    &&j.score>=ms&&(!loc||(j.location||"").includes(loc))&&(!src||j.source===src)
-  );
-  document.getElementById("st-t").textContent=f.length;
-  document.getElementById("st-9").textContent=f.filter(j=>j.score>=90).length;
-  document.getElementById("jlist").innerHTML=f.length?f.map(renderCard).join(""):`<div class="empty">No jobs match your filters.</div>`;
-}
-
-const PROMPTS={
-  gap:j=>`You are a senior recruiter. Skills gap analysis — concise, no preamble.
-${RES}
-${RULES}
-JOB: ${j.title} at ${j.company} (${j.industry})
-Required: ${(j.skills||[]).join(", ")}
-Output: top 5 gaps with adaptation suggestions from Suhi's background. Priority actions at end.`,
-  bullets:j=>`Rewrite Suhi's experience bullets for this JD. Follow all rules.
-${RES}
-${RULES}
-JOB: ${j.title} at ${j.company} (${j.industry}) Required: ${(j.skills||[]).join(", ")}
-Rules: 4-6 bullets/role, strong action verbs, keep ALL locked metrics exactly, weave JD keywords naturally.
-Output PayScale / Infor / CDF sections.`,
-  ats:j=>`ATS audit for this resume vs JD.
-${RES}
-${RULES}
-JOB: ${j.title} at ${j.company} (${j.industry}) Required: ${(j.skills||[]).join(", ")}
-Output: ATS SCORE/100, matched keywords, missing keywords, minimized skills section for this JD only, formatting flags.`,
-  summary:j=>`Write tailored resume summary.
-${RES}
-${RULES}
-JOB: ${j.title} at ${j.company} (${j.industry})
-Output: HEADLINE (title + 3 specialties), SUMMARY (5 sentences: years+domain, locked metric for ${j.industry}, technical stack, alignment with ${j.company}, forward-looking mentioning ${j.company}).`
-};
-
-let CJ=null;
-function openTailor_j(j){
-  CJ=j;
-  document.getElementById("mttl").textContent=`${j.title} @ ${j.company}`;
-  document.getElementById("msub").textContent="Running your 4-prompt tailoring system…";
-  ["gap","bullets","ats","summary"].forEach(k=>document.getElementById("ms-"+k).innerHTML=`<div class="lbox"><span class="spin"></span>Running ${k}…</div>`);
-  mt("gap");
-  document.getElementById("mft").innerHTML="";
-  document.getElementById("mod").classList.add("open");
-  ["gap","bullets","ats","summary"].forEach(async k=>{
-    try{
-      if(!API_KEY){
-        if(k==="gap") showKeyModal();
-        document.getElementById("ms-"+k).innerHTML=`<div class="lbox" style="color:var(--amber);padding:1.5rem">
-          <div style="font-size:16px;margin-bottom:8px">🔑 API key needed</div>
-          <div style="font-size:13px;margin-bottom:12px">Enter your free Anthropic API key to enable AI tailoring. It stays in your browser only — never uploaded to GitHub.</div>
-          <button class="btn btn-dark" onclick="showKeyModal()">Enter API key</button>
-        </div>`;
-        return;
-      }
-      const r=await fetch("https://api.anthropic.com/v1/messages",{
-        method:"POST",
-        headers:{"Content-Type":"application/json","x-api-key":API_KEY,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
-        body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:900,messages:[{role:"user",content:PROMPTS[k](j)}]})
-      });
-      const d=await r.json();
-      const t=(d.content?.[0]?.text||"Error").trim();
-      document.getElementById("ms-"+k).innerHTML=`<div class="rbox">${t.replace(/\n/g,"<br>")}</div><button class="btn" style="margin-top:10px" onclick="copy(document.getElementById('ms-${k}').querySelector('.rbox').innerText)">Copy</button>`;
-    }catch(e){document.getElementById("ms-"+k).innerHTML=`<div class="lbox" style="color:#8b1f1f">API call requires http server, not file://.<br><small>Run: python3 -m http.server 8080</small></div>`;}
-  });
-  document.getElementById("mft").innerHTML=`<button class="btn btn-dark" onclick="copyAll()">Copy all 4</button><a class="btn btn-go" href="${CJ.url}" target="_blank">Apply now ↗</a><button class="btn" onclick="cm()">Close</button>`;
-}
-
-function mt(t){["gap","bullets","ats","summary"].forEach(k=>{document.getElementById("mpt-"+k).classList.toggle("active",k===t);document.getElementById("ms-"+k).classList.toggle("active",k===t);}); }
-function copyAll(){
-  const ks=["gap","bullets","ats","summary"];
-  const parts=ks.map(k=>{const b=document.getElementById("ms-"+k).querySelector(".rbox");return b?"== "+k.toUpperCase()+" ==\n"+b.innerText:"";});
-  copy(parts.join("\n\n"));
-}
-function cm(){document.getElementById("mod").classList.remove("open");}
-function cmbg(e){if(e.target.id==="mod")cm();}
-
-async function draftOutreach_j(j){
-  pg("outreach");
-  const rec = getRecruiter(j.company);
-  const recLine = rec ? `Recruiter: ${rec.name}, ${rec.title} at ${j.company} (found via ${rec.via})` : `Address to Hiring Team / Talent Acquisition at ${j.company}`;
-
-  // Show recruiter card immediately before API call
-  document.getElementById("oc").innerHTML=`
-    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:1rem;">
-      <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Job</div>
-      <div style="font-size:15px;font-weight:800">${j.title}</div>
-      <div style="font-size:13px;color:var(--text2);margin-top:2px">${j.company} · ${j.location} · ${j.source}</div>
-      ${rec ? `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);display:flex;align-items:center;gap:8px">
-        <div style="width:30px;height:30px;border-radius:50%;background:var(--bbg);color:var(--blue);display:grid;place-items:center;font-size:11px;font-weight:800">${rec.init}</div>
-        <div><div style="font-size:13px;font-weight:700">${rec.name}</div>
-        <div style="font-size:11px;color:var(--text2)">${rec.title} <span style="color:var(--teal);margin-left:4px;font-weight:700">via ${rec.via}</span></div></div>
-      </div>` : `<div style="font-size:12px;color:var(--text3);margin-top:8px">No recruiter found in database — message will address Hiring Team</div>`}
-    </div>
-    <div class="lbox"><span class="spin"></span>Drafting LinkedIn message and cold email…</div>`;
-
-  if(!API_KEY){
-    document.getElementById("oc").innerHTML += `<div style="background:var(--abg);color:var(--amber);padding:14px;border-radius:var(--rs);font-size:13px;margin-top:8px">
-      <div style="font-size:15px;font-weight:700;margin-bottom:8px">🔑 API key needed</div>
-      <div style="margin-bottom:12px">Enter your free Anthropic API key to generate outreach messages. It stays in your browser only — never uploaded anywhere.</div>
-      <button class="btn btn-dark" onclick="showKeyModal()">Enter API key</button>
-    </div>`;
-    return;
-  }
-
-  try{
-    const r=await fetch("https://api.anthropic.com/v1/messages",{
-      method:"POST",
-      headers:{"Content-Type":"application/json","x-api-key":API_KEY,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
-      body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:800,messages:[{role:"user",content:`Draft two outreach messages. Human, warm, specific — no corporate clichés.
-SENDER: Suhitha (Suhi) Reddy, Senior Data Analyst, 5+ yrs, Dallas TX
-Wins: $4.2M revenue optimization (PayScale), 40% ETL reduction healthcare (CDF), 87% churn model (Infor), AWS certified
-Role: ${j.title} at ${j.company} (${j.industry})
-${recLine}
-===LINKEDIN=== Under 150 words. Use recruiter first name if known. Reference one specific win relevant to ${j.industry}. Soft CTA for 15-min chat.
-===EMAIL=== Subject: [Punchy 6-8 word subject — not generic]
-[Under 190 words. Specific connection to ${j.company}. Hard metric. 15-min call CTA. Sign as Suhi.]`}]})
-    });
-    const d=await r.json();
-    const text=d.content?.[0]?.text||"";
-    const lm=text.match(/===LINKEDIN===([\s\S]*?)===EMAIL===/);
-    const em=text.match(/===EMAIL===([\s\S]*)$/);
-    const li=lm?lm[1].trim():text;
-    const ef=em?em[1].trim():"";
-    const sm=ef.match(/Subject:\s*(.+)/);
-    const sub=sm?sm[1].trim():"Interest in "+j.title;
-    const body=ef.replace(/Subject:.+(\n|$)/,"").trim();
-    document.getElementById("oc").innerHTML=`<div class="oc"><div class="ojbar"><div class="ojtitle">${j.title}</div><div class="ojco">${j.company} · ${j.location} · ${j.source}</div></div><div class="osecs"><div class="osec"><div class="olbl">LinkedIn message</div><div class="msgbox" id="li-m">${li.replace(/\n/g,"<br>")}</div><button class="btn" onclick="copy(document.getElementById('li-m').innerText)">Copy</button></div><div class="osec"><div class="olbl">Cold email</div><div class="schip">📧 ${sub}</div><div class="msgbox" id="em-m">${body.replace(/\n/g,"<br>")}</div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" onclick="copy(document.getElementById('em-m').innerText)">Copy</button><a class="btn" href="https://mail.google.com/mail/?view=cm&su=${encodeURIComponent(sub)}&body=${encodeURIComponent(body)}" target="_blank">Gmail ↗</a><a class="btn btn-go" href="${j.url}" target="_blank">Apply ↗</a></div></div></div></div>`;
-  }catch(e){document.getElementById("oc").innerHTML=`<div class="lbox" style="color:#8b1f1f">Error. <button class="btn" onclick="draftOutreach_j(${JSON.stringify(j).replace(/"/g,"&quot;")})">Retry</button></div>`;}
-}
-
-function pg(n){["jobs","outreach","rules","sources"].forEach((p,i)=>{document.querySelectorAll(".ntab")[i].classList.toggle("active",p===n);document.getElementById("pg-"+p).classList.toggle("active",p===n);});;window.scrollTo(0,0);}
-
-function showKeyModal(){
-  document.getElementById("key-modal").classList.add("open");
-  setTimeout(()=>document.getElementById("key-input").focus(),100);
-}
-function closeKeyModal(){ document.getElementById("key-modal").classList.remove("open"); }
-function saveKey(){
-  const val = document.getElementById("key-input").value.trim();
-  if(val.length < 10){
-    document.getElementById("key-err").style.display="block"; return;
-  }
-  document.getElementById("key-err").style.display="none";
-  localStorage.setItem("suhi_anthropic_key", val);
-  API_KEY = val;
-  closeKeyModal();
-  const t=document.getElementById("toast");
-  t.textContent="API key saved!"; t.classList.add("show");
-  setTimeout(()=>t.classList.remove("show"),2500);
-}
-function showKeyStatus(){
-  const key = localStorage.getItem("suhi_anthropic_key");
-  const el = document.getElementById("key-status");
-  if(el) el.textContent = key ? "AI ready" : "Add key";
-}
-document.addEventListener("DOMContentLoaded", showKeyStatus);
-
-render();
-</script>
 
 <!-- API KEY MODAL -->
 <div class="mbg" id="key-modal" onclick="if(event.target.id==='key-modal') closeKeyModal()">
-<div class="modal" style="max-width:440px">
+<div class="modal modal-sm">
   <div class="mhdr">
-    <div class="mxrow"><button class="mx" onclick="closeKeyModal()">✕</button></div>
+    <div class="mxrow"><button class="mx" onclick="closeKeyModal()">&#x2715;</button></div>
     <div class="mttl">🔑 Enter your Anthropic API key</div>
-    <div class="msub">Stored in your browser only — never sent to GitHub or any server</div>
+    <div class="msub">Stored in your browser only — never uploaded to GitHub</div>
   </div>
-  <div class="mbody">
+  <div class="key-modal-body">
     <div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">
-      Get a free key at <a href="https://console.anthropic.com" target="_blank" style="color:var(--blue)"><strong>console.anthropic.com</strong></a> → API Keys → Create Key.<br>
-      It starts with <code style="font-family:monospace;background:var(--s2);padding:1px 5px;border-radius:3px"><span>sk</span>-ant-...</code>
+      Get a free key at <a href="https://console.anthropic.com" target="_blank" style="color:var(--blue);font-weight:700">console.anthropic.com</a>
+      → API Keys → Create Key
     </div>
-    <input type="password" id="key-input" placeholder="Your Anthropic API key" 
-      style="width:100%;padding:10px 12px;border:1.5px solid var(--border2);border-radius:var(--rs);font-family:monospace;font-size:13px;background:var(--surface);color:var(--text);outline:none;margin-bottom:10px"
-      onkeydown="if(event.key==='Enter') saveKey()">
-    <div id="key-err" style="font-size:12px;color:var(--red);margin-bottom:8px;display:none">Please enter a valid Anthropic API key</div>
-    <div style="display:flex;gap:8px">
-      <button class="btn btn-dark" onclick="saveKey()" style="flex:1">Save key &amp; continue</button>
+    <input type="password" id="key-input" class="key-input" placeholder="Paste your Anthropic API key here">
+    <div id="key-err" style="font-size:12px;color:var(--red);margin-bottom:8px;display:none">Please enter a valid API key</div>
+    <div style="display:flex;gap:8px;margin-bottom:14px">
+      <button class="btn btn-dark" onclick="saveKey()" style="flex:1">Save and continue</button>
       <button class="btn" onclick="closeKeyModal()">Cancel</button>
     </div>
-    <div style="font-size:11px;color:var(--text3);margin-top:10px;line-height:1.5">
+    <div id="key-saved-msg" style="display:none;background:var(--gbg);color:var(--green);padding:10px 12px;border-radius:var(--rs);font-size:12px;font-weight:600;margin-bottom:8px">
+      ✅ API key saved! AI features are now active.
+    </div>
+    <div style="font-size:11px;color:var(--text3);line-height:1.5">
       Your key is saved with <code>localStorage</code> — it only exists in your browser on this device. Clearing browser data will remove it.
     </div>
   </div>
 </div>
 </div>
+
+<div class="toast" id="toast">Copied!</div>
+
+<script>
+// ─── DATA ───────────────────────────────────────────────────────────────────
+const JOBS = [{"title": "Senior Data Analyst, Enterprise Analytics ", "company": "GitLab", "location": "Remote, Bangalore", "url": "https://job-boards.greenhouse.io/gitlab/jobs/8478359002", "score": 87, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8478359002"}, {"title": "Senior Data Analyst, Marketing Analytics", "company": "GitLab", "location": "Remote, North America", "url": "https://job-boards.greenhouse.io/gitlab/jobs/8472178002", "score": 87, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8472178002"}, {"title": "Senior Software Engineer - Analytics Data Engineering", "company": "Klaviyo", "location": "Boston, MA", "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7564587003", "score": 80, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7564587003"}, {"title": "Senior Data Analyst", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=7783160", "score": 78, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7783160"}, {"title": "Commercial Loans Senior Data Analyst", "company": "SoFi", "location": "CA - Sacramento; NC -Charlotte; TX - Frisco; DE - Greenville ", "url": "https://sofi.com/careers/job/7598746003?gh_jid=7598746003", "score": 78, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7598746003"}, {"title": "Senior Manager, Product Data Analyst", "company": "ContentSquare", "location": "Paris Area, France", "url": "https://jobs.lever.co/contentsquare/732d8ae5-c560-4bc0-9727-fca9956dbe18", "score": 78, "source": "Lever", "posted": "2026-01-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "732d8ae5-c560-4bc0-9727-fca9956dbe18"}, {"title": "Senior Analytics Engineer, Marketing", "company": "Instacart", "location": "United States - Remote", "url": "https://instacart.careers/job/?gh_jid=7754354", "score": 77, "source": "Greenhouse", "posted": "2026-04-24", "industry": "SaaS/Tech", "salary": "See posting", "id": "7754354"}, {"title": "Senior Data Scientist II - AI for Analytics", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=7779563", "score": 77, "source": "Greenhouse", "posted": "2026-04-08", "industry": "AI/ML", "salary": "See posting", "id": "7779563"}, {"title": "Senior Analytics Engineer", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/7445224", "score": 77, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7445224"}, {"title": "Data Engineer, Analytics Data Engineering", "company": "Dropbox", "location": "Remote - Canada: Select locations", "url": "https://jobs.dropbox.com/listing/7739574?gh_jid=7739574", "score": 77, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7739574"}, {"title": "Staff Data Engineer, Analytics Data Engineering", "company": "Dropbox", "location": "Remote - US: Select locations", "url": "https://jobs.dropbox.com/listing/7595183?gh_jid=7595183", "score": 77, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7595183"}, {"title": "Senior Data Engineer", "company": "Gusto", "location": "Denver, CO;San Francisco, CA;New York, NY;Los Angeles, CA;Seattle, WA;Toronto, Ontario, CAN - Remote", "url": "https://job-boards.greenhouse.io/gusto/jobs/7357541", "score": 76, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7357541"}, {"title": "Associate Marketing Data Analyst - Marketing Analytics", "company": "Datadog", "location": "New York, New York, USA", "url": "https://careers.datadoghq.com/detail/7837084/?gh_jid=7837084", "score": 74, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7837084"}, {"title": "Financial Data Analyst-User Billing", "company": "Stripe", "location": "Bengaluru", "url": "https://stripe.com/jobs/search?gh_jid=7278434", "score": 73, "source": "Greenhouse", "posted": "2026-05-04", "industry": "FinTech", "salary": "See posting", "id": "7278434"}, {"title": "Senior Data Analyst, Spending", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8344077002?gh_jid=8344077002", "score": 73, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8344077002"}, {"title": "Senior Data Analyst, Trust & Safety", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8344063002?gh_jid=8344063002", "score": 73, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8344063002"}, {"title": "Senior Data Analyst", "company": "MongoDB", "location": "United States", "url": "https://www.mongodb.com/careers/job/?gh_jid=7696633", "score": 73, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7696633"}, {"title": "Senior Data Analyst II, Product", "company": "MongoDB", "location": "Austin", "url": "https://www.mongodb.com/careers/job/?gh_jid=7846877", "score": 73, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7846877"}, {"title": "Senior Analytics Engineer, Corporate Strategy", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7346630?t=gh_src=&gh_jid=7346630", "score": 72, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7346630"}, {"title": "Data Engineer II - Platform Analytics - Kibana Platform - AppEx", "company": "Elastic", "location": "Greece", "url": "https://jobs.elastic.co/jobs?gh_jid=7614519&gh_jid=7614519", "score": 72, "source": "Greenhouse", "posted": "2026-04-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "7614519"}, {"title": "Senior Analytics Engineer", "company": "Klaviyo", "location": "Boston, MA", "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7718472003", "score": 72, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7718472003"}, {"title": "Software Engineer II - Analytics Data Engineering", "company": "Klaviyo", "location": "Boston, MA", "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7669291003", "score": 72, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7669291003"}, {"title": "Senior Software Engineer, Data Engineering", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660", "score": 71, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "4738660"}, {"title": "Senior Software Engineer, Data Engineering", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8505462002?gh_jid=8505462002", "score": 71, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8505462002"}, {"title": "Senior Software Engineer, Data Engineering", "company": "Ripple", "location": "San Francisco, CA, United States", "url": "https://ripple.com/careers/all-jobs/job/7872439?gh_jid=7872439", "score": 71, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7872439"}, {"title": "Senior Technical Revenue Analyst (Dublin, Ireland) ", "company": "Figma", "location": "Dublin, Ireland", "url": "https://boards.greenhouse.io/figma/jobs/5835673004?gh_jid=5835673004", "score": 71, "source": "Greenhouse", "posted": "2026-04-15", "industry": "SaaS/Tech", "salary": "See posting", "id": "5835673004"}, {"title": "Senior Backend and Data Engineer, Telematics", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/7888101002?gh_jid=7888101002", "score": 71, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7888101002"}, {"title": "Senior Data Engineer, PickupXP", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/8479543002?gh_jid=8479543002", "score": 71, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8479543002"}, {"title": "Senior Manager, Data Engineering", "company": "SoFi", "location": "United States", "url": "https://sofi.com/careers/job/7718604003?gh_jid=7718604003", "score": 71, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7718604003"}, {"title": "Senior Staff Data Engineer", "company": "SoFi", "location": "CA - San Francisco; WA - Seattle; UT - Salt Lake", "url": "https://sofi.com/careers/job/7644799003?gh_jid=7644799003", "score": 71, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7644799003"}, {"title": "Lead Data Analyst, Growth Science", "company": "Chime", "location": "New York, NY, USA; San Francisco, CA, USA; Seattle, WA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8462910002?gh_jid=8462910002", "score": 70, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8462910002"}, {"title": "Staff Analytics Engineer, Subledger Platform", "company": "Affirm", "location": "Remote Canada", "url": "https://job-boards.greenhouse.io/affirm/jobs/7715407003", "score": 69, "source": "Greenhouse", "posted": "2026-04-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "7715407003"}, {"title": "Lead Analytics Engineer", "company": "Oscar Health", "location": "New York, New York, United States", "url": "http://www.hioscar.com/careers/7809846?gh_jid=7809846", "score": 69, "source": "Greenhouse", "posted": "2026-04-15", "industry": "Healthcare", "salary": "See posting", "id": "7809846"}, {"title": "Principal Machine Learning & Data Engineer ", "company": "Twilio", "location": "Remote - US", "url": "https://job-boards.greenhouse.io/twilio/jobs/7155492", "score": 69, "source": "Greenhouse", "posted": "2026-04-30", "industry": "AI/ML", "salary": "See posting", "id": "7155492"}, {"title": "Staff Analytics Engineer", "company": "Twilio", "location": "Remote - US", "url": "https://job-boards.greenhouse.io/twilio/jobs/7551660", "score": 69, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "7551660"}, {"title": "Data Scientist - Machine Learning, Pricing & Rider Engagement", "company": "Lyft", "location": "San Francisco, CA", "url": "https://app.careerpuck.com/job-board/lyft/job/8485432002?gh_jid=8485432002", "score": 69, "source": "Greenhouse", "posted": "2026-05-01", "industry": "AI/ML", "salary": "See posting", "id": "8485432002"}, {"title": "Senior Data Scientist - Ads Auctions", "company": "Instacart", "location": "United States - Remote", "url": "https://instacart.careers/job/?gh_jid=7762552", "score": 68, "source": "Greenhouse", "posted": "2026-04-08", "industry": "SaaS/Tech", "salary": "See posting", "id": "7762552"}, {"title": "Senior Data Scientist (I & II)", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=4949335", "score": 68, "source": "Greenhouse", "posted": "2026-04-17", "industry": "SaaS/Tech", "salary": "See posting", "id": "4949335"}, {"title": "Senior Data Scientist - Shopping Experience (Search)", "company": "Instacart", "location": "Canada - Remote (ON, AB, BC, or NS Only)", "url": "https://instacart.careers/job/?gh_jid=7819293", "score": 68, "source": "Greenhouse", "posted": "2026-04-15", "industry": "E-Commerce", "salary": "See posting", "id": "7819293"}, {"title": "Senior Data Scientist, Ads", "company": "Reddit", "location": "Remote - British Columbia, Canada", "url": "https://job-boards.greenhouse.io/reddit/jobs/7607121", "score": 68, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7607121"}, {"title": "Senior Data Scientist, Consumer", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/7275414", "score": 68, "source": "Greenhouse", "posted": "2026-05-05", "industry": "E-Commerce", "salary": "See posting", "id": "7275414"}, {"title": "Data Engineer", "company": "Dropbox", "location": "Remote - Mexico", "url": "https://jobs.dropbox.com/listing/7739553?gh_jid=7739553", "score": 68, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7739553"}, {"title": "Senior Data Scientist, AI Products", "company": "Dropbox", "location": "Remote - Canada: Select locations", "url": "https://jobs.dropbox.com/listing/7729764?gh_jid=7729764", "score": 68, "source": "Greenhouse", "posted": "2026-04-28", "industry": "AI/ML", "salary": "See posting", "id": "7729764"}, {"title": "Staff Data Engineer", "company": "Dropbox", "location": "Remote - Mexico", "url": "https://jobs.dropbox.com/listing/7739568?gh_jid=7739568", "score": 68, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7739568"}, {"title": "Associate, Insurance Senior Business Analyst", "company": "SoFi", "location": "UT - Cottonwood Heights; CA - San Francisco HQ; VA - Reston; TX - Frisco   ", "url": "https://sofi.com/careers/job/7677710003?gh_jid=7677710003", "score": 68, "source": "Greenhouse", "posted": "2026-05-01", "industry": "FinTech", "salary": "See posting", "id": "7677710003"}, {"title": "Senior Manager Data Scientist (Portfolio Management and Loss Mitigation)", "company": "SoFi", "location": "(CA - San Francisco; NY - New York City; UT - Salt Lake City; FL, Jacksonville; TX - Frisco) ", "url": "https://sofi.com/careers/job/7677684003?gh_jid=7677684003", "score": 68, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7677684003"}, {"title": "Data Analyst, Payments Performance", "company": "Stripe", "location": "Seattle, WA", "url": "https://stripe.com/jobs/search?gh_jid=7440960", "score": 65, "source": "Greenhouse", "posted": "2026-05-04", "industry": "FinTech", "salary": "See posting", "id": "7440960"}, {"title": "Lead Data Analyst", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8403069002?gh_jid=8403069002", "score": 65, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8403069002"}, {"title": "Data Analyst - Global Growth Luxury Strategy", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8514400002?gh_jid=8514400002", "score": 65, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8514400002"}, {"title": "Data Analyst, Global Growth Strategy ", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/8461143002?gh_jid=8461143002", "score": 65, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8461143002"}, {"title": "Analytics Engineer", "company": "Stripe", "location": "Seattle, WA", "url": "https://stripe.com/jobs/search?gh_jid=7863844", "score": 64, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7863844"}, {"title": "GTM Analytics Engineer", "company": "Gusto", "location": "Denver, CO;San Francisco, CA;New York, NY;Las Vegas, NV;Atlanta, GA;Phoenix, AZ", "url": "https://job-boards.greenhouse.io/gusto/jobs/7557049", "score": 64, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7557049"}, {"title": "Intern, Analytics Engineer", "company": "Workato", "location": "Singapore", "url": "https://job-boards.greenhouse.io/workato/jobs/8434477002", "score": 64, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8434477002"}, {"title": "Intern, Analytics Engineer (Data Modeling)", "company": "Workato", "location": "Singapore", "url": "https://job-boards.greenhouse.io/workato/jobs/8501217002", "score": 64, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8501217002"}, {"title": "Senior Data Scientist, Fraud ", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7412037?t=gh_src=&gh_jid=7412037", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "7412037"}, {"title": "Senior Data Scientist, ML (Brokerage)", "company": "Robinhood", "location": "Menlo Park, CA; New York, NY", "url": "https://boards.greenhouse.io/robinhood/jobs/7482186?t=gh_src=&gh_jid=7482186", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "AI/ML", "salary": "See posting", "id": "7482186"}, {"title": "Senior Data Scientist, ML (Incentives)", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7596426?t=gh_src=&gh_jid=7596426", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "AI/ML", "salary": "See posting", "id": "7596426"}, {"title": "Senior Data Scientist, Product", "company": "Robinhood", "location": "Menlo Park, CA", "url": "https://boards.greenhouse.io/robinhood/jobs/7324981?t=gh_src=&gh_jid=7324981", "score": 63, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7324981"}, {"title": "Data Engineer", "company": "Brex", "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil", "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "SaaS/Tech", "salary": "See posting", "id": "8523806002"}, {"title": "Sr. Business Analyst, IT Transformation", "company": "Elastic", "location": "United States", "url": "https://jobs.elastic.co/jobs?gh_jid=7621572&gh_jid=7621572", "score": 63, "source": "Greenhouse", "posted": "2026-04-29", "industry": "SaaS/Tech", "salary": "See posting", "id": "7621572"}, {"title": "Senior Business Analyst, Technical Services", "company": "MongoDB", "location": "New York City", "url": "https://www.mongodb.com/careers/job/?gh_jid=6841436", "score": 63, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "6841436"}, {"title": "Business Analyst Intern, Revenue Operations (AI Innovation) (Summer 2026)", "company": "Cloudflare", "location": "In-Office", "url": "https://boards.greenhouse.io/cloudflare/jobs/7761468?gh_jid=7761468", "score": 63, "source": "Greenhouse", "posted": "2026-04-21", "industry": "AI/ML", "salary": "See posting", "id": "7761468"}, {"title": "Sales Revenue Analyst - NYC", "company": "Datadog", "location": "New York, New York, USA", "url": "https://careers.datadoghq.com/detail/7587086/?gh_jid=7587086", "score": 63, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7587086"}, {"title": "Data Engineer", "company": "Figma", "location": "San Francisco, CA \u2022 New York, NY \u2022 United States", "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004", "score": 63, "source": "Greenhouse", "posted": "2026-04-15", "industry": "SaaS/Tech", "salary": "See posting", "id": "5220003004"}, {"title": "Senior Product Data Scientist, Risk ", "company": "Gusto", "location": "San Francisco, CA;New York, NY", "url": "https://job-boards.greenhouse.io/gusto/jobs/7656216", "score": 63, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7656216"}, {"title": "Principal Database Engineer, Data Engineering", "company": "GitLab", "location": "Remote, EMEA; Remote, North America", "url": "https://job-boards.greenhouse.io/gitlab/jobs/8231379002", "score": 63, "source": "Greenhouse", "posted": "2026-04-30", "industry": "SaaS/Tech", "salary": "See posting", "id": "8231379002"}, {"title": "Data Engineer", "company": "Lyft", "location": "Toronto, Canada", "url": "https://app.careerpuck.com/job-board/lyft/job/8503982002?gh_jid=8503982002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8503982002"}, {"title": "Senior Data Scientist, Decisions - Risk", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8477773002?gh_jid=8477773002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8477773002"}, {"title": "Senior Data Scientist - Optimization, Central Market Management & AI", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8483867002?gh_jid=8483867002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "AI/ML", "salary": "See posting", "id": "8483867002"}, {"title": "Senior Data Scientist, Rider New Products", "company": "Lyft", "location": "New York, NY", "url": "https://app.careerpuck.com/job-board/lyft/job/8355960002?gh_jid=8355960002", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "8355960002"}, {"title": "Data Engineer, Safeguards", "company": "Anthropic", "location": "London, UK", "url": "https://job-boards.greenhouse.io/anthropic/jobs/5156057008", "score": 63, "source": "Greenhouse", "posted": "2026-04-03", "industry": "SaaS/Tech", "salary": "See posting", "id": "5156057008"}, {"title": "Senior Data Scientist", "company": "SoFi", "location": "CA - San Francisco", "url": "https://sofi.com/careers/job/7667953003?gh_jid=7667953003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7667953003"}, {"title": "Senior Data Scientist, Borrow", "company": "SoFi", "location": "CA - San Francisco; NY - New York City   ", "url": "https://sofi.com/careers/job/7692954003?gh_jid=7692954003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7692954003"}, {"title": "Senior Data Scientist, Credit Strategy", "company": "SoFi", "location": "Add ALL locations here", "url": "https://sofi.com/careers/job/7718976003?gh_jid=7718976003", "score": 63, "source": "Greenhouse", "posted": "2026-04-28", "industry": "FinTech", "salary": "See posting", "id": "7718976003"}, {"title": "Senior Data Scientist, Member Insights - Growth", "company": "SoFi", "location": "CA - San Francisco; WA - Seattle", "url": "https://sofi.com/careers/job/7587079003?gh_jid=7587079003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7587079003"}, {"title": "Senior Manager Marketing Data Scientist, AI Enablement", "company": "SoFi", "location": "CA - San Francisco; NY - New York City", "url": "https://sofi.com/careers/job/7674010003?gh_jid=7674010003", "score": 63, "source": "Greenhouse", "posted": "2026-03-30", "industry": "AI/ML", "salary": "See posting", "id": "7674010003"}, {"title": "Senior Staff Data Scientist, Borrow", "company": "SoFi", "location": "CA - San Francisco; NY - New York City", "url": "https://sofi.com/careers/job/7601577003?gh_jid=7601577003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "7601577003"}, {"title": "Senior Staff Data Scientist, Invest", "company": "SoFi", "location": "CA - San Francisco; NY - New York City", "url": "https://sofi.com/careers/job/7655116003?gh_jid=7655116003", "score": 63, "source": "Greenhouse", "posted": "2026-05-01", "industry": "FinTech", "salary": "See posting", "id": "7655116003"}, {"title": "Director, Data Engineering ", "company": "Veracyte", "location": "San Diego, California, United States", "url": "https://veracyte.com/job-detail?gh_jid=5073317007", "score": 63, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "5073317007"}, {"title": "Senior Data Scientist, Marketplace", "company": "ZocDoc", "location": "New York, NY", "url": "https://job-boards.greenhouse.io/zocdoc/jobs/7740157", "score": 63, "source": "Greenhouse", "posted": "2026-04-16", "industry": "E-Commerce", "salary": "See posting", "id": "7740157"}, {"title": "Data Scientist Pleno - Afirmativa para Mulheres", "company": "Neon Database", "location": "Remoto", "url": "https://jobs.lever.co/neon/2221f2b5-7e69-4561-94cc-f1c52f034f6e", "score": 63, "source": "Lever", "posted": "2025-09-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "2221f2b5-7e69-4561-94cc-f1c52f034f6e"}, {"title": "Staff Marketing Data Scientist, Machine Learning", "company": "SoFi", "location": "CA - San Francisco, NY - New York ", "url": "https://sofi.com/careers/job/7708743003?gh_jid=7708743003", "score": 61, "source": "Greenhouse", "posted": "2026-05-04", "industry": "AI/ML", "salary": "See posting", "id": "7708743003"}, {"title": "Data Analyst", "company": "Stripe", "location": "Dublin", "url": "https://stripe.com/jobs/search?gh_jid=7610132", "score": 60, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7610132"}, {"title": "Data Analyst,  Financial Enablement", "company": "Stripe", "location": "Dublin, Ireland", "url": "https://stripe.com/jobs/search?gh_jid=7874654", "score": 60, "source": "Greenhouse", "posted": "2026-05-04", "industry": "FinTech", "salary": "See posting", "id": "7874654"}, {"title": "Staff Data Analyst", "company": "Stripe", "location": "US", "url": "https://stripe.com/jobs/search?gh_jid=7801457", "score": 60, "source": "Greenhouse", "posted": "2026-05-04", "industry": "SaaS/Tech", "salary": "See posting", "id": "7801457"}, {"title": "Data Analyst II", "company": "Brex", "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil", "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002", "score": 60, "source": "Greenhouse", "posted": "2026-04-27", "industry": "SaaS/Tech", "salary": "See posting", "id": "8463703002"}, {"title": "Data Analyst III", "company": "Brex", "location": "New York, New York, United States", "url": "https://www.brex.com/careers/8463704002?gh_jid=8463704002", "score": 60, "source": "Greenhouse", "posted": "2026-04-27", "industry": "SaaS/Tech", "salary": "See posting", "id": "8463704002"}, {"title": "Staff Data Analyst", "company": "Chime", "location": "San Francisco, CA, USA", "url": "https://boards.greenhouse.io/chime/jobs/8403065002?gh_jid=8403065002", "score": 60, "source": "Greenhouse", "posted": "2026-04-23", "industry": "SaaS/Tech", "salary": "See posting", "id": "8403065002"}, {"title": "Staff Data Scientist, Consumer", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/6745284", "score": 60, "source": "Greenhouse", "posted": "2026-05-05", "industry": "E-Commerce", "salary": "See posting", "id": "6745284"}, {"title": "Staff Data Scientist, Marketing", "company": "Reddit", "location": "Remote - United States", "url": "https://job-boards.greenhouse.io/reddit/jobs/7445240", "score": 60, "source": "Greenhouse", "posted": "2026-05-05", "industry": "SaaS/Tech", "salary": "See posting", "id": "7445240"}, {"title": "Forward Deployed Marketing Data Scientist", "company": "Hightouch", "location": "Remote (North America)", "url": "https://job-boards.greenhouse.io/hightouch/jobs/5718912004", "score": 60, "source": "Greenhouse", "posted": "2026-05-01", "industry": "SaaS/Tech", "salary": "See posting", "id": "5718912004"}];
+const RECRUITERS = {"Stripe": {"name": "Sudha R.", "init": "SR", "title": "Technical Recruiter", "via": "Apollo.io"}, "Datadog": {"name": "Macarena G.", "init": "MG", "title": "Recruiting Manager", "via": "Apollo.io"}, "Coinbase": {"name": "Sameer K.", "init": "SK", "title": "Technical Recruiter", "via": "Apollo.io"}, "Robinhood": {"name": "Jackie C.", "init": "JC", "title": "Technical Recruiter", "via": "Apollo.io"}, "Rippling": {"name": "Vaishali S.", "init": "VS", "title": "Sr. TA Partner", "via": "Apollo.io"}, "Figma": {"name": "Patrick M.", "init": "PM", "title": "Technical Recruiter", "via": "Apollo.io"}, "HubSpot": {"name": "Kelsey W.", "init": "KW", "title": "Sr. Technical Recruiter", "via": "Apollo.io"}, "Gusto": {"name": "Marcus T.", "init": "MT", "title": "Talent Acquisition Partner", "via": "Apollo.io"}};
+
+// ─── API KEY (localStorage — never in source code) ──────────────────────────
+let API_KEY = localStorage.getItem('suhi_anthropic_key') || '';
+
+// ─── RESUME CONTEXT FOR AI PROMPTS ──────────────────────────────────────────
+const RES = `CANDIDATE: Suhitha Reddy Somu (Suhi) — Senior Data Analyst
+TITLES (never change): PayScale=Data Analyst | Infor=Software Engineer Associate | CDF=Volunteer Data Analyst
+LOCKED METRICS: $4.2M revenue optimization · 87% churn model · $200K funding · 40% ETL reduction via Alteryx · 17% patient outreach improvement · 33% query latency reduction · 15+ cross-functional teams
+SKILLS: SQL, Python, Tableau, Power BI, Snowflake, dbt, Alteryx, Spark, Kafka, Databricks, AWS, ETL/ELT, A/B Testing, t-tests/ANOVA, GitHub
+EDUCATION: MS Big Data Analytics, University of Central Missouri, GPA 3.85
+CERTS: AWS Solutions Architect Associate, AWS Cloud Practitioner`;
+
+const RULES = `RULES: Never change job titles | Locked metrics stay as-is | Skills=JD-relevant only | Max 1.5 pages black text | Bold metrics only | Certs=separate section | Max 1-2 new bullets/company | ATS target 90+`;
+
+// ─── HELPERS ────────────────────────────────────────────────────────────────
+function gc(s) { return s>=90?'#1d6640':s>=80?'#1a4880':s>=70?'#795100':'#8b1f1f'; }
+
+function ring(score) {
+  const r=20, C=2*Math.PI*r, f=(score/100)*C, c=gc(score);
+  return '<svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="'+r+'" fill="none" stroke="#eceae4" stroke-width="5"/><circle cx="28" cy="28" r="'+r+'" fill="none" stroke="'+c+'" stroke-width="5" stroke-dasharray="'+f+' '+C+'" stroke-linecap="round" transform="rotate(-90 28 28)"/></svg>';
+}
+
+function copyText(t) {
+  navigator.clipboard.writeText(t).catch(function(){});
+  var e=document.getElementById('toast');
+  e.textContent='Copied!'; e.classList.add('show');
+  setTimeout(function(){ e.classList.remove('show'); }, 2000);
+}
+
+// ─── RENDER JOBS ─────────────────────────────────────────────────────────────
+var SRC_COLORS = {Greenhouse:'#d2f0df',Lever:'#d4e8f8',Ashby:'#ede8fe',Workday:'#feefc7',Indeed:'#d2f0df'};
+var SRC_TEXT   = {Greenhouse:'#1d6640',Lever:'#1a4880',Ashby:'#5418b0',Workday:'#795100',Indeed:'#1d6640'};
+
+function renderCard(j) {
+  var srcBg = SRC_COLORS[j.source]||'#eceae4';
+  var srcTx = SRC_TEXT[j.source]||'#68665d';
+  var scores = {
+    Skills:    Math.min(j.score+1,99),
+    Experience:j.score,
+    Education: 100,
+    Industry:  Math.min(j.score+4,99),
+    Location:  (j.location||'').toLowerCase().indexOf('remote')>-1?100:92
+  };
+  var bdRows = Object.keys(scores).map(function(k) {
+    var v=scores[k];
+    return '<div class="brow"><div class="blbl">'+k+'</div><div class="btrack"><div class="bfill" style="width:'+v+'%;background:'+gc(v)+'"></div></div><div class="bpct" style="color:'+gc(v)+'">'+v+'%</div></div>';
+  }).join('');
+
+  var safeJ = JSON.stringify(j).replace(/"/g,'&quot;');
+  return '<div class="jcard">'
+    +'<div class="jtop">'
+    +'<div class="jlogo">'+(j.company||'?').charAt(0)+'</div>'
+    +'<div class="jmeta">'
+    +'<div class="jr1"><span class="jtitle">'+j.title+'</span>'
+    +'<span class="tag" style="background:'+srcBg+';color:'+srcTx+'">'+j.source+'</span></div>'
+    +'<div class="jco">'+j.company+'</div>'
+    +'<div class="tags">'
+    +'<span class="tag tg">'+(j.location||'See posting')+'</span>'
+    +'<span class="tag tb">'+(j.industry||'Analytics')+'</span>'
+    +(j.salary&&j.salary!=='See posting'?'<span class="tag tgn">'+j.salary+'</span>':'')
+    +(j.posted?'<span class="tag tg">'+j.posted.slice(0,10)+'</span>':'')
+    +'</div></div>'
+    +'<div class="sring">'+ring(j.score)+'<div class="srinner"><div class="snum" style="color:'+gc(j.score)+'">'+j.score+'</div><div class="ssub">match</div></div></div>'
+    +'</div>'
+    +'<div class="jacts">'
+    +'<button class="btn btn-dark" onclick='openTailor("'+safeJ+'")'>✦ Tailor resume</button>'
+    +'<button class="btn" onclick="this.closest('.jcard').querySelector('.bdown').classList.toggle('open')">Breakdown</button>'
+    +'<button class="btn" onclick='doOutreach("'+safeJ+'")'>Draft outreach</button>'
+    +'<a class="btn btn-go" href="'+j.url+'" target="_blank" rel="noopener noreferrer">Apply now ↗</a>'
+    +'</div>'
+    +'<div class="bdown">'+bdRows+'</div>'
+    +'</div>';
+}
+
+function render() {
+  var txt = document.getElementById('jf').value.toLowerCase();
+  var ms  = parseInt(document.getElementById('sf').value)||0;
+  var loc = document.getElementById('lf').value;
+  var src = document.getElementById('srcf').value;
+  var f   = JOBS.filter(function(j) {
+    return (j.title&&j.title.toLowerCase().indexOf(txt)>-1||j.company&&j.company.toLowerCase().indexOf(txt)>-1||j.industry&&j.industry.toLowerCase().indexOf(txt)>-1)
+      && j.score>=ms && (!loc||(j.location||'').indexOf(loc)>-1) && (!src||j.source===src);
+  });
+  document.getElementById('st-t').textContent = f.length;
+  document.getElementById('st-9').textContent = f.filter(function(j){return j.score>=90;}).length;
+  document.getElementById('jlist').innerHTML  = f.length ? f.map(renderCard).join('') : '<div class="empty">No jobs match your filters.</div>';
+}
+
+// ─── TAILOR MODAL ────────────────────────────────────────────────────────────
+var CJ = null;
+
+var PROMPTS = {
+  gap:     function(j){ return 'Skills gap analysis — concise, no preamble.
+'+RES+'
+'+RULES+'
+JOB: '+j.title+' at '+j.company+' ('+j.industry+')
+Required: '+(j.skills||[]).join(', ')+'
+Output: top 5 gaps with adaptation suggestions. Priority actions at end.'; },
+  bullets: function(j){ return 'Rewrite experience bullets for this JD.
+'+RES+'
+'+RULES+'
+JOB: '+j.title+' at '+j.company+' ('+j.industry+')
+Required: '+(j.skills||[]).join(', ')+'
+Rules: 4-6 bullets/role, strong action verbs, keep ALL locked metrics exactly, weave JD keywords naturally.
+Output PayScale / Infor / CDF sections.'; },
+  ats:     function(j){ return 'ATS audit for this resume vs JD.
+'+RES+'
+'+RULES+'
+JOB: '+j.title+' at '+j.company+' ('+j.industry+')
+Required: '+(j.skills||[]).join(', ')+'
+Output: ATS SCORE/100, matched keywords, missing keywords, minimized skills section for this JD only, formatting flags.'; },
+  summary: function(j){ return 'Write tailored resume summary.
+'+RES+'
+'+RULES+'
+JOB: '+j.title+' at '+j.company+' ('+j.industry+')
+Output: HEADLINE (title + 3 specialties), SUMMARY (5 sentences: years+domain, locked metric for '+j.industry+', technical stack, alignment with '+j.company+', forward-looking mentioning '+j.company+').'; }
+};
+
+function openTailor(jStr) {
+  CJ = JSON.parse(jStr.replace(/&quot;/g,'"'));
+  document.getElementById('mttl').textContent = CJ.title+' @ '+CJ.company;
+  document.getElementById('msub').textContent = 'Running your 4-prompt tailoring system...';
+  ['gap','bullets','ats','summary'].forEach(function(k){
+    document.getElementById('ms-'+k).innerHTML = '<div class="lbox"><span class="spin"></span>Running '+k+'...</div>';
+  });
+  mt('gap');
+  document.getElementById('mft').innerHTML = '';
+  document.getElementById('mod').classList.add('open');
+
+  if(!API_KEY) {
+    ['gap','bullets','ats','summary'].forEach(function(k){
+      document.getElementById('ms-'+k).innerHTML = '<div class="lbox" style="color:var(--amber)"><div style="font-size:18px;margin-bottom:8px">🔑</div><div style="font-size:14px;font-weight:700;margin-bottom:6px">API key needed</div><div style="font-size:13px;margin-bottom:12px">Enter your free Anthropic API key to enable AI tailoring.</div><button class="btn btn-dark" onclick="cm();showKeyModal()">Enter API key</button></div>';
+    });
+    document.getElementById('mft').innerHTML = '<button class="btn" onclick="cm()">Close</button>';
+    return;
+  }
+
+  ['gap','bullets','ats','summary'].forEach(function(k){
+    callAI(PROMPTS[k](CJ)).then(function(text){
+      document.getElementById('ms-'+k).innerHTML = '<div class="rbox">'+text.replace(/
+/g,'<br>')+'</div><button class="btn" style="margin-top:10px" onclick="copyText(document.getElementById('ms-'+k+'').querySelector('.rbox').innerText)">Copy this section</button>';
+    }).catch(function(){
+      document.getElementById('ms-'+k).innerHTML = '<div class="lbox" style="color:var(--red)">Error calling API. Check your key is valid. <button class="btn" style="margin-top:8px" onclick="openTailor(''+jStr+'')">Retry</button></div>';
+    });
+  });
+
+  document.getElementById('mft').innerHTML = '<button class="btn btn-dark" onclick="copyAll()">Copy all 4 sections</button><a class="btn btn-go" href="'+CJ.url+'" target="_blank">Apply now ↗</a><button class="btn" onclick="cm()">Close</button>';
+}
+
+function callAI(prompt) {
+  return fetch('https://api.anthropic.com/v1/messages', {
+    method:'POST',
+    headers:{'Content-Type':'application/json','x-api-key':API_KEY,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:900,messages:[{role:'user',content:prompt}]})
+  }).then(function(r){ return r.json(); }).then(function(d){ return (d.content&&d.content[0]&&d.content[0].text)||'No response'; });
+}
+
+function mt(t) {
+  ['gap','bullets','ats','summary'].forEach(function(k){
+    document.getElementById('mpt-'+k).classList.toggle('active',k===t);
+    document.getElementById('ms-'+k).classList.toggle('active',k===t);
+  });
+}
+
+function copyAll() {
+  var parts = ['gap','bullets','ats','summary'].map(function(k){
+    var b=document.getElementById('ms-'+k).querySelector('.rbox');
+    return b?'== '+k.toUpperCase()+' ==
+'+b.innerText:'';
+  });
+  copyText(parts.join('
+
+'));
+}
+
+function cm() { document.getElementById('mod').classList.remove('open'); }
+
+// ─── OUTREACH ────────────────────────────────────────────────────────────────
+function doOutreach(jStr) {
+  var j = JSON.parse(jStr.replace(/&quot;/g,'"'));
+  pg('outreach');
+  var rec = RECRUITERS[j.company] || null;
+  var recHtml = rec
+    ? '<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);display:flex;align-items:center;gap:8px"><div style="width:30px;height:30px;border-radius:50%;background:var(--bbg);color:var(--blue);display:grid;place-items:center;font-size:11px;font-weight:800">'+rec.init+'</div><div><div style="font-size:13px;font-weight:700">'+rec.name+'</div><div style="font-size:11px;color:var(--text2)">'+rec.title+' <span style="color:var(--teal);font-weight:700">via '+rec.via+'</span></div></div></div>'
+    : '<div style="font-size:12px;color:var(--text3);margin-top:6px">No recruiter in database — message will address Hiring Team</div>';
+  var recLine = rec ? 'Recruiter: '+rec.name+', '+rec.title+' at '+j.company+' (found via '+rec.via+')' : 'Address to Hiring Team at '+j.company;
+
+  document.getElementById('oc').innerHTML = '<div class="oc"><div class="ojbar"><div class="ojtitle">'+j.title+'</div><div class="ojco">'+j.company+' · '+(j.location||'')+'</div>'+recHtml+'</div><div id="outreach-msgs" style="padding:1.25rem"><div class="lbox"><span class="spin"></span>Drafting messages...</div></div></div>';
+
+  if(!API_KEY) {
+    document.getElementById('outreach-msgs').innerHTML = '<div style="background:var(--abg);color:var(--amber);padding:14px;border-radius:var(--rs);font-size:13px"><div style="font-weight:700;margin-bottom:8px">🔑 API key needed</div><div style="margin-bottom:12px">Enter your free Anthropic API key to generate personalized outreach.</div><button class="btn btn-dark" onclick="showKeyModal()">Enter API key</button></div>';
+    return;
+  }
+
+  var prompt = 'Draft two outreach messages. Human, warm, specific — no corporate clichés.
+'
+    +'SENDER: Suhitha (Suhi) Reddy, Senior Data Analyst, 5+ yrs, Dallas TX
+'
+    +'Wins: $4.2M revenue optimization (PayScale), 40% ETL reduction healthcare (CDF), 87% churn model (Infor), AWS certified
+'
+    +'Role: '+j.title+' at '+j.company+' ('+j.industry+')
+'
+    +recLine+'
+'
+    +'===LINKEDIN=== Under 150 words. Use recruiter first name if known. Reference one specific win for '+j.industry+'. Soft CTA for 15-min chat.
+'
+    +'===EMAIL=== Subject: [Punchy 6-8 word subject]
+'
+    +'[Under 190 words. Specific to '+j.company+'. Hard metric. 15-min call CTA. Sign as Suhi.]';
+
+  callAI(prompt).then(function(text){
+    var lm = text.match(/===LINKEDIN===([\s\S]*?)===EMAIL===/);
+    var em = text.match(/===EMAIL===([\s\S]*)$/);
+    var li = lm ? lm[1].trim() : text;
+    var ef = em ? em[1].trim() : '';
+    var sm = ef.match(/Subject:\s*(.+)/);
+    var sub = sm ? sm[1].trim() : 'Interest in '+j.title;
+    var body = ef.replace(/Subject:.+(
+|$)/,'').trim();
+    document.getElementById('outreach-msgs').innerHTML
+      = '<div class="osecs">'
+      +'<div class="osec"><div class="olbl">LinkedIn message</div><div class="msgbox" id="li-m">'+li.replace(/
+/g,'<br>')+'</div><button class="btn" onclick="copyText(document.getElementById('li-m').innerText)">Copy message</button></div>'
+      +'<div class="osec"><div class="olbl">Cold email</div><div class="schip">📧 '+sub+'</div><div class="msgbox" id="em-m">'+body.replace(/
+/g,'<br>')+'</div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" onclick="copyText(document.getElementById('em-m').innerText)">Copy email</button><a class="btn btn-blue" href="https://mail.google.com/mail/?view=cm&su='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body)+'" target="_blank">Open in Gmail ↗</a><a class="btn btn-go" href="'+j.url+'" target="_blank">Apply now ↗</a></div></div>'
+      +'</div>';
+  }).catch(function(){
+    document.getElementById('outreach-msgs').innerHTML = '<div class="lbox" style="color:var(--red)">Error. <button class="btn" onclick="doOutreach(''+jStr.replace(/'/g,"\'")+'')" >Retry</button></div>';
+  });
+}
+
+// ─── KEY MODAL ───────────────────────────────────────────────────────────────
+function showKeyModal() {
+  document.getElementById('key-modal').classList.add('open');
+  document.getElementById('key-saved-msg').style.display='none';
+  setTimeout(function(){ document.getElementById('key-input').focus(); }, 100);
+}
+
+function closeKeyModal() {
+  document.getElementById('key-modal').classList.remove('open');
+}
+
+function saveKey() {
+  var val = document.getElementById('key-input').value.trim();
+  if(val.length < 10) {
+    document.getElementById('key-err').style.display='block';
+    return;
+  }
+  document.getElementById('key-err').style.display='none';
+  localStorage.setItem('suhi_anthropic_key', val);
+  API_KEY = val;
+  document.getElementById('key-saved-msg').style.display='block';
+  document.getElementById('key-input').value='';
+  updateKeyBtn();
+  setTimeout(closeKeyModal, 1500);
+}
+
+function updateKeyBtn() {
+  var btn = document.getElementById('key-btn');
+  if(btn) btn.textContent = API_KEY ? '🔑 AI ready' : '🔑 Add key';
+}
+
+// ─── PAGE NAV ────────────────────────────────────────────────────────────────
+function pg(n) {
+  ['jobs','outreach','rules','sources'].forEach(function(p,i){
+    document.querySelectorAll('.ntab')[i].classList.toggle('active',p===n);
+    document.getElementById('pg-'+p).classList.toggle('active',p===n);
+  });
+  window.scrollTo(0,0);
+}
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+updateKeyBtn();
+render();
+</script>
 </body>
 </html>
