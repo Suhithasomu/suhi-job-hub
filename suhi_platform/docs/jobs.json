@@ -1,18 +1,6 @@
 {
   "jobs": [
     {
-      "title": "Senior Data Analyst, Enterprise Analytics ",
-      "company": "GitLab",
-      "location": "Remote, Bangalore",
-      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8478359002",
-      "score": 87,
-      "source": "Greenhouse",
-      "posted": "2026-04-30",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8478359002"
-    },
-    {
       "title": "Senior Data Analyst, Marketing Analytics",
       "company": "GitLab",
       "location": "Remote, North America",
@@ -31,7 +19,7 @@
       "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7564587003",
       "score": 80,
       "source": "Greenhouse",
-      "posted": "2026-05-16",
+      "posted": "2026-05-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7564587003"
@@ -147,14 +135,14 @@
     {
       "title": "Senior Data Engineer, AI and Systems Engineering",
       "company": "Dropbox",
-      "location": "Remote - Mexico",
-      "url": "https://jobs.dropbox.com/listing/7872748?gh_jid=7872748",
+      "location": "Remote - Poland",
+      "url": "https://jobs.dropbox.com/listing/7872745?gh_jid=7872745",
       "score": 76,
       "source": "Greenhouse",
       "posted": "2026-05-14",
       "industry": "AI/ML",
       "salary": "See posting",
-      "id": "7872748"
+      "id": "7872745"
     },
     {
       "title": "Associate Marketing Data Analyst - Marketing Analytics",
@@ -219,14 +207,14 @@
     {
       "title": "Senior Data Analyst",
       "company": "MongoDB",
-      "location": "United States",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7696633",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7616983",
       "score": 73,
       "source": "Greenhouse",
-      "posted": "2026-05-15",
+      "posted": "2026-05-11",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7696633"
+      "id": "7616983"
     },
     {
       "title": "Senior Data Analyst II, Product",
@@ -259,7 +247,7 @@
       "url": "https://www.klaviyo.com/careers/jobs?gh_jid=7669291003",
       "score": 72,
       "source": "Greenhouse",
-      "posted": "2026-05-15",
+      "posted": "2026-05-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7669291003"
@@ -613,6 +601,18 @@
       "id": "7557049"
     },
     {
+      "title": "Data Engineer",
+      "company": "Brex",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-05-08",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8523806002"
+    },
+    {
       "title": "Senior Data Scientist, Fraud ",
       "company": "Robinhood",
       "location": "Menlo Park, CA",
@@ -647,18 +647,6 @@
       "industry": "AI/ML",
       "salary": "See posting",
       "id": "7596426"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-05-08",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8523806002"
     },
     {
       "title": "Senior Data Scientist",
@@ -707,18 +695,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5220003004"
-    },
-    {
-      "title": "Sales Revenue Analyst - NYC",
-      "company": "Datadog",
-      "location": "New York, New York, USA",
-      "url": "https://careers.datadoghq.com/detail/7587086/?gh_jid=7587086",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-05-15",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7587086"
     },
     {
       "title": "Senior Data Scientist",
@@ -913,6 +889,30 @@
       "id": "8403065002"
     },
     {
+      "title": "Data Analyst II",
+      "company": "Brex",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-05-15",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8463703002"
+    },
+    {
+      "title": "Data Analyst III",
+      "company": "Brex",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8463699002?gh_jid=8463699002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-05-08",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8463699002"
+    },
+    {
       "title": "Data Analyst",
       "company": "Stripe",
       "location": "Bengaluru",
@@ -947,30 +947,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7801457"
-    },
-    {
-      "title": "Data Analyst II",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-05-15",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8463703002"
-    },
-    {
-      "title": "Data Analyst III",
-      "company": "Brex",
-      "location": "San Francisco, California, United States",
-      "url": "https://www.brex.com/careers/8463699002?gh_jid=8463699002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-05-08",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8463699002"
     },
     {
       "title": "Staff Data Scientist, Consumer",
@@ -1021,11 +997,11 @@
       "id": "5134376007"
     }
   ],
-  "total": 85,
-  "last_updated": "May 17, 2026 02:55 PM UTC",
+  "total": 83,
+  "last_updated": "May 18, 2026 04:47 PM UTC",
   "companies_scanned": 260,
   "sources": {
-    "greenhouse": 110,
+    "greenhouse": 108,
     "lever": 3,
     "ashby": 0,
     "workday": 0
