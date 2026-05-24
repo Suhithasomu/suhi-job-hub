@@ -206,18 +206,6 @@
     },
     {
       "title": "Senior Software Engineer, Data Engineering",
-      "company": "Robinhood",
-      "location": "Menlo Park, CA",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660",
-      "score": 71,
-      "source": "Greenhouse",
-      "posted": "2026-05-22",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "4738660"
-    },
-    {
-      "title": "Senior Software Engineer, Data Engineering",
       "company": "Chime",
       "location": "San Francisco, CA, USA",
       "url": "https://boards.greenhouse.io/chime/jobs/8505462002?gh_jid=8505462002",
@@ -227,6 +215,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8505462002"
+    },
+    {
+      "title": "Senior Software Engineer, Data Engineering",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660",
+      "score": 71,
+      "source": "Greenhouse",
+      "posted": "2026-05-22",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "4738660"
     },
     {
       "title": "Senior Software Engineer, Data Engineering",
@@ -661,6 +661,18 @@
       "id": "8541697002"
     },
     {
+      "title": "Senior Product Data Scientist",
+      "company": "TripAdvisor",
+      "location": "London",
+      "url": "https://job-boards.greenhouse.io/tripadvisor/jobs/7946763",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-05-20",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7946763"
+    },
+    {
       "title": "Data Engineer",
       "company": "Lyft",
       "location": "Toronto, Canada",
@@ -781,18 +793,6 @@
       "id": "5073317007"
     },
     {
-      "title": "Senior Product Data Scientist",
-      "company": "TripAdvisor",
-      "location": "London",
-      "url": "https://job-boards.greenhouse.io/tripadvisor/jobs/7946763",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-05-20",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7946763"
-    },
-    {
       "title": "Data Scientist Pleno - Afirmativa para Mulheres",
       "company": "Neon Database",
       "location": "Remoto",
@@ -805,40 +805,16 @@
       "id": "2221f2b5-7e69-4561-94cc-f1c52f034f6e"
     },
     {
-      "title": "Data Analyst II",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-05-18",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8463703002"
-    },
-    {
-      "title": "Data Analyst III",
-      "company": "Brex",
-      "location": "San Francisco, California, United States",
-      "url": "https://www.brex.com/careers/8463699002?gh_jid=8463699002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-05-08",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8463699002"
-    },
-    {
       "title": "Data Analyst",
       "company": "Stripe",
-      "location": "Mexico City ",
-      "url": "https://stripe.com/jobs/search?gh_jid=6282403",
+      "location": "Bengaluru",
+      "url": "https://stripe.com/jobs/search?gh_jid=7794729",
       "score": 60,
       "source": "Greenhouse",
       "posted": "2026-05-20",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "6282403"
+      "id": "7794729"
     },
     {
       "title": "Data Analyst,  Financial Enablement",
@@ -875,6 +851,30 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8403065002"
+    },
+    {
+      "title": "Data Analyst II",
+      "company": "Brex",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-05-18",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8463703002"
+    },
+    {
+      "title": "Data Analyst III",
+      "company": "Brex",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8463699002?gh_jid=8463699002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-05-08",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8463699002"
     },
     {
       "title": "Staff Data Scientist, Consumer",
@@ -938,7 +938,7 @@
     }
   ],
   "total": 78,
-  "last_updated": "May 23, 2026 03:00 PM UTC",
+  "last_updated": "May 24, 2026 03:03 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 103,
