@@ -73,18 +73,6 @@
       "id": "7779561"
     },
     {
-      "title": "Senior Analytics Engineer",
-      "company": "Reddit",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7445224",
-      "score": 77,
-      "source": "Greenhouse",
-      "posted": "2026-05-30",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7445224"
-    },
-    {
       "title": "Staff Data Engineer, Analytics Data Engineering",
       "company": "Dropbox",
       "location": "Remote - Canada: Select locations",
@@ -95,6 +83,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7595186"
+    },
+    {
+      "title": "Senior Analytics Engineer",
+      "company": "Reddit",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7445224",
+      "score": 77,
+      "source": "Greenhouse",
+      "posted": "2026-05-31",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7445224"
     },
     {
       "title": "Home Loans Loss Forecasting Analytics, Senior Data Scientist",
@@ -266,18 +266,6 @@
     },
     {
       "title": "Senior Software Engineer, Data Engineering",
-      "company": "Ripple",
-      "location": "San Francisco, CA, United States",
-      "url": "https://ripple.com/careers/all-jobs/job/7872439?gh_jid=7872439",
-      "score": 71,
-      "source": "Greenhouse",
-      "posted": "2026-05-04",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7872439"
-    },
-    {
-      "title": "Senior Software Engineer, Data Engineering",
       "company": "Robinhood",
       "location": "Menlo Park, CA",
       "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660",
@@ -287,6 +275,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "4738660"
+    },
+    {
+      "title": "Senior Software Engineer, Data Engineering",
+      "company": "Ripple",
+      "location": "San Francisco, CA, United States",
+      "url": "https://ripple.com/careers/all-jobs/job/7872439?gh_jid=7872439",
+      "score": 71,
+      "source": "Greenhouse",
+      "posted": "2026-05-04",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7872439"
     },
     {
       "title": "Senior Technical Revenue Analyst (Dublin, Ireland) ",
@@ -391,7 +391,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7958354",
       "score": 69,
       "source": "Greenhouse",
-      "posted": "2026-05-30",
+      "posted": "2026-05-31",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7958354"
@@ -457,30 +457,6 @@
       "id": "7958121"
     },
     {
-      "title": "Senior Data Scientist, Ads",
-      "company": "Reddit",
-      "location": "Remote - Ontario, Canada",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7607121",
-      "score": 68,
-      "source": "Greenhouse",
-      "posted": "2026-05-14",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7607121"
-    },
-    {
-      "title": "Senior Data Scientist, Consumer",
-      "company": "Reddit",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7275414",
-      "score": 68,
-      "source": "Greenhouse",
-      "posted": "2026-05-28",
-      "industry": "E-Commerce",
-      "salary": "See posting",
-      "id": "7275414"
-    },
-    {
       "title": "Data Engineer",
       "company": "Dropbox",
       "location": "Remote - Mexico",
@@ -515,6 +491,30 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7739568"
+    },
+    {
+      "title": "Senior Data Scientist, Ads",
+      "company": "Reddit",
+      "location": "Remote - Ontario, Canada",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7607121",
+      "score": 68,
+      "source": "Greenhouse",
+      "posted": "2026-05-14",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7607121"
+    },
+    {
+      "title": "Senior Data Scientist, Consumer",
+      "company": "Reddit",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7275414",
+      "score": 68,
+      "source": "Greenhouse",
+      "posted": "2026-05-28",
+      "industry": "E-Commerce",
+      "salary": "See posting",
+      "id": "7275414"
     },
     {
       "title": "Associate, Insurance Senior Business Analyst",
@@ -613,18 +613,6 @@
       "id": "7659010"
     },
     {
-      "title": "Data Engineer",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-05-26",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8523806002"
-    },
-    {
       "title": "Senior Data Scientist, Fraud ",
       "company": "Robinhood",
       "location": "Menlo Park, CA",
@@ -659,6 +647,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7965000"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Brex",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-05-26",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8523806002"
     },
     {
       "title": "Senior Data Scientist",
@@ -889,6 +889,18 @@
       "id": "e48468bc-4eb4-46dc-9b91-90fdec12eb81"
     },
     {
+      "title": "Insights Analyst, Dispute Experience",
+      "company": "Chime",
+      "location": "Remote, USA",
+      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-05-28",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8565199002"
+    },
+    {
       "title": "Data Analyst II",
       "company": "Brex",
       "location": "San Francisco, California, United States",
@@ -913,28 +925,16 @@
       "id": "8463704002"
     },
     {
-      "title": "Insights Analyst, Dispute Experience",
-      "company": "Chime",
-      "location": "Remote, USA",
-      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-05-28",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8565199002"
-    },
-    {
       "title": "Data Analyst",
       "company": "Stripe",
-      "location": "Bengaluru",
-      "url": "https://stripe.com/jobs/search?gh_jid=7794729",
+      "location": "Mexico City ",
+      "url": "https://stripe.com/jobs/search?gh_jid=6282403",
       "score": 60,
       "source": "Greenhouse",
       "posted": "2026-05-20",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7794729"
+      "id": "6282403"
     },
     {
       "title": "Data Analyst,  Financial Enablement",
@@ -952,13 +952,13 @@
       "title": "Staff Data Analyst",
       "company": "Stripe",
       "location": "US",
-      "url": "https://stripe.com/jobs/search?gh_jid=7921649",
+      "url": "https://stripe.com/jobs/search?gh_jid=7801457",
       "score": 60,
       "source": "Greenhouse",
       "posted": "2026-05-29",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7921649"
+      "id": "7801457"
     },
     {
       "title": "Staff Data Scientist, Consumer",
@@ -1022,7 +1022,7 @@
     }
   ],
   "total": 85,
-  "last_updated": "May 30, 2026 03:05 PM UTC",
+  "last_updated": "May 31, 2026 03:17 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 109,
