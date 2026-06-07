@@ -87,14 +87,14 @@
     {
       "title": "Senior Analytics Engineer",
       "company": "Reddit",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7445224",
+      "location": "Remote - Ontario, Canada",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7958403",
       "score": 77,
       "source": "Greenhouse",
-      "posted": "2026-06-06",
+      "posted": "2026-06-07",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7445224"
+      "id": "7958403"
     },
     {
       "title": "Data Engineer, Analytics Data Engineering",
@@ -391,7 +391,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7958354",
       "score": 69,
       "source": "Greenhouse",
-      "posted": "2026-06-06",
+      "posted": "2026-06-07",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7958354"
@@ -495,26 +495,26 @@
     {
       "title": "Senior Staff Data Scientist - Consumer Experimentation",
       "company": "Reddit",
-      "location": "Remote - Ontario, Canada",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7974507",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7974504",
       "score": 68,
       "source": "Greenhouse",
       "posted": "2026-06-01",
       "industry": "E-Commerce",
       "salary": "See posting",
-      "id": "7974507"
+      "id": "7974504"
     },
     {
       "title": "Senior Staff Data Scientist - Consumer Relevance",
       "company": "Reddit",
-      "location": "Remote - Ontario, Canada",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7974647",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7974605",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-06-06",
+      "posted": "2026-06-07",
       "industry": "E-Commerce",
       "salary": "See posting",
-      "id": "7974647"
+      "id": "7974605"
     },
     {
       "title": "Data Engineer",
@@ -685,18 +685,6 @@
       "id": "7881815"
     },
     {
-      "title": "Staff Data Engineer",
-      "company": "MongoDB",
-      "location": "Gurugram",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7858063",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-06-06",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7858063"
-    },
-    {
       "title": "Sales Revenue Analyst (Boston)",
       "company": "Datadog",
       "location": "Boston, Massachusetts, USA",
@@ -707,6 +695,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7587086"
+    },
+    {
+      "title": "Staff Data Engineer",
+      "company": "MongoDB",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7858063",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-06-06",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7858063"
     },
     {
       "title": "Data Engineer",
@@ -1034,7 +1034,7 @@
     }
   ],
   "total": 86,
-  "last_updated": "June 06, 2026 03:15 PM UTC",
+  "last_updated": "June 07, 2026 03:23 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 112,
