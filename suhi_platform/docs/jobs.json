@@ -79,7 +79,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7958403",
       "score": 77,
       "source": "Greenhouse",
-      "posted": "2026-06-20",
+      "posted": "2026-06-21",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7958403"
@@ -134,18 +134,6 @@
     },
     {
       "title": "Senior Software Engineer, Data Engineering",
-      "company": "Robinhood",
-      "location": "Menlo Park, CA",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660",
-      "score": 71,
-      "source": "Greenhouse",
-      "posted": "2026-06-12",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "4738660"
-    },
-    {
-      "title": "Senior Software Engineer, Data Engineering",
       "company": "Chime",
       "location": "San Francisco, CA, USA",
       "url": "https://boards.greenhouse.io/chime/jobs/8505462002?gh_jid=8505462002",
@@ -155,6 +143,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8505462002"
+    },
+    {
+      "title": "Senior Software Engineer, Data Engineering",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660",
+      "score": 71,
+      "source": "Greenhouse",
+      "posted": "2026-06-12",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "4738660"
     },
     {
       "title": "Senior Software Engineer, Data Engineering",
@@ -391,7 +391,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7974605",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-06-20",
+      "posted": "2026-06-21",
       "industry": "E-Commerce",
       "salary": "See posting",
       "id": "7974605"
@@ -535,7 +535,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7958385",
       "score": 64,
       "source": "Greenhouse",
-      "posted": "2026-06-20",
+      "posted": "2026-06-21",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7958385"
@@ -551,42 +551,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7659010"
-    },
-    {
-      "title": "Senior Credit Business Analyst",
-      "company": "Robinhood",
-      "location": "Menlo Park, CA",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/7975475?t=gh_src=&gh_jid=7975475",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-06-12",
-      "industry": "FinTech",
-      "salary": "See posting",
-      "id": "7975475"
-    },
-    {
-      "title": "Senior Data Scientist, Fraud ",
-      "company": "Robinhood",
-      "location": "Menlo Park, CA",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/7412037?t=gh_src=&gh_jid=7412037",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-06-12",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7412037"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-06-10",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8523806002"
     },
     {
       "title": "Senior Data Scientist, Growth Product",
@@ -623,6 +587,42 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8586463002"
+    },
+    {
+      "title": "Senior Credit Business Analyst",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7975475?t=gh_src=&gh_jid=7975475",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-06-12",
+      "industry": "FinTech",
+      "salary": "See posting",
+      "id": "7975475"
+    },
+    {
+      "title": "Senior Data Scientist, Fraud ",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7412037?t=gh_src=&gh_jid=7412037",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-06-12",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7412037"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Brex",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-06-10",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8523806002"
     },
     {
       "title": "Staff Software Engineer, Data Engineering Solutions",
@@ -698,6 +698,30 @@
     },
     {
       "title": "Data Engineer",
+      "company": "Anthropic",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4956672008",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-06-19",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "4956672008"
+    },
+    {
+      "title": "Data Engineering Manager, Product",
+      "company": "Anthropic",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5125387008",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-06-16",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "5125387008"
+    },
+    {
+      "title": "Data Engineer",
       "company": "Lyft",
       "location": "Mexico City, Mexico",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8594129002?gh_jid=8594129002",
@@ -757,30 +781,6 @@
       "id": "8355960002"
     },
     {
-      "title": "Data Engineer",
-      "company": "Anthropic",
-      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4956672008",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-06-19",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "4956672008"
-    },
-    {
-      "title": "Data Engineering Manager, Product",
-      "company": "Anthropic",
-      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5125387008",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-06-16",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "5125387008"
-    },
-    {
       "title": "Senior Data Scientist, Borrow",
       "company": "SoFi",
       "location": "CA - San Francisco; NY - New York City   ",
@@ -829,6 +829,18 @@
       "id": "e48468bc-4eb4-46dc-9b91-90fdec12eb81"
     },
     {
+      "title": "Insights Analyst, Dispute Experience",
+      "company": "Chime",
+      "location": "Remote, USA",
+      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-06-16",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8565199002"
+    },
+    {
       "title": "Data Analyst II",
       "company": "Brex",
       "location": "New York, New York, United States",
@@ -851,18 +863,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8463699002"
-    },
-    {
-      "title": "Insights Analyst, Dispute Experience",
-      "company": "Chime",
-      "location": "Remote, USA",
-      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-06-16",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8565199002"
     },
     {
       "title": "Data Analyst",
@@ -949,18 +949,6 @@
       "id": "7445240"
     },
     {
-      "title": "Data Analyst, Autonomous Vehicles",
-      "company": "Lyft",
-      "location": "Toronto, Canada",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8545543002?gh_jid=8545543002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-06-18",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8545543002"
-    },
-    {
       "title": "Lead Data Scientist, Platform Product",
       "company": "Anthropic",
       "location": "New York City, NY | Seattle, WA; San Francisco, CA",
@@ -971,6 +959,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5116820008"
+    },
+    {
+      "title": "Data Analyst, Autonomous Vehicles",
+      "company": "Lyft",
+      "location": "Toronto, Canada",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8545543002?gh_jid=8545543002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-06-18",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8545543002"
     },
     {
       "title": "Forward Deployed Marketing Data Scientist",
@@ -998,7 +998,7 @@
     }
   ],
   "total": 83,
-  "last_updated": "June 20, 2026 03:45 PM UTC",
+  "last_updated": "June 21, 2026 03:50 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 110,
