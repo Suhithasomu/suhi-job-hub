@@ -27,14 +27,26 @@
     {
       "title": "Senior Data Analyst",
       "company": "Instacart",
-      "location": "Canada - Remote (ON, AB, BC, or NS Only)",
-      "url": "https://instacart.careers/job/?gh_jid=7783160",
+      "location": "United States - Remote",
+      "url": "https://instacart.careers/job/?gh_jid=7783158",
       "score": 78,
       "source": "Greenhouse",
       "posted": "2026-06-24",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7783160"
+      "id": "7783158"
+    },
+    {
+      "title": "Senior Manager, Product Data Analyst",
+      "company": "ContentSquare",
+      "location": "London area",
+      "url": "https://jobs.lever.co/contentsquare/0fe32c4c-0fbd-434f-a42e-586794cf91a6",
+      "score": 78,
+      "source": "Lever",
+      "posted": "2026-06-04",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "0fe32c4c-0fbd-434f-a42e-586794cf91a6"
     },
     {
       "title": "Senior Analytics Engineer (Platform - Financial Analytics)",
@@ -63,14 +75,14 @@
     {
       "title": "Staff Data Engineer, Analytics Data Engineering",
       "company": "Dropbox",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7595186?gh_jid=7595186",
+      "location": "Remote - US: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7595183?gh_jid=7595183",
       "score": 77,
       "source": "Greenhouse",
       "posted": "2026-07-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7595186"
+      "id": "7595183"
     },
     {
       "title": "Home Loans Loss Forecasting Analytics, Senior Data Scientist",
@@ -85,13 +97,25 @@
       "id": "7727059003"
     },
     {
+      "title": "Senior Pricing Data Scientist",
+      "company": "Fivetran",
+      "location": "Remote, Illinois, United States, AMER",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=7806295003",
+      "score": 76,
+      "source": "Greenhouse",
+      "posted": "2026-07-20",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7806295003"
+    },
+    {
       "title": "Senior Data Analyst",
       "company": "MongoDB",
       "location": "United States",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7696633",
       "score": 73,
       "source": "Greenhouse",
-      "posted": "2026-07-16",
+      "posted": "2026-07-21",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7696633"
@@ -121,6 +145,18 @@
       "id": "7872439"
     },
     {
+      "title": "Senior AI Data Engineer",
+      "company": "Elastic",
+      "location": "Spain",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=7989242&gh_jid=7989242",
+      "score": 71,
+      "source": "Greenhouse",
+      "posted": "2026-07-04",
+      "industry": "AI/ML",
+      "salary": "See posting",
+      "id": "7989242"
+    },
+    {
       "title": "Senior Data Engineer",
       "company": "Cloudflare",
       "location": "In-Office",
@@ -143,18 +179,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8060158"
-    },
-    {
-      "title": "Senior AI Data Engineer",
-      "company": "Elastic",
-      "location": "Spain",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=7989242&gh_jid=7989242",
-      "score": 71,
-      "source": "Greenhouse",
-      "posted": "2026-07-04",
-      "industry": "AI/ML",
-      "salary": "See posting",
-      "id": "7989242"
     },
     {
       "title": "Senior Technical Revenue Analyst (Dublin, Ireland) ",
@@ -181,6 +205,18 @@
       "id": "8605842002"
     },
     {
+      "title": "Analytics Engineer II",
+      "company": "Affirm",
+      "location": "Remote Poland",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7764109003",
+      "score": 69,
+      "source": "Greenhouse",
+      "posted": "2026-07-01",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7764109003"
+    },
+    {
       "title": "Analytics Engineer",
       "company": "Coinbase",
       "location": "Remote - USA",
@@ -203,18 +239,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8024880"
-    },
-    {
-      "title": "Analytics Engineer II",
-      "company": "Affirm",
-      "location": "Remote Poland",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7764109003",
-      "score": 69,
-      "source": "Greenhouse",
-      "posted": "2026-07-01",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7764109003"
     },
     {
       "title": "Lead Analytics Engineer",
@@ -265,16 +289,64 @@
       "id": "7560841"
     },
     {
+      "title": "Senior Data Scientist II - Core Delivery",
+      "company": "Instacart",
+      "location": "United States - Remote",
+      "url": "https://instacart.careers/job/?gh_jid=7977331",
+      "score": 68,
+      "source": "Greenhouse",
+      "posted": "2026-06-24",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7977331"
+    },
+    {
+      "title": "Senior Data Scientist (I & II)",
+      "company": "Instacart",
+      "location": "United States - Remote",
+      "url": "https://instacart.careers/job/?gh_jid=4949339",
+      "score": 68,
+      "source": "Greenhouse",
+      "posted": "2026-06-26",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "4949339"
+    },
+    {
+      "title": "Senior Data Scientist - Shopping Experience (Search)",
+      "company": "Instacart",
+      "location": "Canada - Remote (ON, AB, BC, or NS Only)",
+      "url": "https://instacart.careers/job/?gh_jid=7819293",
+      "score": 68,
+      "source": "Greenhouse",
+      "posted": "2026-06-24",
+      "industry": "E-Commerce",
+      "salary": "See posting",
+      "id": "7819293"
+    },
+    {
+      "title": "Senior People Data Scientist",
+      "company": "Instacart",
+      "location": "Canada - Remote (ON, AB, BC, or NS Only)",
+      "url": "https://instacart.careers/job/?gh_jid=7958122",
+      "score": 68,
+      "source": "Greenhouse",
+      "posted": "2026-06-24",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7958122"
+    },
+    {
       "title": "Senior Data Scientist, Ads",
       "company": "Reddit",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/6042236",
+      "location": "Remote - Ontario, Canada",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7607121",
       "score": 68,
       "source": "Greenhouse",
       "posted": "2026-07-10",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "6042236"
+      "id": "7607121"
     },
     {
       "title": "Senior Data Scientist, Consumer",
@@ -307,7 +379,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7974647",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-07-20",
+      "posted": "2026-07-21",
       "industry": "E-Commerce",
       "salary": "See posting",
       "id": "7974647"
@@ -319,7 +391,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8072046",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-07-20",
+      "posted": "2026-07-21",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8072046"
@@ -327,14 +399,14 @@
     {
       "title": "Data Engineer",
       "company": "Dropbox",
-      "location": "Remote - Poland",
-      "url": "https://jobs.dropbox.com/listing/8053628?gh_jid=8053628",
+      "location": "Remote - Mexico",
+      "url": "https://jobs.dropbox.com/listing/7739553?gh_jid=7739553",
       "score": 68,
       "source": "Greenhouse",
       "posted": "2026-07-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8053628"
+      "id": "7739553"
     },
     {
       "title": "Staff Data Engineer",
@@ -347,54 +419,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7739568"
-    },
-    {
-      "title": "Senior Data Scientist II - Core Delivery",
-      "company": "Instacart",
-      "location": "Canada - Remote (ON, AB, BC, or NS Only)",
-      "url": "https://instacart.careers/job/?gh_jid=7977344",
-      "score": 68,
-      "source": "Greenhouse",
-      "posted": "2026-06-24",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7977344"
-    },
-    {
-      "title": "Senior Data Scientist (I & II)",
-      "company": "Instacart",
-      "location": "United States - Remote",
-      "url": "https://instacart.careers/job/?gh_jid=4949339",
-      "score": 68,
-      "source": "Greenhouse",
-      "posted": "2026-06-26",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "4949339"
-    },
-    {
-      "title": "Senior Data Scientist - Shopping Experience (Search)",
-      "company": "Instacart",
-      "location": "United States - Remote",
-      "url": "https://instacart.careers/job/?gh_jid=7819163",
-      "score": 68,
-      "source": "Greenhouse",
-      "posted": "2026-06-24",
-      "industry": "E-Commerce",
-      "salary": "See posting",
-      "id": "7819163"
-    },
-    {
-      "title": "Senior People Data Scientist",
-      "company": "Instacart",
-      "location": "United States - Remote",
-      "url": "https://instacart.careers/job/?gh_jid=7958121",
-      "score": 68,
-      "source": "Greenhouse",
-      "posted": "2026-06-24",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7958121"
     },
     {
       "title": "Lead Data Analyst, MyPay",
@@ -469,18 +493,6 @@
       "id": "7659010"
     },
     {
-      "title": "Data Engineer",
-      "company": "Brex",
-      "location": "San Francisco, California, United States",
-      "url": "https://www.brex.com/careers/8366850002?gh_jid=8366850002",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-06-10",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8366850002"
-    },
-    {
       "title": "Senior Data Scientist, AI & App Experience",
       "company": "Chime",
       "location": "San Francisco, CA, USA",
@@ -505,16 +517,16 @@
       "id": "8612037002"
     },
     {
-      "title": "Staff Software Engineer, Data Engineering",
-      "company": "Ripple",
-      "location": "San Francisco, CA, United States",
-      "url": "https://ripple.com/careers/all-jobs/job/8030778?gh_jid=8030778",
+      "title": "Data Engineer",
+      "company": "Brex",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-07-14",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8030778"
+      "id": "8523806002"
     },
     {
       "title": "Staff Software Engineer, Data Engineering Solutions",
@@ -527,6 +539,42 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8013220"
+    },
+    {
+      "title": "Staff Software Engineer, Data Engineering",
+      "company": "Ripple",
+      "location": "San Francisco, CA, United States",
+      "url": "https://ripple.com/careers/all-jobs/job/8030778?gh_jid=8030778",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-07-14",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8030778"
+    },
+    {
+      "title": "Revenue Analyst",
+      "company": "Elastic",
+      "location": "Bangalore, India",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8054405&gh_jid=8054405",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-07-17",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8054405"
+    },
+    {
+      "title": "Staff Data Engineer",
+      "company": "MongoDB",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7858063",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-07-21",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7858063"
     },
     {
       "title": "Senior Data Scientist",
@@ -553,18 +601,6 @@
       "id": "8042547"
     },
     {
-      "title": "Revenue Analyst",
-      "company": "Elastic",
-      "location": "Bangalore, India",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8054405&gh_jid=8054405",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-07-17",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8054405"
-    },
-    {
       "title": "Sales Revenue Analyst - Boston",
       "company": "Datadog",
       "location": "Boston, Massachusetts, USA",
@@ -575,30 +611,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7587086"
-    },
-    {
-      "title": "Staff Data Engineer",
-      "company": "MongoDB",
-      "location": "Gurugram",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7858063",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-07-16",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7858063"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Figma",
-      "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
-      "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-07-17",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "5220003004"
     },
     {
       "title": "Senior Data Scientist",
@@ -627,14 +639,26 @@
     {
       "title": "Senior Product Data Scientist",
       "company": "TripAdvisor",
-      "location": "London",
-      "url": "https://job-boards.greenhouse.io/tripadvisor/jobs/7946763",
+      "location": "Poland",
+      "url": "https://job-boards.greenhouse.io/tripadvisor/jobs/8046250",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-07-15",
+      "posted": "2026-07-17",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7946763"
+      "id": "8046250"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Figma",
+      "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-07-17",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "5220003004"
     },
     {
       "title": "Data Engineer",
@@ -663,38 +687,38 @@
     {
       "title": "Senior Data Scientist, Algorithms, Forecasting and Realtime Optimization Platform",
       "company": "Lyft",
-      "location": "San Francisco, CA",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8620998002?gh_jid=8620998002",
+      "location": "Seattle, WA",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8621789002?gh_jid=8621789002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-07-08",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8620998002"
+      "id": "8621789002"
     },
     {
       "title": "Senior Data Scientist, Causal Inference",
       "company": "Lyft",
-      "location": "San Francisco, CA",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8584595002?gh_jid=8584595002",
+      "location": "Seattle, WA",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8584695002?gh_jid=8584695002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-07-06",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8584595002"
+      "id": "8584695002"
     },
     {
       "title": "Senior Data Scientist - Optimization, Central Market Management & AI",
       "company": "Lyft",
-      "location": "San Francisco, CA",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8483708002?gh_jid=8483708002",
+      "location": "New York, NY",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8483867002?gh_jid=8483867002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-07-16",
       "industry": "AI/ML",
       "salary": "See posting",
-      "id": "8483708002"
+      "id": "8483867002"
     },
     {
       "title": "Senior Data Scientist, Rider New Products",
@@ -763,7 +787,7 @@
       "url": "https://veracyte.com/job-detail?gh_jid=5073317007",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-07-16",
+      "posted": "2026-07-20",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5073317007"
@@ -793,16 +817,28 @@
       "id": "e48468bc-4eb4-46dc-9b91-90fdec12eb81"
     },
     {
+      "title": "Insights Analyst, Dispute Experience",
+      "company": "Chime",
+      "location": "Remote, USA",
+      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-07-01",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8565199002"
+    },
+    {
       "title": "Data Analyst II",
       "company": "Brex",
-      "location": "San Francisco, California, United States",
-      "url": "https://www.brex.com/careers/8463696002?gh_jid=8463696002",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
       "score": 60,
       "source": "Greenhouse",
       "posted": "2026-06-10",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8463696002"
+      "id": "8463703002"
     },
     {
       "title": "Data Analyst III",
@@ -817,28 +853,16 @@
       "id": "8463704002"
     },
     {
-      "title": "Insights Analyst, Dispute Experience",
-      "company": "Chime",
-      "location": "Remote, USA",
-      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-07-01",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8565199002"
-    },
-    {
       "title": "Data Analyst",
       "company": "Stripe",
-      "location": "Canada",
-      "url": "https://stripe.com/jobs/search?gh_jid=5416444",
+      "location": "Mexico City",
+      "url": "https://stripe.com/jobs/search?gh_jid=7978488",
       "score": 60,
       "source": "Greenhouse",
       "posted": "2026-06-26",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "5416444"
+      "id": "7978488"
     },
     {
       "title": "Financial Data Analyst",
@@ -847,7 +871,7 @@
       "url": "https://stripe.com/jobs/search?gh_jid=8044924",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-07-13",
+      "posted": "2026-07-21",
       "industry": "FinTech",
       "salary": "See posting",
       "id": "8044924"
@@ -895,7 +919,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8072076",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-07-20",
+      "posted": "2026-07-21",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8072076"
@@ -967,18 +991,18 @@
       "url": "https://veracyte.com/job-detail?gh_jid=5134376007",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-07-16",
+      "posted": "2026-07-20",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5134376007"
     }
   ],
-  "total": 81,
-  "last_updated": "July 20, 2026 03:49 PM UTC",
+  "total": 83,
+  "last_updated": "July 21, 2026 03:42 PM UTC",
   "companies_scanned": 260,
   "sources": {
-    "greenhouse": 104,
-    "lever": 2,
+    "greenhouse": 106,
+    "lever": 4,
     "ashby": 0,
     "workday": 0
   }
