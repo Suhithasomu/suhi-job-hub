@@ -253,18 +253,6 @@
       "id": "8621789002"
     },
     {
-      "title": "Analytics Engineer, GFCO Analytics",
-      "company": "Coinbase",
-      "location": "Remote - USA",
-      "url": "https://www.coinbase.com/careers/positions/8024880?gh_jid=8024880",
-      "score": 69,
-      "source": "Greenhouse",
-      "posted": "2026-07-23",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8024880"
-    },
-    {
       "title": "Analytics Engineer II",
       "company": "Affirm",
       "location": "Remote Poland",
@@ -275,6 +263,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7764109003"
+    },
+    {
+      "title": "Analytics Engineer, GFCO Analytics",
+      "company": "Coinbase",
+      "location": "Remote - USA",
+      "url": "https://www.coinbase.com/careers/positions/8024880?gh_jid=8024880",
+      "score": 69,
+      "source": "Greenhouse",
+      "posted": "2026-07-23",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8024880"
     },
     {
       "title": "Staff, Analytics Engineer, GTM Data Science & Analytics",
@@ -439,7 +439,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7974605",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-07-25",
+      "posted": "2026-07-26",
       "industry": "E-Commerce",
       "salary": "See posting",
       "id": "7974605"
@@ -451,7 +451,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8072046",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-07-25",
+      "posted": "2026-07-26",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8072046"
@@ -541,16 +541,16 @@
       "id": "7659010"
     },
     {
-      "title": "Data Engineer",
-      "company": "Brex",
-      "location": "San Francisco, California, United States",
-      "url": "https://www.brex.com/careers/8366850002?gh_jid=8366850002",
+      "title": "Staff Software Engineer, Data Engineering Solutions",
+      "company": "Stripe",
+      "location": "Bengaluru",
+      "url": "https://stripe.com/jobs/search?gh_jid=7548037",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-06-10",
+      "posted": "2026-07-22",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8366850002"
+      "id": "7548037"
     },
     {
       "title": "Senior Data Scientist, AI & App Experience",
@@ -577,28 +577,16 @@
       "id": "8612037002"
     },
     {
-      "title": "Staff Software Engineer, Data Engineering Solutions",
-      "company": "Stripe",
-      "location": "Bengaluru",
-      "url": "https://stripe.com/jobs/search?gh_jid=7548037",
+      "title": "Data Engineer",
+      "company": "Brex",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8366850002?gh_jid=8366850002",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-07-22",
+      "posted": "2026-06-10",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7548037"
-    },
-    {
-      "title": "Senior Data Scientist",
-      "company": "Oscar Health",
-      "location": "New York, New York, United States",
-      "url": "http://www.hioscar.com/careers/8083703?gh_jid=8083703",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-07-24",
-      "industry": "Healthcare",
-      "salary": "See posting",
-      "id": "8083703"
+      "id": "8366850002"
     },
     {
       "title": "Staff Software Engineer, Data Engineering",
@@ -613,16 +601,16 @@
       "id": "8030778"
     },
     {
-      "title": "Revenue Analyst",
-      "company": "Elastic",
-      "location": "Bangalore, India",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8054405&gh_jid=8054405",
+      "title": "Senior Data Scientist",
+      "company": "Oscar Health",
+      "location": "New York, New York, United States",
+      "url": "http://www.hioscar.com/careers/8083703?gh_jid=8083703",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-07-22",
-      "industry": "SaaS/Tech",
+      "posted": "2026-07-24",
+      "industry": "Healthcare",
       "salary": "See posting",
-      "id": "8054405"
+      "id": "8083703"
     },
     {
       "title": "Senior Data Scientist",
@@ -647,6 +635,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8042547"
+    },
+    {
+      "title": "Revenue Analyst",
+      "company": "Elastic",
+      "location": "Bangalore, India",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8054405&gh_jid=8054405",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-07-22",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8054405"
     },
     {
       "title": "Staff Data Engineer",
@@ -841,42 +841,6 @@
       "id": "7958522"
     },
     {
-      "title": "Data Analyst II",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-06-10",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8463703002"
-    },
-    {
-      "title": "Data Analyst III",
-      "company": "Brex",
-      "location": "New York, New York, United States",
-      "url": "https://www.brex.com/careers/8463704002?gh_jid=8463704002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-06-10",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8463704002"
-    },
-    {
-      "title": "Insights Analyst, Dispute Experience",
-      "company": "Chime",
-      "location": "Remote, USA",
-      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-07-01",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8565199002"
-    },
-    {
       "title": "Data Analyst",
       "company": "Stripe",
       "location": "Canada",
@@ -911,6 +875,42 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7921649"
+    },
+    {
+      "title": "Insights Analyst, Dispute Experience",
+      "company": "Chime",
+      "location": "Remote, USA",
+      "url": "https://boards.greenhouse.io/chime/jobs/8565199002?gh_jid=8565199002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-07-01",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8565199002"
+    },
+    {
+      "title": "Data Analyst II",
+      "company": "Brex",
+      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-06-10",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8463703002"
+    },
+    {
+      "title": "Data Analyst III",
+      "company": "Brex",
+      "location": "New York, New York, United States",
+      "url": "https://www.brex.com/careers/8463704002?gh_jid=8463704002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-06-10",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8463704002"
     },
     {
       "title": "Staff Business Intelligence Engineer",
@@ -955,7 +955,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8072076",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-07-25",
+      "posted": "2026-07-26",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8072076"
@@ -1034,7 +1034,7 @@
     }
   ],
   "total": 86,
-  "last_updated": "July 25, 2026 03:01 PM UTC",
+  "last_updated": "July 26, 2026 03:04 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 108,
