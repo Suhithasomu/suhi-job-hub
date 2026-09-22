@@ -19,7 +19,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8023563",
       "score": 85,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8023563"
@@ -49,6 +49,18 @@
       "id": "0fe32c4c-0fbd-434f-a42e-586794cf91a6"
     },
     {
+      "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
+      "company": "Affirm",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7916080003",
+      "score": 77,
+      "source": "Greenhouse",
+      "posted": "2026-09-17",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7916080003"
+    },
+    {
       "title": "Senior Analytics Engineer, GFCO Analytics",
       "company": "Coinbase",
       "location": "Remote - USA",
@@ -71,18 +83,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8009392"
-    },
-    {
-      "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
-      "company": "Affirm",
-      "location": "Remote Poland",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7813362003",
-      "score": 77,
-      "source": "Greenhouse",
-      "posted": "2026-09-17",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7813362003"
     },
     {
       "title": "Senior Market Data Engineer",
@@ -109,6 +109,18 @@
       "id": "8082199"
     },
     {
+      "title": "Senior Data Engineer",
+      "company": "TripAdvisor",
+      "location": "London, United Kingdom - Remote / Hybrid",
+      "url": "https://job-boards.greenhouse.io/tripadvisor/jobs/8079199",
+      "score": 76,
+      "source": "Greenhouse",
+      "posted": "2026-09-22",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8079199"
+    },
+    {
       "title": "Senior Manager, Data Engineering",
       "company": "Dropbox",
       "location": "Remote - Canada: Select locations",
@@ -131,6 +143,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7806295003"
+    },
+    {
+      "title": "Sr. Manager, Data Engineering ",
+      "company": "Veracyte",
+      "location": "Remote ; San Diego, California, United States",
+      "url": "https://veracyte.com/job-detail?gh_jid=5226416007",
+      "score": 76,
+      "source": "Greenhouse",
+      "posted": "2026-09-21",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "5226416007"
     },
     {
       "title": "Senior Data Analyst",
@@ -183,14 +207,14 @@
     {
       "title": "Senior Data Analyst, People",
       "company": "Fivetran",
-      "location": "Oakland, California, United States, AMER",
-      "url": "https://www.fivetran.com/careers/job?gh_jid=7918612003",
+      "location": "USA - New York (dbt)",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=7975857003",
       "score": 73,
       "source": "Greenhouse",
       "posted": "2026-09-15",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7918612003"
+      "id": "7975857003"
     },
     {
       "title": "Senior Analytics Engineer",
@@ -215,6 +239,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5424111008"
+    },
+    {
+      "title": "Senior Software Engineer, Data Engineering",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660",
+      "score": 71,
+      "source": "Greenhouse",
+      "posted": "2026-08-25",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "4738660"
     },
     {
       "title": "Senior Software Engineer, Data Engineering",
@@ -244,13 +280,13 @@
       "title": "Senior Data Engineer",
       "company": "Cloudflare",
       "location": "In-Office",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/8055118?gh_jid=8055118",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8007032?gh_jid=8007032",
       "score": 71,
       "source": "Greenhouse",
       "posted": "2026-09-04",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8055118"
+      "id": "8007032"
     },
     {
       "title": "Senior Technical Revenue Analyst",
@@ -271,7 +307,7 @@
       "url": "https://job-boards.greenhouse.io/gusto/jobs/8099751",
       "score": 71,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8099751"
@@ -373,18 +409,6 @@
       "id": "8206668"
     },
     {
-      "title": "Staff Applied Data Scientist, Pricing",
-      "company": "Coinbase",
-      "location": "Remote - USA",
-      "url": "https://www.coinbase.com/careers/positions/8083051?gh_jid=8083051",
-      "score": 68,
-      "source": "Greenhouse",
-      "posted": "2026-09-21",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8083051"
-    },
-    {
       "title": "Staff Data Engineer, Market Data",
       "company": "Coinbase",
       "location": "Remote - USA",
@@ -415,7 +439,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8104403",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8104403"
@@ -439,7 +463,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8126946",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "E-Commerce",
       "salary": "See posting",
       "id": "8126946"
@@ -451,10 +475,22 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7974504",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "E-Commerce",
       "salary": "See posting",
       "id": "7974504"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Dropbox",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/8211532?gh_jid=8211532",
+      "score": 68,
+      "source": "Greenhouse",
+      "posted": "2026-09-22",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8211532"
     },
     {
       "title": "Data Analyst, Credit Risk",
@@ -529,18 +565,6 @@
       "id": "8612980002"
     },
     {
-      "title": "Staff Analytics Engineer",
-      "company": "ZocDoc",
-      "location": "New York, NY",
-      "url": "https://job-boards.greenhouse.io/zocdoc/jobs/7659010",
-      "score": 64,
-      "source": "Greenhouse",
-      "posted": "2026-09-11",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7659010"
-    },
-    {
       "title": "Analytics Engineer",
       "company": "Klaviyo",
       "location": "Boston, MA",
@@ -553,16 +577,16 @@
       "id": "7737707003"
     },
     {
-      "title": "Data Engineer Intern",
-      "company": "Coinbase",
-      "location": "Hybrid - San Francisco, CA",
-      "url": "https://www.coinbase.com/careers/positions/8175459?gh_jid=8175459",
-      "score": 63,
+      "title": "Staff Analytics Engineer",
+      "company": "ZocDoc",
+      "location": "New York, NY",
+      "url": "https://job-boards.greenhouse.io/zocdoc/jobs/7659010",
+      "score": 64,
       "source": "Greenhouse",
-      "posted": "2026-09-08",
+      "posted": "2026-09-11",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8175459"
+      "id": "7659010"
     },
     {
       "title": "Data Engineer",
@@ -611,6 +635,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8790231002"
+    },
+    {
+      "title": "Data Engineer Intern",
+      "company": "Coinbase",
+      "location": "Hybrid - San Francisco, CA",
+      "url": "https://www.coinbase.com/careers/positions/8175459?gh_jid=8175459",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-09-08",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8175459"
     },
     {
       "title": "Staff Software Engineer, Risk Data Engineering",
@@ -697,18 +733,6 @@
       "id": "8132294"
     },
     {
-      "title": "Intern, Data Engineering",
-      "company": "Workato",
-      "location": "Singapore",
-      "url": "https://www.workato.com/careers?gh_jid=8731177002#open-roles",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-09-03",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8731177002"
-    },
-    {
       "title": "Data Engineer II",
       "company": "Iterable",
       "location": "Hybrid - Lisbon, Portugal",
@@ -719,6 +743,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8094300"
+    },
+    {
+      "title": "Intern, Data Engineering",
+      "company": "Workato",
+      "location": "Singapore",
+      "url": "https://www.workato.com/careers?gh_jid=8731177002#open-roles",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-09-03",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8731177002"
     },
     {
       "title": "Engineering Manager (Data Engineering) ",
@@ -751,7 +787,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8103594",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8103594"
@@ -807,14 +843,14 @@
     {
       "title": "Senior Data Scientist, Causal Inference",
       "company": "Lyft",
-      "location": "Seattle, WA",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8584695002?gh_jid=8584695002",
+      "location": "San Francisco, CA",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8584595002?gh_jid=8584595002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-09-04",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8584695002"
+      "id": "8584595002"
     },
     {
       "title": "Data Engineer",
@@ -891,14 +927,14 @@
     {
       "title": "Data Analyst II",
       "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8463696002?gh_jid=8463696002",
       "score": 60,
       "source": "Greenhouse",
       "posted": "2026-06-10",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8463703002"
+      "id": "8463696002"
     },
     {
       "title": "Data Analyst",
@@ -979,7 +1015,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8072076",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8072076"
@@ -991,7 +1027,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7445240",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-09-21",
+      "posted": "2026-09-22",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7445240"
@@ -1021,11 +1057,11 @@
       "id": "5134376007"
     }
   ],
-  "total": 85,
-  "last_updated": "September 21, 2026 07:04 PM UTC",
+  "total": 88,
+  "last_updated": "September 22, 2026 05:57 PM UTC",
   "companies_scanned": 260,
   "sources": {
-    "greenhouse": 95,
+    "greenhouse": 99,
     "lever": 7,
     "ashby": 0,
     "workday": 0
