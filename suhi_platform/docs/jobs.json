@@ -19,7 +19,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8023563",
       "score": 85,
       "source": "Greenhouse",
-      "posted": "2026-10-17",
+      "posted": "2026-10-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8023563"
@@ -87,14 +87,14 @@
     {
       "title": "Senior Data Analyst",
       "company": "MongoDB",
-      "location": "United States",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7696633",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=8224590",
       "score": 73,
       "source": "Greenhouse",
       "posted": "2026-10-16",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7696633"
+      "id": "8224590"
     },
     {
       "title": "Sr Data Analyst, Search Marketing",
@@ -123,14 +123,14 @@
     {
       "title": "Senior Data Analyst, People",
       "company": "Fivetran",
-      "location": "Oakland, California, United States, AMER",
-      "url": "https://www.fivetran.com/careers/job?gh_jid=7918612003",
+      "location": "USA - New York (dbt)",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=7975857003",
       "score": 73,
       "source": "Greenhouse",
       "posted": "2026-10-02",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7918612003"
+      "id": "7975857003"
     },
     {
       "title": "Senior Analytics Engineer",
@@ -243,14 +243,14 @@
     {
       "title": "Analytics Engineer II",
       "company": "Affirm",
-      "location": "Remote Spain",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8010489003",
+      "location": "Remote Poland",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7764109003",
       "score": 69,
       "source": "Greenhouse",
       "posted": "2026-10-16",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8010489003"
+      "id": "7764109003"
     },
     {
       "title": "Analytics Engineer",
@@ -259,7 +259,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8282760",
       "score": 69,
       "source": "Greenhouse",
-      "posted": "2026-10-17",
+      "posted": "2026-10-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8282760"
@@ -375,14 +375,14 @@
     {
       "title": "Senior Financial Insights Analyst",
       "company": "Instacart",
-      "location": "United States - Remote",
-      "url": "https://instacart.careers/job/?gh_jid=8282526",
+      "location": "Canada - Remote (ON, AB, BC, or NS Only)",
+      "url": "https://instacart.careers/job/?gh_jid=8282591",
       "score": 68,
       "source": "Greenhouse",
       "posted": "2026-10-14",
       "industry": "FinTech",
       "salary": "See posting",
-      "id": "8282526"
+      "id": "8282591"
     },
     {
       "title": "Senior Data Scientist, Ads",
@@ -391,7 +391,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8104403",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-10-17",
+      "posted": "2026-10-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8104403"
@@ -415,7 +415,7 @@
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7974605",
       "score": 68,
       "source": "Greenhouse",
-      "posted": "2026-10-17",
+      "posted": "2026-10-18",
       "industry": "E-Commerce",
       "salary": "See posting",
       "id": "7974605"
@@ -447,14 +447,14 @@
     {
       "title": "Data Analyst, Intern",
       "company": "Stripe",
-      "location": "New York, Seattle, South San Francisco HQ",
-      "url": "https://stripe.com/jobs/search?gh_jid=8194291",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=8194287",
       "score": 65,
       "source": "Greenhouse",
       "posted": "2026-10-07",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8194291"
+      "id": "8194287"
     },
     {
       "title": "Financial Data Analyst Intern, Technical Operations",
@@ -506,18 +506,6 @@
     },
     {
       "title": "Analytics Engineer",
-      "company": "Klaviyo",
-      "location": "Boston, MA",
-      "url": "https://www.klaviyo.com/careers/jobs/7737707003?gh_jid=7737707003",
-      "score": 64,
-      "source": "Greenhouse",
-      "posted": "2026-08-26",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7737707003"
-    },
-    {
-      "title": "Analytics Engineer",
       "company": "Workato",
       "location": "Singapore",
       "url": "https://www.workato.com/careers?gh_jid=8870119002#open-roles",
@@ -527,6 +515,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8870119002"
+    },
+    {
+      "title": "Analytics Engineer",
+      "company": "Klaviyo",
+      "location": "Boston, MA",
+      "url": "https://www.klaviyo.com/careers/jobs/7737707003?gh_jid=7737707003",
+      "score": 64,
+      "source": "Greenhouse",
+      "posted": "2026-08-26",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7737707003"
     },
     {
       "title": "Staff Analytics Engineer",
@@ -539,6 +539,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "7659010"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Brex",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8366850002?gh_jid=8366850002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-10-13",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8366850002"
     },
     {
       "title": "Senior Business Analyst, TPRM",
@@ -565,16 +577,16 @@
       "id": "8869629002"
     },
     {
-      "title": "Data Engineer",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
+      "title": "Staff Software Engineer, Risk Data Engineering",
+      "company": "Stripe",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=8112043",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-10-13",
+      "posted": "2026-10-07",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8523806002"
+      "id": "8112043"
     },
     {
       "title": "Data Engineer Intern",
@@ -587,18 +599,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8175459"
-    },
-    {
-      "title": "Staff Software Engineer, Risk Data Engineering",
-      "company": "Stripe",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=8112043",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-10-07",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8112043"
     },
     {
       "title": "Senior Data Scientist",
@@ -771,14 +771,14 @@
     {
       "title": "Senior Data Scientist, Causal Inference",
       "company": "Lyft",
-      "location": "Seattle, WA",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8584695002?gh_jid=8584695002",
+      "location": "New York, NY",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8584688002?gh_jid=8584688002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-09-04",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8584695002"
+      "id": "8584688002"
     },
     {
       "title": "Data Engineer, GTM",
@@ -829,18 +829,6 @@
       "id": "9a562c87-abdc-4450-a2a3-469622ccffe9"
     },
     {
-      "title": "Lead Data Scientist, Credit Risk",
-      "company": "Chime",
-      "location": "Chicago, IL, USA; San Francisco, CA, USA",
-      "url": "https://boards.greenhouse.io/chime/jobs/8788322002?gh_jid=8788322002",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-10-13",
-      "industry": "FinTech",
-      "salary": "See posting",
-      "id": "8788322002"
-    },
-    {
       "title": "Data Analyst II",
       "company": "Brex",
       "location": "New York, New York, United States",
@@ -851,6 +839,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8463702002"
+    },
+    {
+      "title": "Lead Data Scientist, Credit Risk",
+      "company": "Chime",
+      "location": "Chicago, IL, USA; San Francisco, CA, USA",
+      "url": "https://boards.greenhouse.io/chime/jobs/8788322002?gh_jid=8788322002",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-10-13",
+      "industry": "FinTech",
+      "salary": "See posting",
+      "id": "8788322002"
     },
     {
       "title": "Data Analyst",
@@ -915,26 +915,26 @@
     {
       "title": "Staff Data Scientist - Ads Measurement, Signals, Privacy",
       "company": "Reddit",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/8072076",
+      "location": "Remote - Ontario, Canada",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/8103609",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-10-17",
+      "posted": "2026-10-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8072076"
+      "id": "8103609"
     },
     {
       "title": "Staff Data Scientist, Marketing",
       "company": "Reddit",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7445240",
+      "location": "Remote - Ontario, Canada",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7931000",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-10-17",
+      "posted": "2026-10-18",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7445240"
+      "id": "7931000"
     },
     {
       "title": "Staff Data Analyst",
@@ -974,7 +974,7 @@
     }
   ],
   "total": 81,
-  "last_updated": "October 17, 2026 04:51 PM UTC",
+  "last_updated": "October 18, 2026 05:04 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 96,
