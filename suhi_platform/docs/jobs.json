@@ -169,18 +169,6 @@
       "id": "8621789002"
     },
     {
-      "title": "Data Engineer, Billing & Payments",
-      "company": "Anthropic",
-      "location": "San Francisco, CA | New York City, NY",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450099008",
-      "score": 71,
-      "source": "Greenhouse",
-      "posted": "2026-10-19",
-      "industry": "FinTech",
-      "salary": "See posting",
-      "id": "5450099008"
-    },
-    {
       "title": "Senior Pricing & Monetization Data Scientist",
       "company": "Fivetran",
       "location": "Oakland, California, United States, AMER",
@@ -191,6 +179,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8031705003"
+    },
+    {
+      "title": "Data Engineer, Billing & Payments",
+      "company": "Anthropic",
+      "location": "San Francisco, CA | New York City, NY",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450099008",
+      "score": 71,
+      "source": "Greenhouse",
+      "posted": "2026-10-19",
+      "industry": "FinTech",
+      "salary": "See posting",
+      "id": "5450099008"
     },
     {
       "title": "Senior Data Engineer",
@@ -517,6 +517,18 @@
       "id": "8870119002"
     },
     {
+      "title": "Data Engineer Intern",
+      "company": "Coinbase",
+      "location": "Hybrid - San Francisco, CA",
+      "url": "https://www.coinbase.com/careers/positions/8175459?gh_jid=8175459",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-10-30",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8175459"
+    },
+    {
       "title": "Senior Data Scientist, Product",
       "company": "Robinhood",
       "location": "Menlo Park, CA",
@@ -551,18 +563,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8366850002"
-    },
-    {
-      "title": "Data Engineer Intern",
-      "company": "Coinbase",
-      "location": "Hybrid - San Francisco, CA",
-      "url": "https://www.coinbase.com/careers/positions/8175459?gh_jid=8175459",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-10-30",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8175459"
     },
     {
       "title": "Staff Software Engineer, Risk Data Engineering",
@@ -685,18 +685,6 @@
       "id": "8355688"
     },
     {
-      "title": "Intermediate Data Engineer",
-      "company": "GitLab",
-      "location": "Bangalore, India",
-      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8924923002",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-11-06",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8924923002"
-    },
-    {
       "title": "Data Engineer",
       "company": "Lyft",
       "location": "Toronto, Canada",
@@ -745,6 +733,30 @@
       "id": "8908005002"
     },
     {
+      "title": "Intermediate Data Engineer",
+      "company": "GitLab",
+      "location": "Bangalore, India",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8924923002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-11-06",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8924923002"
+    },
+    {
+      "title": "Senior Product Analyst",
+      "company": "Fivetran",
+      "location": "Oakland, California, United States, AMER",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=8017414003",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-10-30",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8017414003"
+    },
+    {
       "title": "Data Engineer, GTM",
       "company": "Anthropic",
       "location": "San Francisco, CA | New York City, NY",
@@ -779,18 +791,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5448481008"
-    },
-    {
-      "title": "Senior Product Analyst",
-      "company": "Fivetran",
-      "location": "Oakland, California, United States, AMER",
-      "url": "https://www.fivetran.com/careers/job?gh_jid=8017414003",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-10-30",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8017414003"
     },
     {
       "title": "Healthcare Business Analyst",
@@ -974,7 +974,7 @@
     }
   ],
   "total": 81,
-  "last_updated": "November 07, 2026 06:28 PM UTC",
+  "last_updated": "November 08, 2026 06:39 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 86,
