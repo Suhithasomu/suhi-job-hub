@@ -39,14 +39,14 @@
     {
       "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
       "company": "Affirm",
-      "location": "Remote Poland",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7813362003",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7916080003",
       "score": 77,
       "source": "Greenhouse",
       "posted": "2026-10-30",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "7813362003"
+      "id": "7916080003"
     },
     {
       "title": "Senior Analytics Engineer",
@@ -103,7 +103,7 @@
       "url": "https://www.mongodb.com/careers/job/?gh_jid=8328780",
       "score": 73,
       "source": "Greenhouse",
-      "posted": "2026-11-10",
+      "posted": "2026-11-12",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8328780"
@@ -229,6 +229,18 @@
       "id": "8047150"
     },
     {
+      "title": "Analytics Engineer",
+      "company": "Reddit",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/8282760",
+      "score": 69,
+      "source": "Greenhouse",
+      "posted": "2026-11-06",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8282760"
+    },
+    {
       "title": "Data Scientist, Enterprise Analytics",
       "company": "GitLab",
       "location": "Remote, Canada; Remote, United States",
@@ -251,18 +263,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8883003002"
-    },
-    {
-      "title": "Analytics Engineer",
-      "company": "Reddit",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/8282760",
-      "score": 69,
-      "source": "Greenhouse",
-      "posted": "2026-11-06",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8282760"
     },
     {
       "title": "Staff Data Scientist, Marketplace Analytics ",
@@ -423,14 +423,14 @@
     {
       "title": "Data Analyst, Intern",
       "company": "Stripe",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=8194287",
+      "location": "New York, Seattle, South San Francisco HQ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8194291",
       "score": 65,
       "source": "Greenhouse",
       "posted": "2026-10-29",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8194287"
+      "id": "8194291"
     },
     {
       "title": "Finance and Strategy Data Analyst",
@@ -517,16 +517,28 @@
       "id": "8356769"
     },
     {
+      "title": "Director, Data Engineering",
+      "company": "Chime",
+      "location": "San Francisco, CA, USA",
+      "url": "https://boards.greenhouse.io/chime/jobs/8765690002?gh_jid=8765690002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-11-12",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8765690002"
+    },
+    {
       "title": "Data Engineer",
       "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8366850002?gh_jid=8366850002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-10-13",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8523806002"
+      "id": "8366850002"
     },
     {
       "title": "Data Engineer Intern",
@@ -547,7 +559,7 @@
       "url": "https://boards.greenhouse.io/robinhood/jobs/8080893?t=gh_src=&gh_jid=8080893",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-11-06",
+      "posted": "2026-11-11",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8080893"
@@ -643,22 +655,10 @@
       "url": "https://www.mongodb.com/careers/job/?gh_jid=8135458",
       "score": 63,
       "source": "Greenhouse",
-      "posted": "2026-11-10",
+      "posted": "2026-11-12",
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8135458"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Cloudflare",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/8055118?gh_jid=8055118",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-11-11",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8055118"
     },
     {
       "title": "Data Engineer Intern (2027)",
@@ -709,28 +709,16 @@
       "id": "8924923002"
     },
     {
-      "title": "Senior Data Scientist",
-      "company": "Reddit",
-      "location": "San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/8355688",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-11-05",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8355688"
-    },
-    {
       "title": "Data Engineer",
       "company": "Lyft",
       "location": "Toronto, Canada",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8662205002?gh_jid=8662205002",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8931413002?gh_jid=8931413002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-11-10",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8662205002"
+      "id": "8931413002"
     },
     {
       "title": "Data Engineer Intern (Summer 2027)",
@@ -767,6 +755,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8908005002"
+    },
+    {
+      "title": "Senior Data Scientist, Autonomous Vehicles",
+      "company": "Lyft",
+      "location": "Toronto, Canada",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8938458002?gh_jid=8938458002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-11-12",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8938458002"
     },
     {
       "title": "Data Engineer, GTM",
@@ -829,18 +829,6 @@
       "id": "8170587"
     },
     {
-      "title": "Business Analyst J\u00fanior - Collections | Afirmativa para PCD's",
-      "company": "Neon Database",
-      "location": "Remoto",
-      "url": "https://jobs.lever.co/neon/9af127ee-0d56-4593-96f9-a06e78397e31",
-      "score": 61,
-      "source": "Lever",
-      "posted": "2026-10-27",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "9af127ee-0d56-4593-96f9-a06e78397e31"
-    },
-    {
       "title": "Lead Data Scientist, Credit Risk",
       "company": "Chime",
       "location": "Chicago, IL, USA; San Francisco, CA, USA",
@@ -855,14 +843,14 @@
     {
       "title": "Data Analyst II",
       "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
+      "location": "New York, New York, United States",
+      "url": "https://www.brex.com/careers/8463702002?gh_jid=8463702002",
       "score": 60,
       "source": "Greenhouse",
       "posted": "2026-06-10",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8463703002"
+      "id": "8463702002"
     },
     {
       "title": "Data Analyst",
@@ -925,6 +913,30 @@
       "id": "8048080003"
     },
     {
+      "title": "Staff Data Scientist - Ads Measurement, Signals, Privacy",
+      "company": "Reddit",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/8072076",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-11-06",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8072076"
+    },
+    {
+      "title": "Staff Data Scientist, Marketing",
+      "company": "Reddit",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7445240",
+      "score": 60,
+      "source": "Greenhouse",
+      "posted": "2026-11-06",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "7445240"
+    },
+    {
       "title": "Staff Data Analyst",
       "company": "GitLab",
       "location": "Bangalore, India",
@@ -935,30 +947,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8827370002"
-    },
-    {
-      "title": "Staff Data Scientist - Ads Measurement, Signals, Privacy",
-      "company": "Reddit",
-      "location": "Remote - British Columbia, Canada",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/8103609",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-11-06",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8103609"
-    },
-    {
-      "title": "Staff Data Scientist, Marketing",
-      "company": "Reddit",
-      "location": "Remote - Ontario, Canada",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7931000",
-      "score": 60,
-      "source": "Greenhouse",
-      "posted": "2026-11-06",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "7931000"
     },
     {
       "title": "Tech Lead Manager, Core Apps Data Scientist",
@@ -985,12 +973,12 @@
       "id": "5116820008"
     }
   ],
-  "total": 82,
-  "last_updated": "November 11, 2026 09:06 PM UTC",
+  "total": 81,
+  "last_updated": "November 12, 2026 09:18 PM UTC",
   "companies_scanned": 260,
   "sources": {
     "greenhouse": 88,
-    "lever": 2,
+    "lever": 1,
     "ashby": 0,
     "workday": 0
   }
