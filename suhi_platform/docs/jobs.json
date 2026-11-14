@@ -145,18 +145,6 @@
       "id": "8621789002"
     },
     {
-      "title": "Data Engineer, Billing & Payments",
-      "company": "Anthropic",
-      "location": "San Francisco, CA | New York City, NY",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450099008",
-      "score": 71,
-      "source": "Greenhouse",
-      "posted": "2026-10-19",
-      "industry": "FinTech",
-      "salary": "See posting",
-      "id": "5450099008"
-    },
-    {
       "title": "Senior Pricing & Monetization Data Scientist",
       "company": "Fivetran",
       "location": "Oakland, California, United States, AMER",
@@ -167,6 +155,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8031705003"
+    },
+    {
+      "title": "Data Engineer, Billing & Payments",
+      "company": "Anthropic",
+      "location": "San Francisco, CA | New York City, NY",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450099008",
+      "score": 71,
+      "source": "Greenhouse",
+      "posted": "2026-10-19",
+      "industry": "FinTech",
+      "salary": "See posting",
+      "id": "5450099008"
     },
     {
       "title": "Senior Data Engineer",
@@ -399,14 +399,14 @@
     {
       "title": "Data Analyst, Intern",
       "company": "Stripe",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=8194287",
+      "location": "New York, Seattle, South San Francisco HQ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8194291",
       "score": 65,
       "source": "Greenhouse",
       "posted": "2026-10-29",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8194287"
+      "id": "8194291"
     },
     {
       "title": "Finance and Strategy Data Analyst",
@@ -493,6 +493,18 @@
       "id": "8356769"
     },
     {
+      "title": "Data Engineer",
+      "company": "Brex",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8366850002?gh_jid=8366850002",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-10-13",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8366850002"
+    },
+    {
       "title": "Director, Data Engineering",
       "company": "Chime",
       "location": "San Francisco, CA, USA",
@@ -503,6 +515,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8765690002"
+    },
+    {
+      "title": "Senior Data Scientist, Experimentation",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8356065?t=gh_src=&gh_jid=8356065",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-11-13",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8356065"
     },
     {
       "title": "Senior Data Scientist, Product",
@@ -527,18 +551,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5616144"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Brex",
-      "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
-      "url": "https://www.brex.com/careers/8523806002?gh_jid=8523806002",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-10-13",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8523806002"
     },
     {
       "title": "Staff Software Engineer, Risk Data Engineering",
@@ -625,18 +637,6 @@
       "id": "8135458"
     },
     {
-      "title": "Data Engineer Intern (2027)",
-      "company": "Figma",
-      "location": "San Francisco, CA \u2022 New York, NY",
-      "url": "https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-10-27",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "6178851004"
-    },
-    {
       "title": "Data Engineer",
       "company": "Cloudflare",
       "location": "Hybrid",
@@ -647,6 +647,18 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "8055118"
+    },
+    {
+      "title": "Data Engineer Intern (2027)",
+      "company": "Figma",
+      "location": "San Francisco, CA \u2022 New York, NY",
+      "url": "https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-10-27",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "6178851004"
     },
     {
       "title": "Intern, Data Engineering",
@@ -688,13 +700,13 @@
       "title": "Data Engineer",
       "company": "Lyft",
       "location": "Toronto, Canada",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8662205002?gh_jid=8662205002",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8931413002?gh_jid=8931413002",
       "score": 63,
       "source": "Greenhouse",
       "posted": "2026-11-10",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "8662205002"
+      "id": "8931413002"
     },
     {
       "title": "Data Engineer Intern (Summer 2027)",
@@ -757,6 +769,18 @@
       "id": "8938458002"
     },
     {
+      "title": "Senior Product Analyst",
+      "company": "Fivetran",
+      "location": "Oakland, California, United States, AMER",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=8017414003",
+      "score": 63,
+      "source": "Greenhouse",
+      "posted": "2026-10-30",
+      "industry": "SaaS/Tech",
+      "salary": "See posting",
+      "id": "8017414003"
+    },
+    {
       "title": "Data Engineer, GTM",
       "company": "Anthropic",
       "location": "San Francisco, CA | New York City, NY",
@@ -769,18 +793,6 @@
       "id": "5418610008"
     },
     {
-      "title": "Data Engineer, GTM Systems",
-      "company": "Anthropic",
-      "location": "San Francisco, CA | New York City, NY; Seattle, WA",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5464234008",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-11-04",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "5464234008"
-    },
-    {
       "title": "Data Engineer, Product",
       "company": "Anthropic",
       "location": "San Francisco, CA | New York City, NY | Seattle, WA",
@@ -791,18 +803,6 @@
       "industry": "SaaS/Tech",
       "salary": "See posting",
       "id": "5448481008"
-    },
-    {
-      "title": "Senior Product Analyst",
-      "company": "Fivetran",
-      "location": "Oakland, California, United States, AMER",
-      "url": "https://www.fivetran.com/careers/job?gh_jid=8017414003",
-      "score": 63,
-      "source": "Greenhouse",
-      "posted": "2026-10-30",
-      "industry": "SaaS/Tech",
-      "salary": "See posting",
-      "id": "8017414003"
     },
     {
       "title": "Healthcare Business Analyst",
@@ -843,14 +843,14 @@
     {
       "title": "Data Analyst",
       "company": "Stripe",
-      "location": "Canada",
-      "url": "https://stripe.com/jobs/search?gh_jid=5416444",
+      "location": "US",
+      "url": "https://stripe.com/jobs/search?gh_jid=5601881",
       "score": 60,
       "source": "Greenhouse",
-      "posted": "2026-11-03",
+      "posted": "2026-11-13",
       "industry": "SaaS/Tech",
       "salary": "See posting",
-      "id": "5416444"
+      "id": "5601881"
     },
     {
       "title": "Data Analyst, SF",
@@ -962,10 +962,10 @@
     }
   ],
   "total": 80,
-  "last_updated": "November 13, 2026 08:46 PM UTC",
+  "last_updated": "November 14, 2026 06:56 PM UTC",
   "companies_scanned": 260,
   "sources": {
-    "greenhouse": 84,
+    "greenhouse": 85,
     "lever": 2,
     "ashby": 0,
     "workday": 0
